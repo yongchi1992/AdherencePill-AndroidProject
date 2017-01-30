@@ -1,0 +1,1 @@
+include ':app', ':zentri_ble', ':zentri_ble_command'

@@ -1,0 +1,4 @@
+#Mon Jan 30 16:40:11 CST 2017
+base.0=/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

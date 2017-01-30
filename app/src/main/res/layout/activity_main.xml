@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/material_blue_500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/textView"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AdherencePill"
+        android:textSize="40sp" />
+    <EditText
+        android:id="@+id/username"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textView"
+        android:hint="username"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/pwd"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignRight="@id/username"
+        android:layout_below="@id/username"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="15dp"/>
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/pwd"
+        android:layout_below="@id/pwd"
+        android:text="reset"
+        />
+    <Button
+        android:id="@+id/conformButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwd"
+        android:layout_toLeftOf="@id/cancelButton"
+        android:text="login"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/button_send"
+        android:text="send data"
+        android:visibility="invisible"
+        android:onClick="selfDestruct" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Jarandice"
+        android:layout_below="@id/button_send"
+        android:text="Jarandice"
+        android:visibility="invisible"
+        android:onClick="selfDestruct" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Truvada"
+        android:visibility="invisible"
+        android:layout_below="@id/Jarandice"
+        android:text="Truvada"
+        android:onClick="selfDestruct" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Asprin"
+        android:visibility="invisible"
+        android:layout_below="@id/Truvada"
+        android:text="Asprin"
+        android:onClick="selfDestruct" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/Lipitor"
+        android:visibility="invisible"
+        android:layout_below="@id/Asprin"
+        android:text="Lipitor"
+        android:onClick="selfDestruct" />
+
+</RelativeLayout>
