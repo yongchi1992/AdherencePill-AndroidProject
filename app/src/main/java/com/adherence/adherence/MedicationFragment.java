@@ -113,6 +113,65 @@ public class MedicationFragment extends Fragment {
             public void onResponse(JSONArray response) {
                 Toast.makeText(getActivity(),response.toString(),Toast.LENGTH_SHORT).show();
                 Log.d("response",response.toString());
+                
+                //retrive data from JSONobject
+                int i = response.length();
+                prescriptions = new Prescription[i];
+                for (int j = 0;j < i;j++){
+                    prescriptions[j] = new Prescription();
+                    try {
+                        JSONObject prescript = response.getJSONObject(j);
+                        prescriptions[j].setName(prescript.getString("name"));
+                        prescriptions[j].setNote(prescript.getString("note"));
+                        JSONArray schedule = prescript.getJSONArray("schedule");
+
+
+                        for(int k = 0; k < schedule.length(); k++){
+                            JSONObject takeTime = schedule.getJSONObject(k);
+                            String time = takeTime.getString("time");
+                            JSONArray takeWeek = takeTime.getJSONArray("days");
+                            Map<String, Integer> days = new HashMap<String, Integer>();
+                            for(int l = 0; l < takeWeek.length(); l++){
+                                JSONObject takeDays = takeWeek.getJSONObject(l);
+                                if(takeDays.has("amount")){
+                                    days.put(takeDays.getString("name"), takeDays.getInt("amount"));
+                                }else {
+                                    days.put(takeDays.getString("name"), 0);
+                                }
+                            }
+                            prescriptions[j].setSchedule(time, days);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                // test if data stored in prescriptions
+                for(int j = 0; j < i; j++){
+                    System.out.println(prescriptions[j].getName());
+                    System.out.println(prescriptions[j].getNote());
+
+                    //traverse with Map.Entry
+                    Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
+
+                    while (it.hasNext()) {
+
+                        // entry.getKey() return key
+                        // entry.getValue() return value
+                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry)it.next();
+                        System.out.println(entry.getKey());
+
+                        HashMap<String, Integer> tmp_in_hashmap=(HashMap)entry.getValue();
+
+                        Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
+                                .entrySet().iterator();
+
+                        while(in_iterator.hasNext()){
+                            Map.Entry in_entry = (Map.Entry)in_iterator.next();
+                            System.out.println(in_entry.getKey()+":"+in_entry.getValue());
+                        }
+                    }
+
+                
             }
         }, new Response.ErrorListener() {
             @Override
