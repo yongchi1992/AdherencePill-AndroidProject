@@ -1,193 +1,193 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:2:1-79:12
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:2:1-79:12
 	package
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:3:5-38
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:7:5-67
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:7:5-67
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:7:22-65
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:7:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:9:5-96
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:9:5-96
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:9:22-77
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:9:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:10:5-97
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:10:5-97
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:10:22-78
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:10:22-78
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:12:5-14:35
-MERGED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:32:5-34:35
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:12:5-14:35
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:32:5-34:35
 	android:required
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:14:9-32
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:14:9-32
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:13:9-53
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:13:9-53
 application
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:16:5-77:19
-MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:design:22.2.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/AndroidManifest.xml:12:5-20
-MERGED from [com.android.volley:volley:1.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:16:5-77:19
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:design:22.2.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/AndroidManifest.xml:12:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:20:9-41
 	android:allowBackup
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:18:9-43
 	android:theme
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:21:9-40
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:21:9-40
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:19:9-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:19:9-45
 activity#com.adherence.adherence.FirstActivity
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:22:9-31:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:22:9-31:20
 	android:label
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:25:13-45
 	android:configChanges
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:24:13-63
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:24:13-63
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:23:13-42
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:23:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:29:27-74
 activity#com.adherence.adherence.MainActivity
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:33:9-34:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:33:9-34:20
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:33:19-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:33:19-47
 activity#com.adherence.adherence.NextActivity
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:35:5-36:16
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:35:5-36:16
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:35:15-43
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:35:15-43
 receiver#com.adherence.adherence.NotificationReceiver
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:37:9-58
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:37:9-58
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:37:19-55
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:37:19-55
 service#com.adherence.adherence.NotificationService
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:38:9-56
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:38:9-56
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:38:18-53
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:38:18-53
 activity#com.adherence.adherence.MainActivity2
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:40:9-48:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:40:9-48:20
 	android:label
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:42:13-45
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:41:13-42
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:41:13-42
 service#com.adherence.adherence.ZentriOSBLEService
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:50:9-55:19
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:50:9-55:19
 	android:label
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:53:13-49
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:53:13-49
 	android:exported
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:54:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:54:13-36
 	android:icon
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:52:13-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:52:13-47
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:51:13-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:51:13-47
 service#com.adherence.adherence.MyService
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:57:9-59:19
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:57:9-59:19
 	android:exported
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:58:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:58:13-36
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:57:18-43
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:57:18-43
 receiver#com.adherence.adherence.AlarmReceiver
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:61:9-66:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:61:9-66:20
 	android:exported
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:62:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:62:13-36
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:61:19-48
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:61:19-48
 intent-filter#Alarm
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:63:13-65:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:63:13-65:29
 action#Alarm
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:64:17-50
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:64:17-50
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:64:25-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:64:25-47
 receiver#com.adherence.adherence.projectBroadcastReceiver
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:68:9-75:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:68:9-75:20
 	android:exported
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:69:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:69:13-36
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:68:19-59
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:68:19-59
 intent-filter#ACTION_SCAN_RESULT
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:70:13-74:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:70:13-74:29
 action#ACTION_SCAN_RESULT
-ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:72:17-63
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:72:17-63
 	android:name
-		ADDED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml:72:25-60
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:72:25-60
 uses-sdk
-INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:22.2.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.volley:volley:1.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/AndroidManifest.xml:7:5-43
-MERGED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:25:5-27:41
-MERGED from [499_AndroidApp-master_Worked-master:zentri_ble_command:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble_command/unspecified/AndroidManifest.xml:25:5-27:41
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:22.2.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.volley:volley:1.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/AndroidManifest.xml:7:5-43
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:25:5-27:41
+MERGED from [ADP_Android:zentri_ble_command:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble_command/unspecified/AndroidManifest.xml:25:5-27:41
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.2.1] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:24.2.1] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 activity#android.support.v7.widget.TestActivity
-ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
+ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
 	android:label
-		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:25:13-53
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:25:13-53
 	android:name
-		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:24:13-66
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:24:13-66
 uses-permission#android.permission.BLUETOOTH
-ADDED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:29:5-68
+ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:29:5-68
 	android:name
-		ADDED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:29:22-65
+		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:29:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:30:5-74
+ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:30:5-74
 	android:name
-		ADDED from [499_AndroidApp-master_Worked-master:zentri_ble:unspecified] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/499_AndroidApp-master_Worked-master/zentri_ble/unspecified/AndroidManifest.xml:30:22-71
+		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/ADP_Android/zentri_ble/unspecified/AndroidManifest.xml:30:22-71
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58

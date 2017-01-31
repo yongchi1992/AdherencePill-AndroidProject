@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/res/merged/debug/menu/global.xml",
-        "source": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/res/menu/global.xml"
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/menu/main.xml"
     },
     {
-        "merged": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/res/menu/main.xml"
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/menu/menu_main.xml"
     },
     {
-        "merged": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
-        "source": "/Users/yongchizhang/Desktop/Android/version_13Merge/499_AndroidApp-master_Worked-master/app/src/main/res/menu/menu_main.xml"
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/menu/global.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/menu/global.xml"
     }
 ]

@@ -41,10 +41,12 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -70,6 +72,7 @@ public class MedicationFragment extends Fragment {
     private TextView pop_pillinfo;
     private TextView pop_pillinstruction;
 
+    private Prescription[] prescriptions;
     private RequestQueue mRequestQueue;
 
     /**
@@ -93,7 +96,7 @@ public class MedicationFragment extends Fragment {
         medicineListHardcode = getArguments().getStringArray(ARG_MEDICINE_LIST);
         detailListHardcode = getArguments().getStringArray(ARG_MEDICINE_DETAIL);
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
-        Log.d("medication fragment session",sessionToken);
+        Log.d("medi_fragment session",sessionToken);
         mContext = this.getContext();
 
 
@@ -146,7 +149,7 @@ public class MedicationFragment extends Fragment {
                     }
                 }
                 // test if data stored in prescriptions
-                for(int j = 0; j < i; j++){
+                for(int j = 0; j < i; j++) {
                     System.out.println(prescriptions[j].getName());
                     System.out.println(prescriptions[j].getNote());
 
@@ -157,19 +160,20 @@ public class MedicationFragment extends Fragment {
 
                         // entry.getKey() return key
                         // entry.getValue() return value
-                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry)it.next();
+                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
                         System.out.println(entry.getKey());
 
-                        HashMap<String, Integer> tmp_in_hashmap=(HashMap)entry.getValue();
+                        HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
 
                         Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
                                 .entrySet().iterator();
 
-                        while(in_iterator.hasNext()){
-                            Map.Entry in_entry = (Map.Entry)in_iterator.next();
-                            System.out.println(in_entry.getKey()+":"+in_entry.getValue());
+                        while (in_iterator.hasNext()) {
+                            Map.Entry in_entry = (Map.Entry) in_iterator.next();
+                            System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
                         }
                     }
+                }
 
                 
             }
