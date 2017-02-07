@@ -10,6 +10,7 @@ import java.util.Map;
 public class Prescription {
     private String name;
     private String note;
+    private String pill;
     private Map<String, Map<String,Integer>> schedule = new HashMap<String, Map<String,Integer>>();
     public void setName(String name){
         this.name = name;
@@ -17,11 +18,18 @@ public class Prescription {
     public void setNote(String note){
         this.note = note;
     }
+    public void setPill(String pill){
+        this.pill = pill;
+    }
+
     public String getName(){
         return name;
     }
     public String getNote(){
         return note;
+    }
+    public String getPill(){
+        return pill;
     }
     public void setSchedule(String time, Map<String,Integer> days){
         this.schedule.put(time, days);

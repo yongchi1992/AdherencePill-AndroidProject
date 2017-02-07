@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="22d2bac7609d0a49358eb3374d808be840f03b16">
+        sha1="6d8d21daa376e7ff4b0358f3c5ca1be42b2fb6ac">
         <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="3e661aa3ce6c93c26a713f1ada8de201a56a318f">
+        sha1="d57d396aa89daa49e42e21a9d4c767daee3948d0">
         <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a/classes.dex" />
     </item>
     <item

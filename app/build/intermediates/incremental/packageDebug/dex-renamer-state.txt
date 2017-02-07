@@ -1,4 +1,4 @@
-#Tue Jan 31 13:02:22 CST 2017
+#Fri Feb 03 15:13:34 CST 2017
 base.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64
 renamed.1=classes.dex
 renamed.0=classes2.dex

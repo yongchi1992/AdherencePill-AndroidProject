@@ -126,6 +126,7 @@ public class MedicationFragment extends Fragment {
                         JSONObject prescript = response.getJSONObject(j);
                         prescriptions[j].setName(prescript.getString("name"));
                         prescriptions[j].setNote(prescript.getString("note"));
+                        prescriptions[j].setPill(prescript.getString("pill"));
                         JSONArray schedule = prescript.getJSONArray("schedule");
 
 
@@ -152,6 +153,7 @@ public class MedicationFragment extends Fragment {
                 for(int j = 0; j < i; j++) {
                     System.out.println(prescriptions[j].getName());
                     System.out.println(prescriptions[j].getNote());
+                    System.out.println(prescriptions[j].getPill());
 
                     //traverse with Map.Entry
                     Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
