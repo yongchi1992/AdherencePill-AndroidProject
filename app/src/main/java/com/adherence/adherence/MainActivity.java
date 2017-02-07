@@ -147,6 +147,12 @@ public class MainActivity extends AppCompatActivity {
 
             loginParse(name,pwd);
         }
+        else{
+            if(text.equals("reset")) {
+                name.setText("");
+                pwd.setText("");
+            }
+        }
     }
 
     private void loginParse(final EditText name, final EditText password) {

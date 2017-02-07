@@ -41,9 +41,10 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     private HashMap<String, HashMap<String, String>> display = new HashMap<String, HashMap<String, String>>();
 
     private ListView listView;
+    private TextView dayofweek;
     private ArrayAdapter<String> arrayAdapter;
     private TextView times_text;
-
+    private String mDay;
     public Calendar c = Calendar.getInstance();
     /**
      * The fragment argument representing the section number for this
@@ -70,12 +71,25 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
+        String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
+        switch (int_day){
+            case "1":mDay="Sunday";break;
+            case "2":mDay="Monday";break;
+            case "3":mDay="Tuesday";break;
+            case "4":mDay="Wednesday";break;
+            case "5":mDay="Thursday";break;
+            case "6":mDay="Friday";break;
+            case "7":mDay="Saturday";break;
+            default:mDay="Sunday";break;
+        }
+        Log.d("DAY",mDay);
         View view = inflater.inflate(R.layout.fragment2, container, false);
         final Button upButton;
         upButton = (Button) view.findViewById(R.id.button_send);
         upButton.setOnClickListener(this);
         listView=(ListView) view.findViewById(R.id.PillList);
+        dayofweek= (TextView) view.findViewById(R.id.dayofweek);
+        dayofweek.setText("This is "+mDay);
         arrayAdapter=new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1);
         final ParseQuery<ParseObject> query=ParseQuery.getQuery("Prescription");
         query.whereNotEqualTo("pill",null);
@@ -91,7 +105,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                     for (int i=0;i<objects.size();i++){
                         schedules[i]=objects.get(i).getParseObject("schedule");
                         parseObjects[i]=objects.get(i).getParseObject("pill").getObjectId();
- //                       arrayAdapter.add(parseObjects[i]);
+                        //                       arrayAdapter.add(parseObjects[i]);
                     }
                     //Toast.makeText(getActivity(),objects.size()+"",Toast.LENGTH_SHORT).show();
 //                    Toast.makeText(getActivity(),"object[i]: "+parseObjects[0],Toast.LENGTH_SHORT).show();
@@ -158,7 +172,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
 //        addTimeViews(rootView, inflater);
 //        return rootView;
     }
-//
+    //
     @Override
     public void onClick(View v) {
         //do what you want to do when button is clicked
