@@ -1,6 +1,7 @@
 package com.adherence.adherence;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -36,5 +37,17 @@ public class Prescription {
     }
     public Map<String, Map<String,Integer>> getSchedule(){
         return schedule;
+    }
+    public HashMap<String, Integer> getTimeAmount(String day){
+        HashMap<String, Integer> set = new HashMap<String, Integer>();
+        int amount;
+        Iterator<Map.Entry<String, Map<String, Integer>>> it = schedule.entrySet().iterator();
+        while (it.hasNext()){
+            Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
+            if((amount = entry.getValue().get(day)) != 0){
+                set.put(entry.getKey(), amount);
+            };
+        }
+        return set;
     }
 }

@@ -130,7 +130,6 @@ public class MedicationFragment extends Fragment {
                         JSONObject prescript = response.getJSONObject(j);
                         prescriptions[j].setName(prescript.getString("name"));
                         prescriptions[j].setNote(prescript.getString("note"));
-
                         prescriptions[j].setPill(prescript.getString("pill"));
 
                         JSONArray schedule = prescript.getJSONArray("schedule");
@@ -138,7 +137,7 @@ public class MedicationFragment extends Fragment {
 
                         for(int k = 0; k < schedule.length(); k++){
                             JSONObject takeTime = schedule.getJSONObject(k);
-                            String time = takeTime.getString("time");
+                            String time = takeTime.getString("time").substring(11, 19);
                             JSONArray takeWeek = takeTime.getJSONArray("days");
                             Map<String, Integer> days = new HashMap<String, Integer>();
                             for(int l = 0; l < takeWeek.length(); l++){
@@ -156,13 +155,22 @@ public class MedicationFragment extends Fragment {
                     }
                 }
                 // test if data stored in prescriptions
+
                 for(int j = 0; j < i; j++) {
+
                     System.out.println(prescriptions[j].getName());
 
 
                     medicineListHardcode[j]=prescriptions[j].getName();
                     System.out.println(prescriptions[j].getNote());
                     detailListHardcode[j]=prescriptions[j].getNote();
+
+                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
+                    while(itr.hasNext()){
+                        Map.Entry<String, Integer> entry = itr.next();
+                        System.out.println(entry.getKey());
+                        System.out.println(entry.getValue());
+                    }
 
 
                     //traverse with Map.Entry
