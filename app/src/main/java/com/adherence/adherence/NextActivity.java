@@ -32,6 +32,7 @@ public class NextActivity extends AppCompatActivity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private String sessionToken;
+    private String username;
     /**
      * Used to store the last screen title. For use in      */
     private CharSequence mTitle;
@@ -66,6 +67,7 @@ public class NextActivity extends AppCompatActivity
         toolbar.setTitle(mTitle);
         Intent intent=getIntent();
         sessionToken=intent.getStringExtra("sessionToken");
+        username=intent.getStringExtra("username");
         Log.d("nextactivity session",sessionToken);
 
 
@@ -147,6 +149,15 @@ public class NextActivity extends AppCompatActivity
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
             getMenuInflater().inflate(R.menu.main, menu);
+            MenuItem menuItem=menu.findItem(R.id.bluetooth);
+            if(username.equals("d@d")){
+
+                menuItem.setEnabled(true);
+            }
+            else{
+                menuItem.setEnabled(false);
+            }
+
 //            restoreActionBar();
             return true;
         }

@@ -93,8 +93,8 @@ public class MedicationFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        medicineListHardcode = getArguments().getStringArray(ARG_MEDICINE_LIST);
-        detailListHardcode = getArguments().getStringArray(ARG_MEDICINE_DETAIL);
+//        medicineListHardcode = getArguments().getStringArray(ARG_MEDICINE_LIST);
+//        detailListHardcode = getArguments().getStringArray(ARG_MEDICINE_DETAIL);
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
         Log.d("medi_fragment session",sessionToken);
         mContext = this.getContext();
@@ -114,11 +114,15 @@ public class MedicationFragment extends Fragment {
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
-                Toast.makeText(getActivity(),response.toString(),Toast.LENGTH_SHORT).show();
                 Log.d("response",response.toString());
-                
+
                 //retrive data from JSONobject
                 int i = response.length();
+                medicineListHardcode=new String[i];
+                detailListHardcode=new String[i];
+
+
+
                 prescriptions = new Prescription[i];
                 for (int j = 0;j < i;j++){
                     prescriptions[j] = new Prescription();
@@ -126,7 +130,9 @@ public class MedicationFragment extends Fragment {
                         JSONObject prescript = response.getJSONObject(j);
                         prescriptions[j].setName(prescript.getString("name"));
                         prescriptions[j].setNote(prescript.getString("note"));
+
                         prescriptions[j].setPill(prescript.getString("pill"));
+
                         JSONArray schedule = prescript.getJSONArray("schedule");
 
 
@@ -152,8 +158,12 @@ public class MedicationFragment extends Fragment {
                 // test if data stored in prescriptions
                 for(int j = 0; j < i; j++) {
                     System.out.println(prescriptions[j].getName());
+
+
+                    medicineListHardcode[j]=prescriptions[j].getName();
                     System.out.println(prescriptions[j].getNote());
-                    System.out.println(prescriptions[j].getPill());
+                    detailListHardcode[j]=prescriptions[j].getNote();
+
 
                     //traverse with Map.Entry
                     Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
@@ -177,7 +187,12 @@ public class MedicationFragment extends Fragment {
                     }
                 }
 
-                
+
+                mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
+                mRecyclerView.setAdapter(mAdapter);
+
+
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -214,7 +229,6 @@ public class MedicationFragment extends Fragment {
                 }
                 mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
                 mRecyclerView.setAdapter(mAdapter);
-
                 mAdapter.setOnItemClickListener(new MedicationListAdapter.OnItemClickListener() {
                     @Override
                     public void onItemClick(final View view, int position) {
@@ -234,7 +248,6 @@ public class MedicationFragment extends Fragment {
                                         String pillinfo=objects.get(0).getString("pillInfo");
                                         String pillinstruction=objects.get(0).getString("pillInstruction");
                                         showPopupWindow(view,"pillName: "+pillname,"pillInfo: "+pillinfo,"pillInstruction: "+pillinstruction);
-
                                     }
                                 });
                             }

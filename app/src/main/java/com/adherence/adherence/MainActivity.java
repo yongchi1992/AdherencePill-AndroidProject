@@ -168,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.d("sessiontoken", sessionToken);
                             Intent intent=new Intent();
                             intent.putExtra("sessionToken",sessionToken);
+                            intent.putExtra("username",name.getText().toString());
                             intent.setClass(MainActivity.this, NextActivity.class);
                             MainActivity.this.startActivity(intent);
                         } catch (JSONException e) {
