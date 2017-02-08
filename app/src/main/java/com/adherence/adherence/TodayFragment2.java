@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -21,6 +22,12 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -28,6 +35,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -35,10 +43,17 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 public class TodayFragment2 extends Fragment implements View.OnClickListener {
     static HashMap<String, HashMap<String, String>> patient = new HashMap<String, HashMap<String, String>>();
     private HashMap<String, HashMap<String, String>> display = new HashMap<String, HashMap<String, String>>();
+
+
+
+    private Prescription[] prescriptions;
+    private RequestQueue mRequestQueue;
+
 
     private ListView listView;
     private TextView dayofweek;
@@ -56,10 +71,16 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static TodayFragment2 newInstance(int sectionNumber) {
+    private static final String ARG_SESSION_TOKEN="session_token";
+
+    private String sessionToken;
+
+    public static TodayFragment2 newInstance(String sessionToken,int sectionNumber) {
         TodayFragment2 fragment = new TodayFragment2();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+//        Log.d("today_frag_newinstance",sessionToken);
+        args.putString(ARG_SESSION_TOKEN,sessionToken);
         fragment.setArguments(args);
 
         return fragment;
@@ -67,10 +88,13 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
 
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
+        if(sessionToken==null) Log.d("today_fragment session","sessionToken is null!");
+        else Log.d("today_fragment session",sessionToken);
+
         String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
         switch (int_day){
             case "1":mDay="Sunday";break;
@@ -83,6 +107,100 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
             default:mDay="Sunday";break;
         }
         Log.d("DAY",mDay);
+
+        mRequestQueue= Volley.newRequestQueue(getActivity());
+        String url="http://129.105.36.93:5000/patient/prescription";
+        JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                Log.d("response",response.toString());
+
+                //retrive data from JSONobject
+                int i = response.length();
+
+                prescriptions = new Prescription[i];
+                for (int j = 0;j < i;j++){
+                    prescriptions[j] = new Prescription();
+                    try {
+                        JSONObject prescript = response.getJSONObject(j);
+                        prescriptions[j].setName(prescript.getString("name"));
+                        prescriptions[j].setNote(prescript.getString("note"));
+                        prescriptions[j].setPill(prescript.getString("pill"));
+
+                        JSONArray schedule = prescript.getJSONArray("schedule");
+
+
+                        for(int k = 0; k < schedule.length(); k++){
+                            JSONObject takeTime = schedule.getJSONObject(k);
+                            String time = takeTime.getString("time").substring(11, 19);
+                            JSONArray takeWeek = takeTime.getJSONArray("days");
+                            Map<String, Integer> days = new HashMap<String, Integer>();
+                            for(int l = 0; l < takeWeek.length(); l++){
+                                JSONObject takeDays = takeWeek.getJSONObject(l);
+                                if(takeDays.has("amount")){
+                                    days.put(takeDays.getString("name"), takeDays.getInt("amount"));
+                                }else {
+                                    days.put(takeDays.getString("name"), 0);
+                                }
+                            }
+                            prescriptions[j].setSchedule(time, days);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                // test if data stored in prescriptions
+
+                for(int j = 0; j < i; j++) {
+
+                    System.out.println(prescriptions[j].getName());
+                    System.out.println(prescriptions[j].getNote());
+
+                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
+                    while(itr.hasNext()){
+                        Map.Entry<String, Integer> entry = itr.next();
+                        System.out.println(entry.getKey());
+                        System.out.println(entry.getValue());
+                    }
+
+
+                    //traverse with Map.Entry
+                    Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
+
+                    while (it.hasNext()) {
+
+                        // entry.getKey() return key
+                        // entry.getValue() return value
+                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
+                        System.out.println(entry.getKey());
+
+                        HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
+
+                        Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
+                                .entrySet().iterator();
+
+                        while (in_iterator.hasNext()) {
+                            Map.Entry in_entry = (Map.Entry) in_iterator.next();
+                            System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
+                        }
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("error",error.toString());
+            }
+        }){
+            @Override
+            public Map<String,String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("x-parse-session-token",sessionToken);
+                return headers;
+            }
+        };
+        mRequestQueue.add(request);
+
         View view = inflater.inflate(R.layout.fragment2, container, false);
         final Button upButton;
         upButton = (Button) view.findViewById(R.id.button_send);
@@ -215,7 +333,8 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
 //            Toast.makeText(getActivity(), "currentUser: " + currentUser, Toast.LENGTH_LONG).show();
             ParseObject.unpinAllInBackground("schedules");
             ParseRelation exportContactRelation = currentUser.getRelation( "Prescription" );
-            Toast.makeText(getActivity(), "exportContactRelation: " + exportContactRelation, Toast.LENGTH_LONG).show();
+            //Toast.makeText(getActivity(), "exportContactRelation: " + exportContactRelation, Toast.LENGTH_LONG).show();
+           Toast.makeText(getContext(),"",Toast.LENGTH_SHORT).show();
             try {
                 List<ParseObject> prescriptions = exportContactRelation.getQuery().find();
 //                Toast.makeText(getActivity(), "prescriptions: " + prescriptions, Toast.LENGTH_LONG).show();
@@ -273,7 +392,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         display.put(schedule.getString("pillName"), time_pills);
                     }
                 } else {
-                    Context context = getActivity().getApplicationContext();
+                    Context context = getContext();
                     CharSequence text = "Please check network connection.";
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
@@ -320,7 +439,8 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         }
     }
     private boolean isNetworkConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm;
+        cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
         if (ni == null) {
             // There are no active networks.

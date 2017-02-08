@@ -4,6 +4,7 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -66,8 +67,11 @@ public class NextActivity extends AppCompatActivity
 
         toolbar.setTitle(mTitle);
         Intent intent=getIntent();
-        sessionToken=intent.getStringExtra("sessionToken");
-        username=intent.getStringExtra("username");
+  //      sessionToken=intent.getStringExtra("sessionToken");
+  //      username=intent.getStringExtra("username");
+        SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
+        sessionToken=data.getString("sessionToken","null");
+        username=data.getString("username","null");
         Log.d("nextactivity session",sessionToken);
 
 
@@ -95,9 +99,12 @@ public class NextActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
         switch(position) {
             case 0:
+                SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
+                sessionToken=data.getString("sessionToken","null");
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, TodayFragment2.newInstance(position + 1))
+                        .replace(R.id.container, TodayFragment2.newInstance(sessionToken,position + 1))
                         .commit();
+
                 break;
             case 1:
                 String[] medicineList = getResources().getStringArray(R.array.medicine_hardcode);

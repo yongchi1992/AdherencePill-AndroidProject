@@ -2,6 +2,7 @@ package com.adherence.adherence;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -172,11 +173,17 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             String sessionToken=res.getString("sessionToken");
                             Log.d("sessiontoken", sessionToken);
+                            SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
+                            SharedPreferences.Editor editor=data.edit();
+                            editor.putString("sessionToken",sessionToken);
+                            editor.putString("username",name.getText().toString());
                             Intent intent=new Intent();
-                            intent.putExtra("sessionToken",sessionToken);
-                            intent.putExtra("username",name.getText().toString());
+//                            intent.putExtra("sessionToken",sessionToken);
+//                            intent.putExtra("username",name.getText().toString());
                             intent.setClass(MainActivity.this, NextActivity.class);
                             MainActivity.this.startActivity(intent);
+
+                            editor.commit();
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Log.d("res","get token wrong!");
