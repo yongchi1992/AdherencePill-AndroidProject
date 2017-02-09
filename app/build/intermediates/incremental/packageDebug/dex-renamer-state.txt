@@ -1,7 +1,0 @@
-#Wed Feb 08 21:46:21 CST 2017
-base.0=/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9a49cc68a4f5c55ba8a055ebf4972526bbc310f7
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fcc27376f4f786f28cf59ba5e34bf6ffbc4873bc/classes.dex
-base.1=/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fcc27376f4f786f28cf59ba5e34bf6ffbc4873bc
-file.0=/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9a49cc68a4f5c55ba8a055ebf4972526bbc310f7/classes.dex
