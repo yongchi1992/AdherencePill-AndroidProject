@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
@@ -39,6 +40,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -49,13 +51,18 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     static HashMap<String, HashMap<String, String>> patient = new HashMap<String, HashMap<String, String>>();
     private HashMap<String, HashMap<String, String>> display = new HashMap<String, HashMap<String, String>>();
 
+    private RecyclerView mRecyclerView;
+    private TodayListAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
+    private ArrayList<String> pillName;
+    private ArrayList<String> time_amount;
 
     private Prescription[] prescriptions;
     private RequestQueue mRequestQueue;
 
 
-    private ListView listView;
+
     private TextView dayofweek;
     private ArrayAdapter<String> arrayAdapter;
     private TextView times_text;
@@ -91,9 +98,11 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.today2_fragment, container, false);
+        mRecyclerView= (RecyclerView) view.findViewById(R.id.today_schedule);
+        mLayoutManager=new LinearLayoutManager(getActivity());
+        mRecyclerView.setLayoutManager(mLayoutManager);
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
-        if(sessionToken==null) Log.d("today_fragment session","sessionToken is null!");
-        else Log.d("today_fragment session",sessionToken);
 
         String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
         switch (int_day){
@@ -106,9 +115,12 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
             case "7":mDay="Saturday";break;
             default:mDay="Sunday";break;
         }
-        Log.d("DAY",mDay);
 
         mRequestQueue= Volley.newRequestQueue(getActivity());
+        pillName=new ArrayList<>();
+        time_amount=new ArrayList<>();
+        dayofweek= (TextView) view.findViewById(R.id.m_day);
+        dayofweek.setText("This is "+mDay);
         String url="http://129.105.36.93:5000/patient/prescription";
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
@@ -153,38 +165,22 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
 
                 for(int j = 0; j < i; j++) {
 
-                    System.out.println(prescriptions[j].getName());
-                    System.out.println(prescriptions[j].getNote());
+//                    System.out.println(prescriptions[j].getName());
+//                    System.out.println(prescriptions[j].getNote());
 
-                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
+                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount(mDay).entrySet().iterator();
+
                     while(itr.hasNext()){
                         Map.Entry<String, Integer> entry = itr.next();
+                        System.out.println(prescriptions[j].getPill());
+                        pillName.add(prescriptions[j].getPill());
                         System.out.println(entry.getKey());
                         System.out.println(entry.getValue());
-                    }
-
-
-                    //traverse with Map.Entry
-                    Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
-
-                    while (it.hasNext()) {
-
-                        // entry.getKey() return key
-                        // entry.getValue() return value
-                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
-                        System.out.println(entry.getKey());
-
-                        HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
-
-                        Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
-                                .entrySet().iterator();
-
-                        while (in_iterator.hasNext()) {
-                            Map.Entry in_entry = (Map.Entry) in_iterator.next();
-                            System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
-                        }
+                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" pill(s)");
                     }
                 }
+                mAdapter=new TodayListAdapter(pillName,time_amount);
+                mRecyclerView.setAdapter(mAdapter);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -201,94 +197,84 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         };
         mRequestQueue.add(request);
 
-        View view = inflater.inflate(R.layout.fragment2, container, false);
-        final Button upButton;
-        upButton = (Button) view.findViewById(R.id.button_send);
-        upButton.setOnClickListener(this);
-        listView=(ListView) view.findViewById(R.id.PillList);
-        dayofweek= (TextView) view.findViewById(R.id.dayofweek);
-        dayofweek.setText("This is "+mDay);
-        arrayAdapter=new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1);
-        final ParseQuery<ParseObject> query=ParseQuery.getQuery("Prescription");
-        query.whereNotEqualTo("pill",null);
-        //query.whereEqualTo("objectId","jEy8igcaQ4");
 
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(final List<ParseObject> objects, ParseException e) {
-                if(e==null){
-//                    Toast.makeText(getActivity(),"objects.length: "+objects.size(),Toast.LENGTH_SHORT).show();
-                    final String[] parseObjects=new String[objects.size()];
-                    final ParseObject[]schedules=new ParseObject[objects.size()];
-                    for (int i=0;i<objects.size();i++){
-                        schedules[i]=objects.get(i).getParseObject("schedule");
-                        parseObjects[i]=objects.get(i).getParseObject("pill").getObjectId();
-                        //                       arrayAdapter.add(parseObjects[i]);
-                    }
-                    //Toast.makeText(getActivity(),objects.size()+"",Toast.LENGTH_SHORT).show();
-//                    Toast.makeText(getActivity(),"object[i]: "+parseObjects[0],Toast.LENGTH_SHORT).show();
-                    for(int i=0;i<parseObjects.length;i++) {
-                        ParseQuery<ParseObject> query1 = ParseQuery.getQuery("PillLib");
+//        final Button upButton;
+//        upButton = (Button) view.findViewById(R.id.button_send);
+//        upButton.setOnClickListener(this);
+//        listView=(ListView) view.findViewById(R.id.PillList);
 
-                        query1.whereEqualTo("objectId", parseObjects[i]);
-                        query1.findInBackground(new FindCallback<ParseObject>() {
-                            @Override
-                            public void done(List<ParseObject> objects, ParseException e) {
-                                String pillName=objects.get(0).getString("pillName");
-//                                Toast.makeText(getActivity(),"pillName: "+pillName,Toast.LENGTH_SHORT).show();
-                                arrayAdapter.add(pillName);
-
-                            }
-                        });
-                    }
-                    listView.setAdapter(arrayAdapter);
-                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> adapterView, final View view, int i, long l) {
-//                            Toast.makeText(getActivity(),schedules.length+"",Toast.LENGTH_SHORT).show();
-
-
-                            ParseQuery<ParseObject>query2=ParseQuery.getQuery("Schedule");
-                            query2.whereEqualTo("objectId",schedules[i].getObjectId());
-                            query2.findInBackground(new FindCallback<ParseObject>() {
-                                @Override
-                                public void done(List<ParseObject> objects, ParseException e) {
-                                    //Toast.makeText(getActivity(),objects.get(0).getJSONArray("times").toString(),Toast.LENGTH_SHORT).show();
-                                    showPopupWindow(view,objects.get(0).getJSONArray("times").toString());
-//                                    JSONArray jsonArray=objects.get(0).getJSONArray("times");
+//        arrayAdapter=new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1);
+//        final ParseQuery<ParseObject> query=ParseQuery.getQuery("Prescription");
+//        query.whereNotEqualTo("pill",null);
+//        //query.whereEqualTo("objectId","jEy8igcaQ4");
 //
-//                                    try {
-//                                        JSONObject jsonObject=jsonArray.getJSONObject(0);
-//                                        showPopupWindow(view,jsonObject.getString("times"));
-//                                    } catch (JSONException e1) {
-//                                        e1.printStackTrace();
-//                                        Toast.makeText(getContext(),"sth wrong",Toast.LENGTH_SHORT).show();
-//                                    }
-                                }
-                            });
-
-                        }
-                    });
-
-                }
-                else{
-                    Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_LONG).show();
-                }
-            }
-        });
+//        query.findInBackground(new FindCallback<ParseObject>() {
+//            @Override
+//            public void done(final List<ParseObject> objects, ParseException e) {
+//                if(e==null){
+////                    Toast.makeText(getActivity(),"objects.length: "+objects.size(),Toast.LENGTH_SHORT).show();
+//                    final String[] parseObjects=new String[objects.size()];
+//                    final ParseObject[]schedules=new ParseObject[objects.size()];
+//                    for (int i=0;i<objects.size();i++){
+//                        schedules[i]=objects.get(i).getParseObject("schedule");
+//                        parseObjects[i]=objects.get(i).getParseObject("pill").getObjectId();
+//                        //                       arrayAdapter.add(parseObjects[i]);
+//                    }
+//                    //Toast.makeText(getActivity(),objects.size()+"",Toast.LENGTH_SHORT).show();
+////                    Toast.makeText(getActivity(),"object[i]: "+parseObjects[0],Toast.LENGTH_SHORT).show();
+//                    for(int i=0;i<parseObjects.length;i++) {
+//                        ParseQuery<ParseObject> query1 = ParseQuery.getQuery("PillLib");
+//
+//                        query1.whereEqualTo("objectId", parseObjects[i]);
+//                        query1.findInBackground(new FindCallback<ParseObject>() {
+//                            @Override
+//                            public void done(List<ParseObject> objects, ParseException e) {
+//                                String pillName=objects.get(0).getString("pillName");
+////                                Toast.makeText(getActivity(),"pillName: "+pillName,Toast.LENGTH_SHORT).show();
+//                                arrayAdapter.add(pillName);
+//
+//                            }
+//                        });
+//                    }
+//                    listView.setAdapter(arrayAdapter);
+//                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                        @Override
+//                        public void onItemClick(AdapterView<?> adapterView, final View view, int i, long l) {
+////                            Toast.makeText(getActivity(),schedules.length+"",Toast.LENGTH_SHORT).show();
+//
+//
+//                            ParseQuery<ParseObject>query2=ParseQuery.getQuery("Schedule");
+//                            query2.whereEqualTo("objectId",schedules[i].getObjectId());
+//                            query2.findInBackground(new FindCallback<ParseObject>() {
+//                                @Override
+//                                public void done(List<ParseObject> objects, ParseException e) {
+//                                    //Toast.makeText(getActivity(),objects.get(0).getJSONArray("times").toString(),Toast.LENGTH_SHORT).show();
+//                                    showPopupWindow(view,objects.get(0).getJSONArray("times").toString());
+////                                    JSONArray jsonArray=objects.get(0).getJSONArray("times");
+////
+////                                    try {
+////                                        JSONObject jsonObject=jsonArray.getJSONObject(0);
+////                                        showPopupWindow(view,jsonObject.getString("times"));
+////                                    } catch (JSONException e1) {
+////                                        e1.printStackTrace();
+////                                        Toast.makeText(getContext(),"sth wrong",Toast.LENGTH_SHORT).show();
+////                                    }
+//                                }
+//                            });
+//
+//                        }
+//                    });
+//
+//                }
+//                else{
+//                    Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_LONG).show();
+//                }
+//            }
+//        });
 
         return view;
 
-//        View rootView = inflater.inflate(R.layout.fragment2, container, false);
-//        ProgressBar progress = (ProgressBar) rootView.findViewById(R.id.progressWheel);
-//        progress.setSecondaryProgress(80);
-//        try {
-//            getDisplay("Sunday");
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//        addTimeViews(rootView, inflater);
-//        return rootView;
+//
     }
     //
     @Override
