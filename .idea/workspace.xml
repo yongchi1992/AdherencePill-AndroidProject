@@ -9,9 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d20dcb7-3047-4e97-af8d-d113a7039805" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/adherence/adherence/TodayFragment2.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/adherence/adherence/TodayFragment2.java" />
-    </list>
+    <list default="true" id="7d20dcb7-3047-4e97-af8d-d113a7039805" name="Default" comment="" />
     <ignored path="ADP_Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
