@@ -176,7 +176,11 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         pillName.add(prescriptions[j].getPill());
                         System.out.println(entry.getKey());
                         System.out.println(entry.getValue());
-                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" pill(s)");
+                        //determine pill or pills
+                        String pill="pill";
+                        int amount=entry.getValue();
+                        if(amount>1) pill=pill+"s";
+                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
                     }
                 }
                 mAdapter=new TodayListAdapter(pillName,time_amount);

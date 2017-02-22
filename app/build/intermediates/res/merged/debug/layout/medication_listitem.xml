@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MedicineList"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Test"
+        style="@style/ListTitle"
+        android:id="@+id/medicine_name"/>
+
+    <TextView
+        style="@style/ListSecondaryTitle"
+        android:text="123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicine_name"
+        android:id="@+id/medicine_detail"/>
+
+</RelativeLayout>
