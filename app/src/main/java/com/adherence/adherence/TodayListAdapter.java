@@ -1,5 +1,6 @@
 package com.adherence.adherence;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +23,10 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     private ArrayList<String> pillName;
     private ArrayList<String> time_amount;
 
+
+    private ArrayList<Boolean> flag;
+
+
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public View listRootView;
         private TextView pillName;
@@ -41,9 +46,10 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         }
     }
 
-    public TodayListAdapter(ArrayList<String> pillName, ArrayList<String> time_amount){
+    public TodayListAdapter(ArrayList<String> pillName, ArrayList<String> time_amount, ArrayList<Boolean> flag){
         this.pillName=new ArrayList<String>(pillName);
         this.time_amount=new ArrayList<String>(time_amount);
+        this.flag=new ArrayList<Boolean>(flag);
     }
 
     @Override
@@ -57,6 +63,11 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     public void onBindViewHolder(TodayListAdapter.ViewHolder holder, int position) {
         holder.getPillName().setText(pillName.get(position));
         holder.getTimeAmount().setText(time_amount.get(position));
+        if(flag.get(position)==true){
+            holder.getTimeAmount().setTextColor(Color.GREEN);
+        }else {
+            holder.getTimeAmount().setTextColor(Color.RED);
+        }
     }
 
     @Override

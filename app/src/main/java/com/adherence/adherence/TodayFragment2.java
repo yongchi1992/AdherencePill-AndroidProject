@@ -28,6 +28,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -40,8 +41,12 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.sql.Time;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -57,6 +62,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
 
     private ArrayList<String> pillName;
     private ArrayList<String> time_amount;
+    private ArrayList<Boolean> flag;
 
     private Prescription[] prescriptions;
     private RequestQueue mRequestQueue;
@@ -98,7 +104,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.today2_fragment, container, false);
+        final View view = inflater.inflate(R.layout.today2_fragment, container, false);
         mRecyclerView= (RecyclerView) view.findViewById(R.id.today_schedule);
         mLayoutManager=new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
@@ -117,10 +123,11 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         }
 
         mRequestQueue= Volley.newRequestQueue(getActivity());
-        pillName=new ArrayList<>();
-        time_amount=new ArrayList<>();
-        dayofweek= (TextView) view.findViewById(R.id.m_day);
-        dayofweek.setText("This is "+mDay);
+//        pillName=new ArrayList<>();
+//        time_amount=new ArrayList<>();
+//        flag=new ArrayList<>();
+//        dayofweek= (TextView) view.findViewById(R.id.m_day);
+//        dayofweek.setText("This is "+mDay);
         String url="http://129.105.36.93:5000/patient/prescription";
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
@@ -136,8 +143,16 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                     try {
                         JSONObject prescript = response.getJSONObject(j);
                         prescriptions[j].setName(prescript.getString("name"));
-                        prescriptions[j].setNote(prescript.getString("note"));
-                        prescriptions[j].setPill(prescript.getString("pill"));
+                        if(prescript.has("note")) {
+                            prescriptions[j].setNote(prescript.getString("note"));
+                        }else {
+                            prescriptions[j].setNote("null");
+                        }
+                        if(prescript.has("pill")) {
+                            prescriptions[j].setPill(prescript.getString("pill"));
+                        }else{
+                            prescriptions[j].setPill("none");
+                        }
 
                         JSONArray schedule = prescript.getJSONArray("schedule");
 
@@ -163,17 +178,44 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                 }
                 // test if data stored in prescriptions
 
-                for(int j = 0; j < i; j++) {
+//                for(int j = 0; j < i; j++) {
+//
+////                    System.out.println(prescriptions[j].getName());
+////                    System.out.println(prescriptions[j].getNote());
+//
+//                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount(mDay).entrySet().iterator();
+//
+//                    while(itr.hasNext()){
+//                        Map.Entry<String, Integer> entry = itr.next();
+//                        System.out.println(prescriptions[j].getPill());
+//                        pillName.add(prescriptions[j].getPill());
+//                        System.out.println(entry.getKey());
+//                        System.out.println(entry.getValue());
+//                        //determine pill or pills
+//                        String pill="pill";
+//                        int amount=entry.getValue();
+//                        if(amount>1) pill=pill+"s";
+//                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
+//                        flag.add(true);
+//
+//                    }
+//                }
 
-//                    System.out.println(prescriptions[j].getName());
-//                    System.out.println(prescriptions[j].getNote());
+                for(int k = 0; k < prescriptions.length; k++){
+                    JsonArrayRequest idRequest;
 
-                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount(mDay).entrySet().iterator();
+                    pillName=new ArrayList<>();
+                    time_amount=new ArrayList<>();
+                    flag=new ArrayList<>();
+                    dayofweek= (TextView) view.findViewById(R.id.m_day);
+                    dayofweek.setText("This is "+mDay);
+
+                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[k].getTimeAmount(mDay).entrySet().iterator();
 
                     while(itr.hasNext()){
                         Map.Entry<String, Integer> entry = itr.next();
-                        System.out.println(prescriptions[j].getPill());
-                        pillName.add(prescriptions[j].getPill());
+                        System.out.println(prescriptions[k].getPill());
+                        pillName.add(prescriptions[k].getPill());
                         System.out.println(entry.getKey());
                         System.out.println(entry.getValue());
                         //determine pill or pills
@@ -181,10 +223,81 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         int amount=entry.getValue();
                         if(amount>1) pill=pill+"s";
                         time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
+                        //flag.add(true);
+
                     }
+
+                    final int finalK = k;
+                    mRequestQueue.add(idRequest = new JsonArrayRequest("http://129.105.36.93:5000/prescription?prescriptionId=8FJOGrTheH", new Response.Listener<JSONArray>() {
+                        @Override
+                        public void onResponse(JSONArray response) {
+                            try {
+                                //prescriptions[finalK].setBottleName(response.getJSONObject(0).getString("name"));
+                                Boolean eaten = false;
+                                String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
+                                String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
+                                DateFormat df = new SimpleDateFormat("HH:mm:ss");
+                                Date currentTime = df.parse(time);
+
+
+
+                                Log.d("Date:", date);
+                                Log.d("Time", time);
+                                Log.d("Name", prescriptions[finalK].getName());
+                                JSONArray updates = response.getJSONObject(0).getJSONArray("updates");
+                                int len = updates.length();
+                                Log.d("updates length", Integer.toString(len));
+                                for(int j = 0; j < len; j++){
+//                                    Log.d("date", updates.getJSONObject(j).getString("timestamp").substring(10, 18));
+//                                    Log.d("time", updates.getJSONObject(j).getString("timestamp").substring(0, 8));
+                                    if(date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)){
+                                        if(Math.abs(currentTime.getTime() - df.parse(updates.getJSONObject(j).getString("timestamp").substring(0, 8)).getTime()) <= 7200000){
+                                            eaten = true;
+                                        }
+
+                                    }
+
+                                }
+                                Log.d("eaten", Boolean.toString(eaten));
+
+
+                                flag.add(eaten);
+                                mAdapter=new TodayListAdapter(pillName,time_amount,flag);
+                                mRecyclerView.setAdapter(mAdapter);
+
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            } catch (java.text.ParseException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Log.d("error",error.toString());
+                        }
+                    }){
+                        @Override
+                        public Map<String,String> getHeaders() throws AuthFailureError {
+                            HashMap<String, String> headers = new HashMap<String, String>();
+                            headers.put("x-parse-session-token",sessionToken);
+                            return headers;
+                        }
+                    });
+
+
+
                 }
-                mAdapter=new TodayListAdapter(pillName,time_amount);
-                mRecyclerView.setAdapter(mAdapter);
+
+
+
+
+
+
+//                mAdapter=new TodayListAdapter(pillName,time_amount,flag);
+//                mRecyclerView.setAdapter(mAdapter);
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -201,80 +314,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         };
         mRequestQueue.add(request);
 
-
-//        final Button upButton;
-//        upButton = (Button) view.findViewById(R.id.button_send);
-//        upButton.setOnClickListener(this);
-//        listView=(ListView) view.findViewById(R.id.PillList);
-
-//        arrayAdapter=new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1);
-//        final ParseQuery<ParseObject> query=ParseQuery.getQuery("Prescription");
-//        query.whereNotEqualTo("pill",null);
-//        //query.whereEqualTo("objectId","jEy8igcaQ4");
-//
-//        query.findInBackground(new FindCallback<ParseObject>() {
-//            @Override
-//            public void done(final List<ParseObject> objects, ParseException e) {
-//                if(e==null){
-////                    Toast.makeText(getActivity(),"objects.length: "+objects.size(),Toast.LENGTH_SHORT).show();
-//                    final String[] parseObjects=new String[objects.size()];
-//                    final ParseObject[]schedules=new ParseObject[objects.size()];
-//                    for (int i=0;i<objects.size();i++){
-//                        schedules[i]=objects.get(i).getParseObject("schedule");
-//                        parseObjects[i]=objects.get(i).getParseObject("pill").getObjectId();
-//                        //                       arrayAdapter.add(parseObjects[i]);
-//                    }
-//                    //Toast.makeText(getActivity(),objects.size()+"",Toast.LENGTH_SHORT).show();
-////                    Toast.makeText(getActivity(),"object[i]: "+parseObjects[0],Toast.LENGTH_SHORT).show();
-//                    for(int i=0;i<parseObjects.length;i++) {
-//                        ParseQuery<ParseObject> query1 = ParseQuery.getQuery("PillLib");
-//
-//                        query1.whereEqualTo("objectId", parseObjects[i]);
-//                        query1.findInBackground(new FindCallback<ParseObject>() {
-//                            @Override
-//                            public void done(List<ParseObject> objects, ParseException e) {
-//                                String pillName=objects.get(0).getString("pillName");
-////                                Toast.makeText(getActivity(),"pillName: "+pillName,Toast.LENGTH_SHORT).show();
-//                                arrayAdapter.add(pillName);
-//
-//                            }
-//                        });
-//                    }
-//                    listView.setAdapter(arrayAdapter);
-//                    listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                        @Override
-//                        public void onItemClick(AdapterView<?> adapterView, final View view, int i, long l) {
-////                            Toast.makeText(getActivity(),schedules.length+"",Toast.LENGTH_SHORT).show();
-//
-//
-//                            ParseQuery<ParseObject>query2=ParseQuery.getQuery("Schedule");
-//                            query2.whereEqualTo("objectId",schedules[i].getObjectId());
-//                            query2.findInBackground(new FindCallback<ParseObject>() {
-//                                @Override
-//                                public void done(List<ParseObject> objects, ParseException e) {
-//                                    //Toast.makeText(getActivity(),objects.get(0).getJSONArray("times").toString(),Toast.LENGTH_SHORT).show();
-//                                    showPopupWindow(view,objects.get(0).getJSONArray("times").toString());
-////                                    JSONArray jsonArray=objects.get(0).getJSONArray("times");
-////
-////                                    try {
-////                                        JSONObject jsonObject=jsonArray.getJSONObject(0);
-////                                        showPopupWindow(view,jsonObject.getString("times"));
-////                                    } catch (JSONException e1) {
-////                                        e1.printStackTrace();
-////                                        Toast.makeText(getContext(),"sth wrong",Toast.LENGTH_SHORT).show();
-////                                    }
-//                                }
-//                            });
-//
-//                        }
-//                    });
-//
-//                }
-//                else{
-//                    Toast.makeText(getActivity(),e.getMessage(),Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        });
 
         return view;
 

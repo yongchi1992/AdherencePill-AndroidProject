@@ -3,6 +3,7 @@ package com.adherence.adherence;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -49,6 +50,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 public class MedicationFragment extends Fragment {
@@ -73,7 +76,7 @@ public class MedicationFragment extends Fragment {
     private TextView pop_pillinstruction;
 
     private Prescription[] prescriptions;
-    private RequestQueue mRequestQueue;
+    private static RequestQueue mRequestQueue;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -98,6 +101,8 @@ public class MedicationFragment extends Fragment {
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
         Log.d("medi_fragment session",sessionToken);
         mContext = this.getContext();
+        mRequestQueue = Volley.newRequestQueue(getActivity());
+        Log.d("sequence", "onCreate!");
 
 
     }
@@ -109,9 +114,11 @@ public class MedicationFragment extends Fragment {
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.medication_list);
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mRequestQueue= Volley.newRequestQueue(getActivity());
-        String url="http://129.105.36.93:5000/patient/prescription";
-        JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            //mRequestQueue= Volley.newRequestQueue(getActivity());
+
+
+        String url="http://129.105.36.93:5000/patient/prescriptions";
+        final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 Log.d("response",response.toString());
@@ -128,9 +135,33 @@ public class MedicationFragment extends Fragment {
                     prescriptions[j] = new Prescription();
                     try {
                         JSONObject prescript = response.getJSONObject(j);
-                        prescriptions[j].setName(prescript.getString("name"));
-                        prescriptions[j].setNote(prescript.getString("note"));
-                        prescriptions[j].setPill(prescript.getString("pill"));
+                        prescriptions[j].setName(prescript.getString("prescriptionName"));
+                        if(prescript.has("bottle")){
+                            if(prescript.getJSONObject("bottle").has("bottleName")){
+                            prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
+                            }
+                            if(prescript.getJSONObject("bottle").has("pillNumber")){
+                            prescriptions[j].setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
+                            }
+                        }else{
+                            prescriptions[j].setBottleName("null");
+                            prescriptions[j].setPillNumber(0);
+                        }
+                        if(prescript.has("note")) {
+                            prescriptions[j].setNote(prescript.getString("note"));
+                        }else{
+                            prescriptions[j].setNote("none");
+                        }
+                        if(prescript.has("pill")) {
+                            prescriptions[j].setPill(prescript.getString("pill"));
+                        }else{
+                            prescriptions[j].setPill("none");
+                        }
+                        if(prescript.has("newAdded")){
+                            prescriptions[j].setNewAdded(prescript.getBoolean("newAdded"));
+                        }else {
+                            prescriptions[j].setNewAdded(false);
+                        }
 
                         JSONArray schedule = prescript.getJSONArray("schedule");
 
@@ -159,11 +190,15 @@ public class MedicationFragment extends Fragment {
                 for(int j = 0; j < i; j++) {
 
                     System.out.println(prescriptions[j].getName());
-
-
                     medicineListHardcode[j]=prescriptions[j].getName();
                     System.out.println(prescriptions[j].getNote());
                     detailListHardcode[j]=prescriptions[j].getNote();
+
+                    System.out.println(prescriptions[j].getBottleName());
+                    System.out.println(prescriptions[j].getNewAdded());
+                    System.out.println(prescriptions[j].getPillNumber());
+
+
 
                     Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
                     while(itr.hasNext()){
@@ -193,12 +228,19 @@ public class MedicationFragment extends Fragment {
                             System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
                         }
                     }
+
+
+
+
                 }
+
+
+
+
 
 
                 mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
                 mRecyclerView.setAdapter(mAdapter);
-
 
 
             }
@@ -215,7 +257,30 @@ public class MedicationFragment extends Fragment {
                 return headers;
             }
         };
-        mRequestQueue.add(request);
+
+
+        //prescriptions[0].requestSetBottleName(sessionToken, mRequestQueue);
+
+        mRequestQueue.add(prescriptionRequest);
+
+
+
+
+
+
+
+
+
+
+
+
+        Log.d("sequence","onCreateView!");
+
+
+        //prescriptions[0].requestSetBottleName(sessionToken, mRequestQueue);
+        //mRequestQueue.add(prescriptions[0].requestSetBottleName(sessionToken, prescriptions[0]));
+       // System.out.println(prescriptions[0].getBottleName());
+
 
      /*   ParseQuery<ParseObject> query2=ParseQuery.getQuery("Prescription");
         query2.whereNotEqualTo("pill",null);
@@ -293,6 +358,7 @@ public class MedicationFragment extends Fragment {
         return rootView;
     }
 
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -342,6 +408,7 @@ public class MedicationFragment extends Fragment {
         int xOff = 20;
         windowPos[0] -= xOff;
         popupWindow.showAtLocation(view, Gravity.TOP | Gravity.START, windowPos[0], windowPos[1]);
+
 
     }
 
