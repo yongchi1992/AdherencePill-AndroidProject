@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/mcv_action_next.png",
+        "source": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/res/drawable-xxxhdpi-v4/mcv_action_next.png"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/mcv_action_previous.png",
+        "source": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/exploded-aar/com.prolificinteractive/material-calendarview/1.4.2/res/drawable-xxxhdpi-v4/mcv_action_previous.png"
+    }
+]

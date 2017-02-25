@@ -216,23 +216,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                     dayofweek.setText("This is "+mDay);
 
 
-                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[k].getTimeAmount(mDay).entrySet().iterator();
 
-                    while(itr.hasNext()){
-                        Map.Entry<String, Integer> entry = itr.next();
-                        System.out.println(prescriptions[k].getPill());
-                        pillName.add(prescriptions[k].getPill());
-                        String prescriptionId=prescriptions[k].getPrescriptionId();
-                        String presciptionRequset="http://129.105.36.93:5000/prescription?prescriptionId="+prescriptionId;
-                        System.out.println(entry.getKey());
-                        System.out.println(entry.getValue());
-                        //determine pill or pills
-                        String pill="pill";
-                        int amount=entry.getValue();
-                        if(amount>1) pill=pill+"s";
-                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
-                        //flag.add(true);
-                    }
 
 
                     final int finalK = k;
@@ -252,20 +236,29 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                 Log.d("Date:", date);
                                 Log.d("Time", time);
                                 Log.d("Name", prescriptions[finalK].getName());
-                                JSONArray updates = response.getJSONObject(0).getJSONArray("updates");
-                                int len = updates.length();
+
                                 ArrayList<String> todayList = new ArrayList<String>();
-                                for (int j = 0; j < len; j++) {
+                                if(!response.isNull(0)) {
+                                    JSONArray updates = response.getJSONObject(0).getJSONArray("updates");
+                                    int len = updates.length();
+                                    for (int j = 0; j < len; j++) {
 //                                          Log.d("date", updates.getJSONObject(j).getString("timestamp").substring(10, 18));
 //                                          Log.d("time", updates.getJSONObject(j).getString("timestamp").substring(0, 8));
-                                    if (date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)) {
+                                        if (date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)) {
 //                                        if (Math.abs(currentTime.getTime() - df.parse(updates.getJSONObject(j).getString("timestamp").substring(0, 8)).getTime()) <= 7200000) {
 //                                            eaten = 2;
 //                                        }
-                                        todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
+                                            todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
+                                        }
+
                                     }
 
+                                }else{
+                                    todayList = new ArrayList<String>();
                                 }
+
+
+
 
                                 Iterator<Map.Entry<String, Integer>> itr = prescriptions[finalK].getTimeAmount(mDay).entrySet().iterator();
 
@@ -281,7 +274,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                                 if(Math.abs(currentTime.getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000){
                                                     eaten = 3;
                                                 }else{
-                                                    eaten = 1;
+                                                    eaten = 2;
                                                 }
                                             }
                                         }
@@ -291,6 +284,14 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                         Log.d("eaten", Integer.toString(eaten));
                                         flag.add(new Integer(eaten));
                                     }
+
+
+                                    pillName.add(prescriptions[finalK].getPill());
+                                    int amount=entry.getValue();
+                                    String pill="pill";
+                                    if(amount>1) pill=pill+"s";
+                                    time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
+
                                     Log.d("flag.size:",flag.size()+"");
                                     Log.d("pillName.size:",pillName.size()+"");
                                     if(pillName.size()==flag.size()) {

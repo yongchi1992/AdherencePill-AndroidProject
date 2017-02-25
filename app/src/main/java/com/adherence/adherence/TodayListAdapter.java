@@ -70,11 +70,11 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         }else if(flag.get(position)==2) {
             //not have pills in time
             holder.getTimeAmount().setTextColor(Color.RED);
-            holder.getTimeAmount().setBackgroundColor(Color.BLUE);
+
         }
         else{
             //have pills in time
-            holder.getTimeAmount().setTextColor(Color.GREEN);
+            holder.getTimeAmount().setTextColor(Color.parseColor("#01a532"));
         }
     }
 
