@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MedicineList"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="pillName"
+        style="@style/ListTitle"
+        android:id="@+id/pill_name"/>
+
+    <TextView
+        style="@style/ListSecondaryTitle"
+        android:text="time: amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pill_name"
+        android:id="@+id/time_amount"/>
+
+
+
+</RelativeLayout>

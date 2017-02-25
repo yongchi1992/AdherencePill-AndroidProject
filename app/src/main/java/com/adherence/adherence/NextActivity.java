@@ -1,6 +1,7 @@
 package com.adherence.adherence;
 
 import android.app.AlarmManager;
+import android.app.DownloadManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -20,9 +21,20 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.parse.ParseObject;
 
+import org.json.JSONObject;
+
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class NextActivity extends AppCompatActivity
@@ -39,6 +51,7 @@ public class NextActivity extends AppCompatActivity
     private CharSequence mTitle;
 
     private Toolbar toolbar;
+    private RequestQueue mRequestQueue;
 //
 //    private ListView listView;
 //    private ArrayAdapter<String>arrayAdapter;
@@ -151,7 +164,7 @@ public class NextActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+        //if (!mNavigationDrawerFragment.isDrawerOpen()) {
             // Only show items in the action bar relevant to this screen
             // if the drawer is not showing. Otherwise, let the drawer
             // decide what to show in the action bar.
@@ -167,8 +180,8 @@ public class NextActivity extends AppCompatActivity
 
 //            restoreActionBar();
             return true;
-        }
-        return super.onCreateOptionsMenu(menu);
+       // }
+        //return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -198,6 +211,28 @@ public class NextActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
             //ParseObject.unpinAllInBackground("user");
+            //use logout API
+            mRequestQueue=Volley.newRequestQueue(this);
+            String url="http://129.105.36.93:5000/logout";
+            JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Toast.makeText(getApplicationContext(),"Logout successful",Toast.LENGTH_SHORT).show();
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(getApplicationContext(),"Logout fail",Toast.LENGTH_SHORT).show();
+                }
+            }){
+                @Override
+                public Map<String,String> getHeaders() throws AuthFailureError {
+                    HashMap<String, String> headers = new HashMap<String, String>();
+                    headers.put("x-parse-session-token",sessionToken);
+                    return headers;
+                }
+            };
+            mRequestQueue.add(jsonObjectRequest);
             Intent intent = new Intent();
             intent.setClass(NextActivity.this, MainActivity.class);
             NextActivity.this.startActivity(intent);
@@ -209,11 +244,11 @@ public class NextActivity extends AppCompatActivity
             NextActivity.this.startActivity(intent);
         }
 
-        if (id == R.id.calendar) {
-            Intent intent = new Intent();
-            intent.setClass(NextActivity.this, NextActivity.class);
-            NextActivity.this.startActivity(intent);
-        }
+//        if (id == R.id.calendar) {
+//            Intent intent = new Intent();
+//            intent.setClass(NextActivity.this, NextActivity.class);
+//            NextActivity.this.startActivity(intent);
+//        }
 
         if (id == R.id.bluetooth) {
             Intent intent = new Intent();
