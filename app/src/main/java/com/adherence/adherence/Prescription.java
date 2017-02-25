@@ -80,35 +80,5 @@ public class Prescription {
         }
         return set;
     }
-    public static JsonArrayRequest setBottleName(final String sessionToken, final Prescription p){
-        String requestUrl = "http://129.105.36.93:5000/prescription?prescriptionId=8FJOGrTheH";
-
-        JsonArrayRequest idRequest = new JsonArrayRequest(requestUrl, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-                try {
-                    p.setBottleName(response.getJSONObject(0).getString("name"));
-                    Log.d("BottleName",p.getBottleName());
-                    Log.d("BottleName",p.getName());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.d("error",error.toString());
-            }
-        }){
-            @Override
-            public Map<String,String> getHeaders() throws AuthFailureError {
-                HashMap<String, String> headers = new HashMap<String, String>();
-                headers.put("x-parse-session-token",sessionToken);
-                return headers;
-            }
-        };
-                return idRequest;
-
-    }
 
 }

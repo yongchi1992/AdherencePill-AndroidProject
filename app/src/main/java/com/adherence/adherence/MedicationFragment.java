@@ -162,6 +162,7 @@ public class MedicationFragment extends Fragment {
                         }else {
                             prescriptions[j].setNewAdded(false);
                         }
+                        //prescriptions[j].setPrescriptionId(prescript.getString("objectId"));
 
                         JSONArray schedule = prescript.getJSONArray("schedule");
 

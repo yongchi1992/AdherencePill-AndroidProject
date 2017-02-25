@@ -197,7 +197,7 @@ public class NextActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
-            ParseObject.unpinAllInBackground("user");
+            //ParseObject.unpinAllInBackground("user");
             Intent intent = new Intent();
             intent.setClass(NextActivity.this, MainActivity.class);
             NextActivity.this.startActivity(intent);

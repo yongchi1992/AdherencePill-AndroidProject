@@ -24,7 +24,7 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     private ArrayList<String> time_amount;
 
 
-    private ArrayList<Boolean> flag;
+    private ArrayList<Integer> flag;
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -46,10 +46,10 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         }
     }
 
-    public TodayListAdapter(ArrayList<String> pillName, ArrayList<String> time_amount, ArrayList<Boolean> flag){
+    public TodayListAdapter(ArrayList<String> pillName, ArrayList<String> time_amount, ArrayList<Integer> flag){
         this.pillName=new ArrayList<String>(pillName);
         this.time_amount=new ArrayList<String>(time_amount);
-        this.flag=new ArrayList<Boolean>(flag);
+        this.flag=new ArrayList<Integer>(flag);
     }
 
     @Override
@@ -63,10 +63,18 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     public void onBindViewHolder(TodayListAdapter.ViewHolder holder, int position) {
         holder.getPillName().setText(pillName.get(position));
         holder.getTimeAmount().setText(time_amount.get(position));
-        if(flag.get(position)==true){
-            holder.getTimeAmount().setTextColor(Color.GREEN);
-        }else {
+        //flag==1, not arrive time
+        if(flag.get(position)==1){
+            holder.getTimeAmount().setTextColor(Color.BLACK);
+
+        }else if(flag.get(position)==2) {
+            //not have pills in time
             holder.getTimeAmount().setTextColor(Color.RED);
+            holder.getTimeAmount().setBackgroundColor(Color.BLUE);
+        }
+        else{
+            //have pills in time
+            holder.getTimeAmount().setTextColor(Color.GREEN);
         }
     }
 

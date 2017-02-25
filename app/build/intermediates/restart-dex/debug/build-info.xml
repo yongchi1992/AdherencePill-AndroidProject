@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="24"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="424531322181873"
+    token="2095561451321740016"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="181" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="30" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="413604987686207"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="/Users/sam/GitHub/ADP_Android/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="424531322181873"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
