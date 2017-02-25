@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="material_blue_500" type="color">#FF2196F3</item>
+    <item name="material_blue_700" type="color">#FF1976D2</item>
+    <item name="material_green_A200" type="color">#FFA5D6A7</item>
+    <color name="colorAccent">#99CCFF</color>
+    <item name="red" type="color">#CC0000</item>
+    <color name="grey_light">#EAEBEB</color>
+    <color name="zentri_orange">#F05f22</color>
+    <color name="zentri_red">#D92A22</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#16AF0F</color>
+    <color name="material_dark_window_background">#303030</color>
+    <color name="grey_dark">#212121</color>
+    <color name="red_light">#D50308</color>
+    <color name="grey">#AAAAAA</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="link_blue">#33b5e5</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>
+
+
+

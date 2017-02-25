@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="medicine_hardcode">
+        <item>Xanax</item>
+        <item>Aspirin</item>
+        <item>Advil</item>
+        <item>Aderall</item>
+        <item>Ponstyl</item>
+        <item>Benadryl</item>
+        <item>Benadryl</item>
+        <item>Benadryl</item>
+
+    </string-array>
+
+    <string-array
+        name="detail_hardcode">
+        <item>Treat Anxiety, Panic and Depress</item>
+        <item>Treat Pain, Fever and Inflammation</item>
+        <item>Treat Crossed in love</item>
+        <item>Treat No Confidence</item>
+        <item>Treat Sorrow</item>
+        <item>Treat Homeless</item>
+        <item></item>
+        <item></item>
+
+
+    </string-array>
+
+
+
+</resources>
