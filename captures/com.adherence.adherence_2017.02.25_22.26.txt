@@ -1,0 +1,3 @@
+Unknown command: com.adherence.adherence
+Bad activity command, or no activities match: com.adherence.adherence
+Use -h for help.

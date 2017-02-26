@@ -18,6 +18,12 @@ import android.content.IntentFilter;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
 import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
@@ -28,6 +34,8 @@ import com.parse.ParseUser;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 import com.zentri.zentri_ble_command.BLECallbacks;
@@ -37,12 +45,17 @@ import com.zentri.zentri_ble_command.ErrorCode;
 import com.zentri.zentri_ble_command.Result;
 import com.zentri.zentri_ble_command.ZentriOSBLEManager;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class ZentriOSBLEService extends Service implements Serializable {
     public static final String ACTION_SCAN_RESULT = "ACTION_SCAN_RESULT";
@@ -113,8 +126,16 @@ public class ZentriOSBLEService extends Service implements Serializable {
     private String deviceinfo;
     private boolean isBack=false;
     private int index=0;
-
+    private String sessionToken;
     private int scan_times = 0;
+
+
+    private Prescription[] prescriptions;
+    private String[] medicineListHardcode;
+    private String[] detailListHardcode;
+
+    private RequestQueue mRequestQueue;
+
 
     ArrayList<String> devices = new ArrayList<String>();
 
@@ -160,6 +181,9 @@ public class ZentriOSBLEService extends Service implements Serializable {
     public int onStartCommand(Intent intent, int flags, int startId) {
         // The service is starting, due to a call to startService()
         Log.d(TAG, "starting service");
+        sessionToken = intent.getStringExtra("sessionToken");
+        Log.d(TAG, sessionToken);
+
         return mStartMode;
     }
 
@@ -220,13 +244,13 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     sendBroadcast(intent);
                     if(isBack) {
 
-                            if (deviceinfo != null && deviceinfo.equals(devices.get(index))) {
-                                mZentriOSBLEManager.stopScan();
-                                scan_times = 0;
-                                //delay_while();
-                                mZentriOSBLEManager.connect(deviceName);
+                        if (deviceinfo != null && deviceinfo.equals(devices.get(index))) {
+                            mZentriOSBLEManager.stopScan();
+                            scan_times = 0;
+                            //delay_while();
+                            mZentriOSBLEManager.connect(deviceName);
 
-                            }
+                        }
 
                     }
 
@@ -274,7 +298,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 isBack = false;
                 index = (index + 1) % devices.size() ;
                 //mBroadcastManager.sendBroadcast(intent);
-
+                //String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
 
                 ///////////////////////////////////////////////////////////////////
 
@@ -303,22 +327,26 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 String info_voltage = info[4];
 
 
+//这段的错误信息：02-08 09:05:38.611 11991-11991/com.adherence.adherence D/score: Error: java.lang.NullPointerException
 
-                ParseQuery<ParseObject> query = ParseQuery.getQuery("Bottle");
-                query.whereEqualTo("Name", deviceinfo);
-                query.findInBackground(new FindCallback<ParseObject>() {
-                    @Override
-                    public void done(List<ParseObject> objects, ParseException e) {
-                        if(e == null) {
-                            Log.d("score", objects.get(0).getString("Name"));
-                        } else {
-                            Log.d("score", "Error: " + e.getMessage());
-                        }
-                    }
-                });
+//                ParseQuery<ParseObject> query = ParseQuery.getQuery("Bottle");
+//                query.whereEqualTo("Name", deviceinfo);
+//                query.findInBackground(new FindCallback<ParseObject>() {
+//                    @Override
+//                    public void done(List<ParseObject> objects, ParseException e) {
+//                        if(e == null) {
+//                            Log.d("score", objects.get(0).getString("Name"));
+//                        } else {
+//                            Log.d("score", "Error: " + e.getMessage());
+//                        }
+//                    }
+//                });
 
 
+                ParseObject testObject = new ParseObject("TestXZ");
 
+                testObject.put("name", "Christina");
+                testObject.saveEventually();
 
                 //push it to server
                 ParseObject testObject1 = new ParseObject("BottleUpdates");
@@ -328,12 +356,159 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 testObject1.put("Battery", info_battery);
                 testObject1.put("Voltage", info_voltage);
 
+                //要用回Parse
                 testObject1.saveEventually();
 
 
                 allinfo="";
 
                 ///////////////////////////////////////////////////////////////////
+
+                mRequestQueue= Volley.newRequestQueue(getApplicationContext());
+                String url="http://129.105.36.93:5000/patient/prescriptions";
+                final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("response",response.toString());
+
+                        //retrive data from JSONobject
+                        int i = response.length();
+                        medicineListHardcode=new String[i];
+                        detailListHardcode=new String[i];
+
+
+
+                        prescriptions = new Prescription[i];
+                        for (int j = 0;j < i;j++){
+                            prescriptions[j] = new Prescription();
+                            try {
+                                JSONObject prescript = response.getJSONObject(j);
+                                prescriptions[j].setName(prescript.getString("prescriptionName"));
+                                if(prescript.has("bottle")){
+                                    if(prescript.getJSONObject("bottle").has("bottleName")){
+                                        prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
+                                    }
+                                    if(prescript.getJSONObject("bottle").has("pillNumber")){
+                                        prescriptions[j].setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
+                                    }
+                                }else{
+                                    prescriptions[j].setBottleName("null");
+                                    prescriptions[j].setPillNumber(0);
+                                }
+                                if(prescript.has("note")) {
+                                    prescriptions[j].setNote(prescript.getString("note"));
+                                }else{
+                                    prescriptions[j].setNote("none");
+                                }
+                                if(prescript.has("pill")) {
+                                    prescriptions[j].setPill(prescript.getString("pill"));
+                                }else{
+                                    prescriptions[j].setPill("none");
+                                }
+                                if(prescript.has("newAdded")){
+                                    prescriptions[j].setNewAdded(prescript.getBoolean("newAdded"));
+                                }else {
+                                    prescriptions[j].setNewAdded(false);
+                                }
+                                //prescriptions[j].setPrescriptionId(prescript.getString("objectId"));
+
+                                JSONArray schedule = prescript.getJSONArray("schedule");
+
+
+                                for(int k = 0; k < schedule.length(); k++){
+                                    JSONObject takeTime = schedule.getJSONObject(k);
+                                    String time = takeTime.getString("time").substring(11, 19);
+                                    JSONArray takeWeek = takeTime.getJSONArray("days");
+                                    Map<String, Integer> days = new HashMap<String, Integer>();
+                                    for(int l = 0; l < takeWeek.length(); l++){
+                                        JSONObject takeDays = takeWeek.getJSONObject(l);
+                                        if(takeDays.has("amount")){
+                                            days.put(takeDays.getString("name"), takeDays.getInt("amount"));
+                                        }else {
+                                            days.put(takeDays.getString("name"), 0);
+                                        }
+                                    }
+                                    prescriptions[j].setSchedule(time, days);
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        // test if data stored in prescriptions
+
+                        for(int j = 0; j < i; j++) {
+
+                            System.out.println(prescriptions[j].getName());
+                            medicineListHardcode[j]=prescriptions[j].getName();
+                            System.out.println(prescriptions[j].getNote());
+                            detailListHardcode[j]=prescriptions[j].getNote();
+
+                            System.out.println(prescriptions[j].getBottleName());
+                            System.out.println(prescriptions[j].getNewAdded());
+                            System.out.println(prescriptions[j].getPillNumber());
+
+
+
+                            Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
+                            while(itr.hasNext()){
+                                Map.Entry<String, Integer> entry = itr.next();
+                                System.out.println(entry.getKey());
+                                System.out.println(entry.getValue());
+                            }
+
+
+                            //traverse with Map.Entry
+                            Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
+
+                            while (it.hasNext()) {
+
+                                // entry.getKey() return key
+                                // entry.getValue() return value
+                                Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
+                                System.out.println(entry.getKey());
+
+                                HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
+
+                                Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
+                                        .entrySet().iterator();
+
+                                while (in_iterator.hasNext()) {
+                                    Map.Entry in_entry = (Map.Entry) in_iterator.next();
+                                    System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
+                                }
+                            }
+
+
+
+
+                        }
+
+
+
+
+
+
+
+
+
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("error",error.toString());
+                    }
+                }){
+                    @Override
+                    public Map<String,String> getHeaders() throws AuthFailureError {
+                        HashMap<String, String> headers = new HashMap<String, String>();
+                        headers.put("x-parse-session-token",sessionToken);
+                        return headers;
+                    }
+                };
+
+                mRequestQueue.add(prescriptionRequest);
+                ///////////////////////////////////////////////////////////////////
+
             }
 
             @Override
@@ -385,6 +560,9 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     header_done = false;
                 } else if (data.equals("N")) {
                     ;
+                } else if(data.contains("Inval") || data.contains("Command")){
+                    String dataToSend = "*gn#";
+                    mZentriOSBLEManager.writeData(dataToSend);
                 } else {
 //                    if (gi == true) {
 //                        String dataToSend = "*ai#";
@@ -392,6 +570,9 @@ public class ZentriOSBLEService extends Service implements Serializable {
 //                        gi = false;
 //                    }
                     //else
+                    if(data.contains("*gn")){
+                        gi = false;
+                    }
                     if(gi==false){
                         String dataToSend = "*gi#";
                         mZentriOSBLEManager.writeData(dataToSend);
@@ -583,7 +764,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
             }
             isBack =  true;
-            gi = false;
+            gi = true;
             mZentriOSBLEManager.startScan();
 
 
@@ -622,7 +803,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
         delay_while();
 
         mZentriOSBLEManager.writeData(dataToSend);
-
+        //gi = false;
     }
 
     private boolean writeLog(String buffer) {
