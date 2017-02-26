@@ -1,0 +1,7 @@
+#Sat Feb 25 22:11:50 CST 2017
+base.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a/classes.dex
+base.1=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a
+file.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex
