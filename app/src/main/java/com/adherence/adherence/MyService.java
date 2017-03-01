@@ -32,7 +32,7 @@ public class MyService extends Service {
 
         AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
         //提醒间隔时间
-        int Minutes = 45*1000;
+        int Minutes = 60*1000;
         //SystemClock.elapsedRealtime()表示1970年1月1日0点至今所经历的时间
         long triggerAtTime = SystemClock.elapsedRealtime() + Minutes;
         //此处设置开启AlarmReceiver这个Service

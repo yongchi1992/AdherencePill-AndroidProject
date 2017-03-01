@@ -1,5 +1,7 @@
 package com.adherence.adherence;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -33,6 +35,7 @@ import com.parse.ParseUser;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -128,6 +131,12 @@ public class ZentriOSBLEService extends Service implements Serializable {
     private int index=0;
     private String sessionToken;
     private int scan_times = 0;
+
+    public Calendar mycalendar = Calendar.getInstance();
+    public String mDay;
+    public String mydate;
+    public String mytime;
+    public boolean aiflag=false;
 
 
     private Prescription[] prescriptions;
@@ -230,7 +239,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
             @Override
             public void onScanResult(String deviceName, String address) {   //这个address就是mac address
                 scan_times++;
-                if (scan_times == 60) {
+                if (scan_times == 30) {
                     mZentriOSBLEManager.stopScan();
                     scan_times = 0;
                 }
@@ -242,7 +251,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     intent.putExtra(EXTRA_DATA, deviceinfo);
                     mBroadcastManager.sendBroadcast(intent);
                     sendBroadcast(intent);
-                    if(isBack) {
+                    if(isBack && !devices.isEmpty()) {
 
                         if (deviceinfo != null && deviceinfo.equals(devices.get(index))) {
                             mZentriOSBLEManager.stopScan();
@@ -364,150 +373,15 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
                 ///////////////////////////////////////////////////////////////////
 
-                mRequestQueue= Volley.newRequestQueue(getApplicationContext());
-                String url="http://129.105.36.93:5000/patient/prescriptions";
-                final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Log.d("response",response.toString());
 
-                        //retrive data from JSONobject
-                        int i = response.length();
-                        medicineListHardcode=new String[i];
-                        detailListHardcode=new String[i];
+//                NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+//                Notification notification = new Notification(R.drawable.ic_launcher, "用电脑时间过长了！白痴！"
+//                        , System.currentTimeMillis());
+//                notification.setLatestEventInfo(context, "快去休息！！！",
+//                        "一定保护眼睛,不然遗传给孩子，老婆跟别人跑啊。", null);
+//                notification.defaults = Notification.DEFAULT_ALL;
+//                manager.notify(1, notification);
 
-
-
-                        prescriptions = new Prescription[i];
-                        for (int j = 0;j < i;j++){
-                            prescriptions[j] = new Prescription();
-                            try {
-                                JSONObject prescript = response.getJSONObject(j);
-                                prescriptions[j].setName(prescript.getString("prescriptionName"));
-                                if(prescript.has("bottle")){
-                                    if(prescript.getJSONObject("bottle").has("bottleName")){
-                                        prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
-                                    }
-                                    if(prescript.getJSONObject("bottle").has("pillNumber")){
-                                        prescriptions[j].setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
-                                    }
-                                }else{
-                                    prescriptions[j].setBottleName("null");
-                                    prescriptions[j].setPillNumber(0);
-                                }
-                                if(prescript.has("note")) {
-                                    prescriptions[j].setNote(prescript.getString("note"));
-                                }else{
-                                    prescriptions[j].setNote("none");
-                                }
-                                if(prescript.has("pill")) {
-                                    prescriptions[j].setPill(prescript.getString("pill"));
-                                }else{
-                                    prescriptions[j].setPill("none");
-                                }
-                                if(prescript.has("newAdded")){
-                                    prescriptions[j].setNewAdded(prescript.getBoolean("newAdded"));
-                                }else {
-                                    prescriptions[j].setNewAdded(false);
-                                }
-                                //prescriptions[j].setPrescriptionId(prescript.getString("objectId"));
-
-                                JSONArray schedule = prescript.getJSONArray("schedule");
-
-
-                                for(int k = 0; k < schedule.length(); k++){
-                                    JSONObject takeTime = schedule.getJSONObject(k);
-                                    String time = takeTime.getString("time").substring(11, 19);
-                                    JSONArray takeWeek = takeTime.getJSONArray("days");
-                                    Map<String, Integer> days = new HashMap<String, Integer>();
-                                    for(int l = 0; l < takeWeek.length(); l++){
-                                        JSONObject takeDays = takeWeek.getJSONObject(l);
-                                        if(takeDays.has("amount")){
-                                            days.put(takeDays.getString("name"), takeDays.getInt("amount"));
-                                        }else {
-                                            days.put(takeDays.getString("name"), 0);
-                                        }
-                                    }
-                                    prescriptions[j].setSchedule(time, days);
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                        // test if data stored in prescriptions
-
-                        for(int j = 0; j < i; j++) {
-
-                            System.out.println(prescriptions[j].getName());
-                            medicineListHardcode[j]=prescriptions[j].getName();
-                            System.out.println(prescriptions[j].getNote());
-                            detailListHardcode[j]=prescriptions[j].getNote();
-
-                            System.out.println(prescriptions[j].getBottleName());
-                            System.out.println(prescriptions[j].getNewAdded());
-                            System.out.println(prescriptions[j].getPillNumber());
-
-
-
-                            Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
-                            while(itr.hasNext()){
-                                Map.Entry<String, Integer> entry = itr.next();
-                                System.out.println(entry.getKey());
-                                System.out.println(entry.getValue());
-                            }
-
-
-                            //traverse with Map.Entry
-                            Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
-
-                            while (it.hasNext()) {
-
-                                // entry.getKey() return key
-                                // entry.getValue() return value
-                                Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
-                                System.out.println(entry.getKey());
-
-                                HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
-
-                                Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
-                                        .entrySet().iterator();
-
-                                while (in_iterator.hasNext()) {
-                                    Map.Entry in_entry = (Map.Entry) in_iterator.next();
-                                    System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
-                                }
-                            }
-
-
-
-
-                        }
-
-
-
-
-
-
-
-
-
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("error",error.toString());
-                    }
-                }){
-                    @Override
-                    public Map<String,String> getHeaders() throws AuthFailureError {
-                        HashMap<String, String> headers = new HashMap<String, String>();
-                        headers.put("x-parse-session-token",sessionToken);
-                        return headers;
-                    }
-                };
-
-                mRequestQueue.add(prescriptionRequest);
-                ///////////////////////////////////////////////////////////////////
 
             }
 
@@ -583,16 +457,26 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     }
                     Log.d(TAG, "Bytes: " + count_bytes);
 
+                    if(aiflag == true){
+                        mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+                        gi = false;
+                        aiflag = false;
+                    }
+
                     if(receiveimage==1) {
                         allinfo = allinfo + data;
                         Log.d(TAG, "allinfo - " + allinfo );
                         if (allinfo.contains(" V")) {
-                            mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
-                            gi = false;
 
+                            String dataToSend = "*ai#";
+                            mZentriOSBLEManager.writeData(dataToSend);
+
+
+                            aiflag = true;
                             receiveimage=0;
                         }
                     }
+
                 }
 
 
@@ -747,6 +631,8 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
             devices.clear();
 
+            getDBinfo();
+
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
             testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
@@ -759,14 +645,18 @@ public class ZentriOSBLEService extends Service implements Serializable {
             c.close();
             testdb.close();
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected())
-            {
-                mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
-            }
+//            if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected())
+//            {
+//                mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+//            }
             isBack =  true;
             gi = true;
-            mZentriOSBLEManager.startScan();
 
+            if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected()) {
+                mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+            }else if(!devices.isEmpty()) {
+                mZentriOSBLEManager.startScan();
+            }
 
         }
     }
@@ -878,6 +768,166 @@ public class ZentriOSBLEService extends Service implements Serializable {
             i=i+1;
             j=0;
         }
+    }
+
+    public void getDBinfo(){
+
+        String int_day=String.valueOf(mycalendar.get(mycalendar.DAY_OF_WEEK));
+        switch (int_day){
+            case "1":mDay="Sunday";break;
+            case "2":mDay="Monday";break;
+            case "3":mDay="Tuesday";break;
+            case "4":mDay="Wednesday";break;
+            case "5":mDay="Thursday";break;
+            case "6":mDay="Friday";break;
+            case "7":mDay="Saturday";break;
+            default:mDay="Sunday";break;
+        }
+        mydate = new SimpleDateFormat("MM/dd/yy").format(new Date());
+        mytime = new SimpleDateFormat("HH:mm:ss").format(new Date());
+
+
+        mRequestQueue= Volley.newRequestQueue(getApplicationContext());
+        String url="http://129.105.36.93:5000/patient/prescriptions";
+        final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                Log.d("response",response.toString());
+
+                //retrive data from JSONobject
+                int i = response.length();
+                medicineListHardcode=new String[i];
+                detailListHardcode=new String[i];
+
+
+
+                prescriptions = new Prescription[i];
+                for (int j = 0;j < i;j++){
+                    prescriptions[j] = new Prescription();
+                    try {
+                        JSONObject prescript = response.getJSONObject(j);
+                        prescriptions[j].setName(prescript.getString("prescriptionName"));
+                        if(prescript.has("bottle")){
+                            if(prescript.getJSONObject("bottle").has("bottleName")){
+                                prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
+                            }
+                            if(prescript.getJSONObject("bottle").has("pillNumber")){
+                                prescriptions[j].setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
+                            }
+                        }else{
+                            prescriptions[j].setBottleName("null");
+                            prescriptions[j].setPillNumber(0);
+                        }
+                        if(prescript.has("note")) {
+                            prescriptions[j].setNote(prescript.getString("note"));
+                        }else{
+                            prescriptions[j].setNote("none");
+                        }
+                        if(prescript.has("pill")) {
+                            prescriptions[j].setPill(prescript.getString("pill"));
+                        }else{
+                            prescriptions[j].setPill("none");
+                        }
+                        if(prescript.has("newAdded")){
+                            prescriptions[j].setNewAdded(prescript.getBoolean("newAdded"));
+                        }else {
+                            prescriptions[j].setNewAdded(false);
+                        }
+                        //prescriptions[j].setPrescriptionId(prescript.getString("objectId"));
+
+                        JSONArray schedule = prescript.getJSONArray("schedule");
+
+
+                        for(int k = 0; k < schedule.length(); k++){
+                            JSONObject takeTime = schedule.getJSONObject(k);
+                            String time = takeTime.getString("time").substring(11, 19);
+                            JSONArray takeWeek = takeTime.getJSONArray("days");
+                            Map<String, Integer> days = new HashMap<String, Integer>();
+                            for(int l = 0; l < takeWeek.length(); l++){
+                                JSONObject takeDays = takeWeek.getJSONObject(l);
+                                if(takeDays.has("amount")){
+                                    days.put(takeDays.getString("name"), takeDays.getInt("amount"));
+                                }else {
+                                    days.put(takeDays.getString("name"), 0);
+                                }
+                            }
+                            prescriptions[j].setSchedule(time, days);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                // test if data stored in prescriptions
+
+                for(int j = 0; j < i; j++) {
+
+                    System.out.println(prescriptions[j].getName());
+                    medicineListHardcode[j]=prescriptions[j].getName();
+                    System.out.println(prescriptions[j].getNote());
+                    detailListHardcode[j]=prescriptions[j].getNote();
+
+                    System.out.println(prescriptions[j].getBottleName());
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////
+                    if(prescriptions[j].getBottleName().contains(":")) {
+                        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
+                        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
+                        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{prescriptions[j].getBottleName()});
+                        testdb.close();
+                    }
+                    ////////////////////////////////////////////////////////////////////////////////////////////////
+                    System.out.println(prescriptions[j].getNewAdded());
+                    System.out.println(prescriptions[j].getPillNumber());
+
+
+//                    获取周一的信息
+//                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
+//                    while(itr.hasNext()){
+//                        Map.Entry<String, Integer> entry = itr.next();
+//                        System.out.println(entry.getKey());
+//                        System.out.println(entry.getValue());
+//                    }
+
+
+                    //traverse with Map.Entry
+                    Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
+
+                    while (it.hasNext()) {
+
+                        // entry.getKey() return key
+                        // entry.getValue() return value
+                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
+                        System.out.println(entry.getKey());
+
+                        HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
+
+                        Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
+                                .entrySet().iterator();
+
+                        while (in_iterator.hasNext()) {
+                            Map.Entry in_entry = (Map.Entry) in_iterator.next();
+                            System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
+                        }
+                    }
+
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("error",error.toString());
+            }
+        }){
+            @Override
+            public Map<String,String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("x-parse-session-token",sessionToken);
+                return headers;
+            }
+        };
+
+        mRequestQueue.add(prescriptionRequest);
+        ///////////////////////////////////////////////////////////////////
     }
 }
 
