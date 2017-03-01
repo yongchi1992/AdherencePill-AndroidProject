@@ -62,11 +62,11 @@ public class NextActivity extends AppCompatActivity
         setContentView(R.layout.next_main);
 
         ///////////////////////////////2.7改动///////////////////////////////////////
-        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
-        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
-        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
-        testdb.execSQL("INSERT INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
-        testdb.close();
+//        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
+//        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
+//        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
+//        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
+//        testdb.close();
         ///////////////////////////////2.7改动///////////////////////////////////////
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -87,8 +87,8 @@ public class NextActivity extends AppCompatActivity
 
         toolbar.setTitle(mTitle);
         Intent intent=getIntent();
-  //      sessionToken=intent.getStringExtra("sessionToken");
-  //      username=intent.getStringExtra("username");
+        //      sessionToken=intent.getStringExtra("sessionToken");
+        //      username=intent.getStringExtra("username");
         SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
         sessionToken=data.getString("sessionToken","null");
         username=data.getString("username","null");
@@ -188,22 +188,22 @@ public class NextActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //if (!mNavigationDrawerFragment.isDrawerOpen()) {
-            // Only show items in the action bar relevant to this screen
-            // if the drawer is not showing. Otherwise, let the drawer
-            // decide what to show in the action bar.
-            getMenuInflater().inflate(R.menu.main, menu);
-            MenuItem menuItem=menu.findItem(R.id.bluetooth);
-            if(username.equals("d@d")){
+        // Only show items in the action bar relevant to this screen
+        // if the drawer is not showing. Otherwise, let the drawer
+        // decide what to show in the action bar.
+        getMenuInflater().inflate(R.menu.main, menu);
+        MenuItem menuItem=menu.findItem(R.id.bluetooth);
+        if(username.equals("d@d")){
 
-                menuItem.setEnabled(true);
-            }
-            else{
-                menuItem.setEnabled(false);
-            }
+            menuItem.setEnabled(true);
+        }
+        else{
+            menuItem.setEnabled(false);
+        }
 
 //            restoreActionBar();
-            return true;
-       // }
+        return true;
+        // }
         //return super.onCreateOptionsMenu(menu);
     }
 
