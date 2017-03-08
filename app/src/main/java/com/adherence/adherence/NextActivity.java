@@ -297,6 +297,7 @@ public class NextActivity extends AppCompatActivity
     back button equals to log out
      */
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        //override the function of back button
         if(keyCode==KeyEvent.KEYCODE_BACK){
             mRequestQueue=Volley.newRequestQueue(this);
             String url="http://129.105.36.93:5000/logout";
