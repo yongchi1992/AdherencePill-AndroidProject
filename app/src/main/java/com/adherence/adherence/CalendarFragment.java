@@ -2,6 +2,7 @@ package com.adherence.adherence;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -30,12 +31,15 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static android.R.attr.max;
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * Created by suhon_000 on 10/29/2015.
  */
+
 public class CalendarFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
+    private float[] percentage;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -48,7 +52,9 @@ public class CalendarFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-    //TODO: Coloring days based solely on overall pills taken doesn't factor in the possibility of multiple pills being taken or not. Technically, user could have taken 90% of total pills, yet not taken any of their crucial pills, etc
+    //TODO: Coloring days based solely on overall pills taken doesn't factor in the possibility of
+    // multiple pills being taken or not. Technically, user could have taken 90% of total pills,
+    // yet not taken any of their crucial pills, etc
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -58,17 +64,19 @@ public class CalendarFragment extends Fragment {
         int currentWidth= materialCalendarView.getTileWidth(); // Set the proper width so that all 7 days of the week are showing
         materialCalendarView.setTileWidth(currentWidth-2);// Don't know why tilewidth is showing as -10. The arithmetic for TileWidth seems buggy, but it works
 
+        percentage=new float[7];
+
         //Get list of sample dates to fill in
         List<CalendarDay> calendars= new ArrayList<>();
         final Calendar new_date= Calendar.getInstance();
-        final CalendarDay current_date= CalendarDay.from(new_date);
+        //final CalendarDay current_date= CalendarDay.from(new_date);
         List<Byte> percentages= new ArrayList<>();//This array functions as storage for the percentages of pills taken per day.
 
         materialCalendarView.setSelectedDate(new_date.getTime()); // Colors the current date green
 
         //Create sample 10 day ArrayList of CalendarDay which can be parsed depending on pill percentage
         for (int i=0; i<10;i++){
-            new_date.add(Calendar.DATE,1);
+            new_date.add(Calendar.DATE,-1);
             CalendarDay calendarDay= CalendarDay.from(new_date);
             calendars.add(calendarDay);
         }
@@ -76,13 +84,13 @@ public class CalendarFragment extends Fragment {
         //Create array of size 3 that contains the 3 different colors to represent pill percentages
         int[] colors=new int[3];
         colors[0]= -65536; //This is red; represents "less than 50% of pills taken that day"
-        colors[1]= -16711936; //This is green; represents "more than 50%, but less than 85% of pills taken that day"
-        colors[2]=-16776961;// This is blue; represents "all pills taken"
+        colors[1]= -16776961; //This is blue; represents "more than 50%, but less than 85% of pills taken that day"
+        colors[2]= -16711936;// This is green; represents "all pills taken"
 
         //Generate a randomized array of pill "percentages". When data is received from the backend team, this array can be replaced with actual pill data.
         byte switcher=1;
         int counter=0;
-        for (int i=0; i<10; i++){
+        for (int i=0; i<7; i++){
             switcher *= -1;
             counter++;
             if (counter % 3 ==0){
@@ -92,13 +100,13 @@ public class CalendarFragment extends Fragment {
                 percentages.add(switcher);
             }
         }
-        for (int i=0; i<percentages.size(); i++){
-            Log.d("Percentages",""+percentages.get(i));
-        }
+//        for (int i=0; i<percentages.size(); i++){
+//            Log.d("Percentages",""+percentages.get(i));
+//        }
         Collections.shuffle(percentages); //Randomize the hardcoded array
-        for (int i=0; i<percentages.size(); i++){
-            Log.d("Shuffled Percentages",""+percentages.get(i));
-        }
+//        for (int i=0; i<percentages.size(); i++){
+//            Log.d("Shuffled Percentages",""+percentages.get(i));
+//        }
         //Go through percentages array
         List<CalendarDay> calendars_too_few= new ArrayList<>();
         List<CalendarDay> calendars_most_taken= new ArrayList<>();

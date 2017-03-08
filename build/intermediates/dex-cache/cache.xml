@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="283c233c56cf6d1bd14d06a60f6aa519096166af">
+        sha1="21cd1b40f3d96c1e01baf6aefdb09dcffa295a04">
         <dex dex="/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9a49cc68a4f5c55ba8a055ebf4972526bbc310f7/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="dc5fbfdf57755a112f2924bf4fc92961bc6533cd">
+        sha1="617cd8dcebaeb92583bce0cfb4ac5f97d70ba7ab">
         <dex dex="/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fcc27376f4f786f28cf59ba5e34bf6ffbc4873bc/classes.dex" />
     </item>
     <item

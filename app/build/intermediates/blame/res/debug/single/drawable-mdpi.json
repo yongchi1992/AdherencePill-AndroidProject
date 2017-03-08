@@ -208,12 +208,12 @@
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-mdpi/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/drawer_shadow.9.png",
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/src/main/res/drawable-mdpi/drawer_shadow.9.png"
+    },
+    {
+        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_btn_radio_to_on_mtrl_000.png",

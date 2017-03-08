@@ -2,6 +2,7 @@ package com.adherence.adherence;
 
 import android.app.AlarmManager;
 import android.app.DownloadManager;
+import android.app.Instrumentation;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +16,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -259,6 +261,8 @@ public class NextActivity extends AppCompatActivity
             Intent intent = new Intent();
             intent.setClass(NextActivity.this, MainActivity.class);
             NextActivity.this.startActivity(intent);
+
+
         }
 
         if (id == R.id.update) {
@@ -282,4 +286,44 @@ public class NextActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
+
+    @Override
+    /*
+    back button equals to log out
+     */
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode==KeyEvent.KEYCODE_BACK){
+            mRequestQueue=Volley.newRequestQueue(this);
+            String url="http://129.105.36.93:5000/logout";
+            JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    Toast.makeText(getApplicationContext(),"Logout successful",Toast.LENGTH_SHORT).show();
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Toast.makeText(getApplicationContext(),"Logout fail",Toast.LENGTH_SHORT).show();
+                }
+            }){
+                @Override
+                public Map<String,String> getHeaders() throws AuthFailureError {
+                    HashMap<String, String> headers = new HashMap<String, String>();
+                    headers.put("x-parse-session-token",sessionToken);
+                    return headers;
+                }
+            };
+            mRequestQueue.add(jsonObjectRequest);
+            Intent intent = new Intent();
+            intent.setClass(NextActivity.this, MainActivity.class);
+            NextActivity.this.startActivity(intent);
+
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }

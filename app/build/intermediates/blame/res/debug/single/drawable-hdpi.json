@@ -124,12 +124,12 @@
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_popup_background_mtrl_mult.9.png",
-        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_text_light_pressed.9.png",
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png",
@@ -264,12 +264,12 @@
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png",
-        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png"
-    },
-    {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "/Users/caoye/Documents/workspace/Android/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png",

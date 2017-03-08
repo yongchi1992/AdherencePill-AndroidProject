@@ -61,6 +61,7 @@ public class FirstActivity extends AppCompatActivity {
 //            intent.setClass(FirstActivity.this, CalendarTestActivity.class);
 
             FirstActivity.this.startActivity(intent);
+
         }
 
 
@@ -79,5 +80,12 @@ public class FirstActivity extends AppCompatActivity {
 
 
 
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
     }
 }
