@@ -20,6 +20,7 @@ import com.prolificinteractive.materialcalendarview.DayViewFacade;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.spans.DotSpan;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -34,14 +35,21 @@ import java.util.concurrent.ThreadLocalRandom;
 import static android.R.attr.max;
 import static android.content.Context.MODE_PRIVATE;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+
 
 
 public class CalendarFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
-    private float[] percentage;
+
     private Calendar calendar;
-    private Date startDate;
-    private Date endDate;
+    private String startDate;
+    private List<Float> percentages;
+
+    //record the dates from earliest prescription created to yesterday
+    private ArrayList<String> dates;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -67,23 +75,50 @@ public class CalendarFragment extends Fragment {
         materialCalendarView.setTileWidth(currentWidth-2);// Don't know why tilewidth is showing as -10. The arithmetic for TileWidth seems buggy, but it works
 
         calendar=Calendar.getInstance();
-        //traverse prescriptions to get the start date
-        //For now just static code
-        startDate=new Date(2017-1900, 2, 1);
-        Log.d("Calendar start date",startDate.toString());
+        Date today=calendar.getTime();
+        Log.d("Calendar today",today.toString());
 
-        percentage=new float[7];
+        /* traverse prescriptions to get the start date
+        For now just static code, set startDate=2017-3-1 */
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        String startDate=sdf.format(new Date(2017-1900, 2, 1));
+        Log.d("Calendar start date",startDate);
+
+        String nextDay=getSpecifiedDayAfter(startDate);
+        Date dayAfter=new Date(Integer.parseInt(nextDay.substring(0,4))-1900,
+                Integer.parseInt(nextDay.substring(5,7))-1,Integer.parseInt(nextDay.substring(8)));
+
+        Log.d("Calendar day after",dayAfter.toString());
+        dates=new ArrayList<>();
+        dates.add(new String(startDate));
+
+
+        List<CalendarDay> calendars= new ArrayList<>();
+
+        while(isSameDay(new Date(Integer.parseInt(nextDay.substring(0,4))-1900,
+                Integer.parseInt(nextDay.substring(5,7))-1,Integer.parseInt(nextDay.substring(8))),today)==false){
+            //loop until yesterday
+            calendars.add(new CalendarDay(Integer.parseInt(nextDay.substring(0,4)),
+                    Integer.parseInt(nextDay.substring(5,7)),Integer.parseInt(nextDay.substring(8))));
+
+            dates.add(new String(nextDay));
+            nextDay=getSpecifiedDayAfter(nextDay);
+        }
+        for(int i=0;i<calendars.size();i++){
+            Log.d("calendars "+i+" : ",calendars.get(i).toString());
+        }
+
 
         //Get list of sample dates to fill in
-        List<CalendarDay> calendars= new ArrayList<>();
+
         final Calendar new_date= Calendar.getInstance();
         //final CalendarDay current_date= CalendarDay.from(new_date);
-        List<Byte> percentages= new ArrayList<>();//This array functions as storage for the percentages of pills taken per day.
+        percentages= new ArrayList<>();//This array functions as storage for the percentages of pills taken per day.
 
         materialCalendarView.setSelectedDate(new_date.getTime()); // Colors the current date green
 
         //Create sample 10 day ArrayList of CalendarDay which can be parsed depending on pill percentage
-        for (int i=0; i<10;i++){
+        for (int i=0; i<dates.size();i++){
             new_date.add(Calendar.DATE,-1);
             CalendarDay calendarDay= CalendarDay.from(new_date);
             calendars.add(calendarDay);
@@ -96,31 +131,29 @@ public class CalendarFragment extends Fragment {
         colors[2]= -16711936;// This is green; represents "all pills taken"
 
         //Generate a randomized array of pill "percentages". When data is received from the backend team, this array can be replaced with actual pill data.
-        byte switcher=1;
-        int counter=0;
-        for (int i=0; i<7; i++){
-            switcher *= -1;
-            counter++;
-            if (counter % 3 ==0){
-                percentages.add((byte) 0);
-            }
-            else{
-                percentages.add(switcher);
-            }
-        }
-//        for (int i=0; i<percentages.size(); i++){
-//            Log.d("Percentages",""+percentages.get(i));
+//        float switcher=1;
+//        int counter=0;
+//        for (int i=0; i<dates.size(); i++){
+//            switcher *= -1;
+//            counter++;
+//            if (counter % 3 ==0){
+//                percentages.add(new Float(0.0));
+//            }
+//            else{
+//                percentages.add(switcher);
+//            }
 //        }
+//
         Collections.shuffle(percentages); //Randomize the hardcoded array
-//        for (int i=0; i<percentages.size(); i++){
-//            Log.d("Shuffled Percentages",""+percentages.get(i));
-//        }
-        //Go through percentages array
-        List<CalendarDay> calendars_too_few= new ArrayList<>();
-        List<CalendarDay> calendars_most_taken= new ArrayList<>();
-        List<CalendarDay> calendars_all_taken= new ArrayList<>();
+//
+        List<CalendarDay> calendars_too_few= new ArrayList<>();//take too few pills, red
+        List<CalendarDay> calendars_most_taken= new ArrayList<>();//take most pills, blue
+        List<CalendarDay> calendars_all_taken= new ArrayList<>();//take all pills, green
 
-
+        //initialize as 0.0%
+        for(int i=0;i<dates.size();i++){
+            percentages.add(new Float(0.0));
+        }
         for (int i=0; i<percentages.size(); i++){
             //Depending on what the % value is, set collection to specified date and add decorator
             if (percentages.get(i) == -1 ) // Simulates "too few" percentage; can be changed easily when actual data is passed
@@ -142,6 +175,8 @@ public class CalendarFragment extends Fragment {
         return rootView;
 
     }
+
+
 
     public class EventDecorator implements DayViewDecorator {
 
@@ -228,5 +263,31 @@ public class CalendarFragment extends Fragment {
             ((NextActivity) context).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
+    }
+    /**
+     * get the date after the specifiedDay
+     *
+     * @param specifiedDay
+     * @return
+     */
+    public static String getSpecifiedDayAfter(String specifiedDay) {
+        Calendar c = Calendar.getInstance();
+        Date date = null;
+        try {
+            date = new SimpleDateFormat("yy-MM-dd").parse(specifiedDay);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        c.setTime(date);
+        int day = c.get(Calendar.DATE);
+        c.set(Calendar.DATE, day + 1);
+
+        String dayAfter = new SimpleDateFormat("yyyy-MM-dd")
+                .format(c.getTime());
+        return dayAfter;
+    }
+    private boolean isSameDay(Date temp, Date today) {
+        return (temp.getYear()==today.getYear())&&
+                (temp.getMonth()==today.getMonth())&&(temp.getDate()==today.getDate());
     }
 }
