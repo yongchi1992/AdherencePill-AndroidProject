@@ -33,6 +33,7 @@ public class Prescription {
     private Boolean newAdded;
     private int pillNumber;
 
+
     private Map<String, Map<String,Integer>> schedule = new HashMap<String, Map<String,Integer>>();
     public void setName(String name){
         this.name = name;

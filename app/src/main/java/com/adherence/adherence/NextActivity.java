@@ -63,13 +63,13 @@ public class NextActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.next_main);
 
-        ///////////////////////////////2.7改动///////////////////////////////////////
+        ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
 //        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
 //        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
 //        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
 //        testdb.close();
-        ///////////////////////////////2.7改动///////////////////////////////////////
+        ///////////////////////////////2.7///////////////////////////////////////
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -96,19 +96,19 @@ public class NextActivity extends AppCompatActivity
         username=data.getString("username","null");
         Log.d("nextactivity session",sessionToken);
 
-        ///////////////////////////////2.7改动///////////////////////////////////////
+        ///////////////////////////////2.7///////////////////////////////////////
         Intent openservice = new Intent(this, ZentriOSBLEService.class);
         openservice.putExtra("sessionToken", sessionToken);
         startService(openservice);
 
         startService(new Intent(this, MyService.class));
 
-        ///////////////////////////////2.7改动///////////////////////////////////////
+        ///////////////////////////////2.7///////////////////////////////////////
         createDelayedNotification();
 
 
     }
-    ///////////////////////////////2.7改动///////////////////////////////////////
+    ///////////////////////////////2.7///////////////////////////////////////
     @Override
     protected void onDestroy()
     {
@@ -117,7 +117,7 @@ public class NextActivity extends AppCompatActivity
         stopService(new Intent(this, ZentriOSBLEService.class));
         stopService(new Intent(this, MyService.class));
     }
-    ///////////////////////////////2.7改动///////////////////////////////////////
+    ///////////////////////////////2.7///////////////////////////////////////
     private void createDelayedNotification() {
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.SECOND, 20);

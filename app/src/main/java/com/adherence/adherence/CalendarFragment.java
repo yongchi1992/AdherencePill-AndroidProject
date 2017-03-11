@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -33,13 +34,14 @@ import java.util.concurrent.ThreadLocalRandom;
 import static android.R.attr.max;
 import static android.content.Context.MODE_PRIVATE;
 
-/**
- * Created by suhon_000 on 10/29/2015.
- */
+
 
 public class CalendarFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
     private float[] percentage;
+    private Calendar calendar;
+    private Date startDate;
+    private Date endDate;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -63,6 +65,12 @@ public class CalendarFragment extends Fragment {
         materialCalendarView.setShowOtherDates(MaterialCalendarView.SHOW_ALL);
         int currentWidth= materialCalendarView.getTileWidth(); // Set the proper width so that all 7 days of the week are showing
         materialCalendarView.setTileWidth(currentWidth-2);// Don't know why tilewidth is showing as -10. The arithmetic for TileWidth seems buggy, but it works
+
+        calendar=Calendar.getInstance();
+        //traverse prescriptions to get the start date
+        //For now just static code
+        startDate=new Date(2017-1900, 2, 1);
+        Log.d("Calendar start date",startDate.toString());
 
         percentage=new float[7];
 

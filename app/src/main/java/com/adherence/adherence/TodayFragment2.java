@@ -114,6 +114,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         pillName=new ArrayList<>();
         time_amount=new ArrayList<>();
         flag=new ArrayList<>();
+        dayofweek= (TextView) view.findViewById(R.id.m_day);
 
         String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
         switch (int_day){
@@ -126,20 +127,13 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
             case "7":mDay="Saturday";break;
             default:mDay="Sunday";break;
         }
-
+        dayofweek.setText("This is "+mDay);
         mRequestQueue= Volley.newRequestQueue(getActivity());
-//        pillName=new ArrayList<>();
-//        time_amount=new ArrayList<>();
-//        flag=new ArrayList<>();
-//        dayofweek= (TextView) view.findViewById(R.id.m_day);
-//        dayofweek.setText("This is "+mDay);
         String url="http://129.105.36.93:5000/patient/prescription";
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
                 Log.d("response",response.toString());
-
-                //retrive data from JSONobject
                 int i = response.length();
 
                 prescriptions = new Prescription[i];
@@ -182,43 +176,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         e.printStackTrace();
                     }
                 }
-                // test if data stored in prescriptions
-
-//                for(int j = 0; j < i; j++) {
-//
-////                    System.out.println(prescriptions[j].getName());
-////                    System.out.println(prescriptions[j].getNote());
-//
-//                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount(mDay).entrySet().iterator();
-//
-//                    while(itr.hasNext()){
-//                        Map.Entry<String, Integer> entry = itr.next();
-//                        System.out.println(prescriptions[j].getPill());
-//                        pillName.add(prescriptions[j].getPill());
-//                        System.out.println(entry.getKey());
-//                        System.out.println(entry.getValue());
-//                        //determine pill or pills
-//                        String pill="pill";
-//                        int amount=entry.getValue();
-//                        if(amount>1) pill=pill+"s";
-//                        time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
-//                        flag.add(true);
-//
-//                    }
-//                }
-
                 for(int k = 0; k < prescriptions.length; k++){
-
-//                    pillName=new ArrayList<>();
-//                    time_amount=new ArrayList<>();
-//                    flag=new ArrayList<>();
-                    dayofweek= (TextView) view.findViewById(R.id.m_day);
-                    dayofweek.setText("This is "+mDay);
-
-
-
-
-
                     final int finalK = k;
 
                     String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
@@ -227,8 +185,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         @Override
                         public void onResponse(JSONArray response) {
                             try {
-                                //prescriptions[finalK].setBottleName(response.getJSONObject(0).getString("name"));
-
                                 String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
                                 String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
                                 DateFormat df = new SimpleDateFormat("HH:mm:ss");
@@ -242,12 +198,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     JSONArray updates = response.getJSONObject(0).getJSONArray("updates");
                                     int len = updates.length();
                                     for (int j = 0; j < len; j++) {
-//                                          Log.d("date", updates.getJSONObject(j).getString("timestamp").substring(10, 18));
-//                                          Log.d("time", updates.getJSONObject(j).getString("timestamp").substring(0, 8));
                                         if (date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)) {
-//                                        if (Math.abs(currentTime.getTime() - df.parse(updates.getJSONObject(j).getString("timestamp").substring(0, 8)).getTime()) <= 7200000) {
-//                                            eaten = 2;
-//                                        }
                                             todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
                                         }
 
@@ -256,10 +207,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                 }else{
                                     todayList = new ArrayList<String>();
                                 }
-
-
-
-
                                 Iterator<Map.Entry<String, Integer>> itr = prescriptions[finalK].getTimeAmount(mDay).entrySet().iterator();
 
                                 while(itr.hasNext()){
@@ -300,11 +247,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                         mRecyclerView.setAdapter(mAdapter);
                                     }
                                 }
-
-//                                mAdapter = new TodayListAdapter(pillName, time_amount, flag);
-//                                mRecyclerView.setAdapter(mAdapter);
-
-
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             } catch (java.text.ParseException e) {
@@ -324,19 +266,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                             return headers;
                         }
                     });
-//                    Log.d("flag.size:",flag.size()+"");
-//                    Log.d("pillName.size:",pillName.size()+"");
-
-
                 }
-
-
-
-
-
-
-//                mAdapter=new TodayListAdapter(pillName,time_amount,flag);
-//                mRecyclerView.setAdapter(mAdapter);
 
             }
         }, new Response.ErrorListener() {
@@ -353,11 +283,8 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
             }
         };
         mRequestQueue.add(request);
-
-
         return view;
 
-//
     }
     //
     @Override
