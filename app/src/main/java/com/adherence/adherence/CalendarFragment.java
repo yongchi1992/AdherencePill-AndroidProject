@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.DayViewDecorator;
 import com.prolificinteractive.materialcalendarview.DayViewFacade;
@@ -38,9 +40,6 @@ import static android.content.Context.MODE_PRIVATE;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-
-
-
 public class CalendarFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -50,7 +49,11 @@ public class CalendarFragment extends Fragment {
 
     //record the dates from earliest prescription created to yesterday
     private ArrayList<String> dates;
+    private ArrayList<CalendarDay> calendars;
+    private ArrayList<Integer> shouldTake;//Amount of pills should take every day
+    private ArrayList<Integer> isTaken;//amount of pills taken every day
 
+    private RequestQueue mRequestQueue;
     /**
      * Returns a new instance of this fragment for the given section
      * number.
@@ -81,9 +84,11 @@ public class CalendarFragment extends Fragment {
         /* traverse prescriptions to get the start date
         For now just static code, set startDate=2017-3-1 */
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-        String startDate=sdf.format(new Date(2017-1900, 2, 1));
+        String startDate=sdf.format(new Date(2017-1900, 2, 0));
         Log.d("Calendar start date",startDate);
-
+        calendars=new ArrayList<>();
+        calendars.add(new CalendarDay(Integer.parseInt(startDate.substring(0,4)),
+                Integer.parseInt(startDate.substring(5,7))-1,Integer.parseInt(startDate.substring(8))));
         String nextDay=getSpecifiedDayAfter(startDate);
         Date dayAfter=new Date(Integer.parseInt(nextDay.substring(0,4))-1900,
                 Integer.parseInt(nextDay.substring(5,7))-1,Integer.parseInt(nextDay.substring(8)));
@@ -93,23 +98,22 @@ public class CalendarFragment extends Fragment {
         dates.add(new String(startDate));
 
 
-        List<CalendarDay> calendars= new ArrayList<>();
+        calendars= new ArrayList<>();
+        shouldTake=new ArrayList<>();
+        isTaken=new ArrayList<>();
 
         while(isSameDay(new Date(Integer.parseInt(nextDay.substring(0,4))-1900,
                 Integer.parseInt(nextDay.substring(5,7))-1,Integer.parseInt(nextDay.substring(8))),today)==false){
             //loop until yesterday
             calendars.add(new CalendarDay(Integer.parseInt(nextDay.substring(0,4)),
-                    Integer.parseInt(nextDay.substring(5,7)),Integer.parseInt(nextDay.substring(8))));
+                    Integer.parseInt(nextDay.substring(5,7))-1,Integer.parseInt(nextDay.substring(8))));
 
-            dates.add(new String(nextDay));
+//            dates.add(new String(nextDay));
             nextDay=getSpecifiedDayAfter(nextDay);
         }
         for(int i=0;i<calendars.size();i++){
             Log.d("calendars "+i+" : ",calendars.get(i).toString());
         }
-
-
-        //Get list of sample dates to fill in
 
         final Calendar new_date= Calendar.getInstance();
         //final CalendarDay current_date= CalendarDay.from(new_date);
@@ -117,12 +121,7 @@ public class CalendarFragment extends Fragment {
 
         materialCalendarView.setSelectedDate(new_date.getTime()); // Colors the current date green
 
-        //Create sample 10 day ArrayList of CalendarDay which can be parsed depending on pill percentage
-        for (int i=0; i<dates.size();i++){
-            new_date.add(Calendar.DATE,-1);
-            CalendarDay calendarDay= CalendarDay.from(new_date);
-            calendars.add(calendarDay);
-        }
+
 
         //Create array of size 3 that contains the 3 different colors to represent pill percentages
         int[] colors=new int[3];
@@ -130,30 +129,22 @@ public class CalendarFragment extends Fragment {
         colors[1]= -16776961; //This is blue; represents "more than 50%, but less than 85% of pills taken that day"
         colors[2]= -16711936;// This is green; represents "all pills taken"
 
-        //Generate a randomized array of pill "percentages". When data is received from the backend team, this array can be replaced with actual pill data.
-//        float switcher=1;
-//        int counter=0;
-//        for (int i=0; i<dates.size(); i++){
-//            switcher *= -1;
-//            counter++;
-//            if (counter % 3 ==0){
-//                percentages.add(new Float(0.0));
-//            }
-//            else{
-//                percentages.add(switcher);
-//            }
-//        }
-//
-        Collections.shuffle(percentages); //Randomize the hardcoded array
-//
+
+        //initialize as 0.0%
+        for(int i=0;i<calendars.size();i++){
+            percentages.add(new Float(0.0));
+            Log.d("percentage "+i+" : ",percentages.get(i)+"");
+        }
+        //Query database to calclulate the real percentage every day
+        mRequestQueue= Volley.newRequestQueue(getActivity());
+        String url="http://129.105.36.93:5000/patient/prescription";
+
+
         List<CalendarDay> calendars_too_few= new ArrayList<>();//take too few pills, red
         List<CalendarDay> calendars_most_taken= new ArrayList<>();//take most pills, blue
         List<CalendarDay> calendars_all_taken= new ArrayList<>();//take all pills, green
 
-        //initialize as 0.0%
-        for(int i=0;i<dates.size();i++){
-            percentages.add(new Float(0.0));
-        }
+
         for (int i=0; i<percentages.size(); i++){
             //Depending on what the % value is, set collection to specified date and add decorator
             if (percentages.get(i) == -1 ) // Simulates "too few" percentage; can be changed easily when actual data is passed
@@ -286,6 +277,8 @@ public class CalendarFragment extends Fragment {
                 .format(c.getTime());
         return dayAfter;
     }
+
+    //Determine if two dates are the same date
     private boolean isSameDay(Date temp, Date today) {
         return (temp.getYear()==today.getYear())&&
                 (temp.getMonth()==today.getMonth())&&(temp.getDate()==today.getDate());
