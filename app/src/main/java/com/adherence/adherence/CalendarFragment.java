@@ -101,7 +101,7 @@ public class CalendarFragment extends Fragment {
                              Bundle savedInstanceState) {
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
         startDate=getArguments().getString(ARG_START_DATE);
-        Log.d("Calendar fragment sesseionToken: ",sessionToken);
+        //Log.d("Calendar fragment sesseionToken: ",sessionToken);
         View rootView = inflater.inflate(R.layout.calendarview, container, false);
         materialCalendarView= (MaterialCalendarView) rootView.findViewById(R.id.matCal);
         materialCalendarView.setShowOtherDates(MaterialCalendarView.SHOW_ALL);
@@ -116,8 +116,9 @@ public class CalendarFragment extends Fragment {
 
 
 
-        /* traverse prescriptions to get the start date
-        For now just static code, set startDate=2017-3-1 */
+        /*
+        startDate is the earliest prescription created date
+         */
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
         String temp_start=sdf.format(new Date(Integer.parseInt(startDate.substring(0,4))-1900,
                 Integer.parseInt(startDate.substring(5,7))-1, Integer.parseInt(startDate.substring(8))-1));
