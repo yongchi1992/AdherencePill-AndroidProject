@@ -11,6 +11,7 @@ import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.annotation.IntegerRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -28,14 +29,20 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.parse.ParseObject;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 
@@ -54,12 +61,15 @@ public class NextActivity extends AppCompatActivity
 
     private Toolbar toolbar;
     private RequestQueue mRequestQueue;
+
+    private String startDate;
+    private List<String> createAt;
 //
 //    private ListView listView;
 //    private ArrayAdapter<String>arrayAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.next_main);
 
@@ -95,6 +105,60 @@ public class NextActivity extends AppCompatActivity
         sessionToken=data.getString("sessionToken","null");
         username=data.getString("username","null");
         Log.d("nextactivity session",sessionToken);
+        startDate="3000-12-31";
+        createAt=new ArrayList<>();
+
+        /*
+        traverse prescriptions to get the startDate, namely the min create date of prescription
+         */
+        mRequestQueue=Volley.newRequestQueue(this);
+        String url="http://129.105.36.93:5000/patient/prescription";
+        final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                //Log.d("prescription length()",response.length()+"");
+                for(int i=0;i<response.length();i++){
+                    try {
+                        String temp=response.getJSONObject(i).getString("createdAt").substring(0,10);
+                        //Log.d("createdAt:"+i,temp);
+                        if(Integer.parseInt(temp.substring(0,4))<Integer.parseInt(startDate.substring(0,4))){
+                            startDate=new String(temp);
+                        }
+                        else if(Integer.parseInt(temp.substring(0,4))==Integer.parseInt(startDate.substring(0,4))
+                                &&Integer.parseInt(temp.substring(5,7))<Integer.parseInt(startDate.substring(5,7))){
+                            startDate=new String(temp);
+                        }
+                        else if(Integer.parseInt(temp.substring(0,4))==Integer.parseInt(startDate.substring(0,4))
+                                &&Integer.parseInt(temp.substring(5,7))==Integer.parseInt(startDate.substring(5,7))
+                                &&Integer.parseInt(temp.substring(8))<Integer.parseInt(startDate.substring(8))){
+                            startDate=new String(temp);
+                        }
+                        else{
+
+                        }
+
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+                Log.d("startDate",startDate);
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.d("error",error.toString());
+            }
+        }){
+            @Override
+            public Map<String,String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("x-parse-session-token",sessionToken);
+                return headers;
+            }
+        };
+        mRequestQueue.add(prescriptionRequest);
 
         ///////////////////////////////2.7///////////////////////////////////////
         Intent openservice = new Intent(this, ZentriOSBLEService.class);
@@ -153,7 +217,7 @@ public class NextActivity extends AppCompatActivity
                 break;
             case 2:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, CalendarFragment.newInstance(sessionToken,position + 1))
+                        .replace(R.id.container, CalendarFragment.newInstance(sessionToken,startDate,position + 1))
                         .commit();
                 break;
             default:
@@ -237,7 +301,7 @@ public class NextActivity extends AppCompatActivity
         if (id == R.id.logout) {
             //ParseObject.unpinAllInBackground("user");
             //use logout API
-            mRequestQueue=Volley.newRequestQueue(this);
+
             String url="http://129.105.36.93:5000/logout";
             JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                 @Override

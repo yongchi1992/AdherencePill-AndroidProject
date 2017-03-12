@@ -57,6 +57,7 @@ import android.content.SharedPreferences;
 
 public class CalendarFragment extends Fragment {
     private static final String ARG_SECTION_NUMBER = "section_number";
+    private static final String ARG_START_DATE="start_date";
 
     private Calendar calendar;
     private String startDate;
@@ -83,10 +84,11 @@ public class CalendarFragment extends Fragment {
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static CalendarFragment newInstance(String sessionToken,int sectionNumber) {
+    public static CalendarFragment newInstance(String sessionToken, String startDate, int sectionNumber) {
         CalendarFragment fragment = new CalendarFragment();
         Bundle args = new Bundle();
         args.putString(ARG_SESSION_TOKEN,sessionToken);
+        args.putString(ARG_START_DATE,startDate);
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
         return fragment;
@@ -98,6 +100,7 @@ public class CalendarFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
+        startDate=getArguments().getString(ARG_START_DATE);
         Log.d("Calendar fragment sesseionToken: ",sessionToken);
         View rootView = inflater.inflate(R.layout.calendarview, container, false);
         materialCalendarView= (MaterialCalendarView) rootView.findViewById(R.id.matCal);
@@ -116,8 +119,10 @@ public class CalendarFragment extends Fragment {
         /* traverse prescriptions to get the start date
         For now just static code, set startDate=2017-3-1 */
         SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-        String startDate=sdf.format(new Date(2017-1900, 2, 0));
-        Log.d("Calendar start date",startDate);
+        String temp_start=sdf.format(new Date(Integer.parseInt(startDate.substring(0,4))-1900,
+                Integer.parseInt(startDate.substring(5,7))-1, Integer.parseInt(startDate.substring(8))-1));
+        startDate=temp_start;
+        Log.d("Calendar_start_date",startDate);
         calendars=new ArrayList<>();
         calendars.add(new CalendarDay(Integer.parseInt(startDate.substring(0,4)),
                 Integer.parseInt(startDate.substring(5,7))-1,Integer.parseInt(startDate.substring(8))));
@@ -269,7 +274,7 @@ public class CalendarFragment extends Fragment {
                     if(k==(prescriptions.length-1))
                         Log.d("shouldTake_size",shouldTake.size()+"");
                     String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
-                   // Log.d("prescription", prescriptReq);
+                    // Log.d("prescription", prescriptReq);
                     mRequestQueue.add(new JsonArrayRequest(prescriptReq, new Response.Listener<JSONArray>() {
                         @Override
                         public void onResponse(JSONArray response) {
@@ -283,7 +288,7 @@ public class CalendarFragment extends Fragment {
                                                 Integer.parseInt(timeStamp.substring(11,12)), Integer.parseInt(timeStamp.substring(14,15)));
                                         for(CalendarDay calendarDay:isTaken.keySet()){
                                             if(calendarDay.getYear()==updateDay.getYear()&&(calendarDay.getMonth()+1)==updateDay.getMonth()
-                                                  &&calendarDay.getDay()==updateDay.getDay()){
+                                                    &&calendarDay.getDay()==updateDay.getDay()){
                                                 Log.d("updateDay==calendarDay",updateDay.toString());
                                                 int amount=isTaken.get(calendarDay);
                                                 amount+=1;
