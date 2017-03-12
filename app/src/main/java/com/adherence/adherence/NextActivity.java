@@ -153,7 +153,7 @@ public class NextActivity extends AppCompatActivity
                 break;
             case 2:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, CalendarFragment.newInstance(position + 1))
+                        .replace(R.id.container, CalendarFragment.newInstance(sessionToken,position + 1))
                         .commit();
                 break;
             default:
