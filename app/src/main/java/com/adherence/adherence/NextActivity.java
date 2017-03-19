@@ -121,17 +121,17 @@ public class NextActivity extends AppCompatActivity
                     try {
                         String temp=response.getJSONObject(i).getString("createdAt").substring(0,10);
                         //Log.d("createdAt:"+i,temp);
-                        if(Integer.parseInt(temp.substring(0,4))<Integer.parseInt(startDate.substring(0,4))){
-                            startDate=new String(temp);
+                        if(Integer.parseInt(temp.substring(0,4)) < Integer.parseInt(startDate.substring(0,4))){
+                            startDate = new String(temp);
                         }
-                        else if(Integer.parseInt(temp.substring(0,4))==Integer.parseInt(startDate.substring(0,4))
-                                &&Integer.parseInt(temp.substring(5,7))<Integer.parseInt(startDate.substring(5,7))){
-                            startDate=new String(temp);
+                        else if(Integer.parseInt(temp.substring(0,4)) == Integer.parseInt(startDate.substring(0,4))
+                                &&Integer.parseInt(temp.substring(5,7)) < Integer.parseInt(startDate.substring(5,7))){
+                            startDate = new String(temp);
                         }
-                        else if(Integer.parseInt(temp.substring(0,4))==Integer.parseInt(startDate.substring(0,4))
-                                &&Integer.parseInt(temp.substring(5,7))==Integer.parseInt(startDate.substring(5,7))
-                                &&Integer.parseInt(temp.substring(8))<Integer.parseInt(startDate.substring(8))){
-                            startDate=new String(temp);
+                        else if(Integer.parseInt(temp.substring(0,4)) == Integer.parseInt(startDate.substring(0,4))
+                                &&Integer.parseInt(temp.substring(5,7)) == Integer.parseInt(startDate.substring(5,7))
+                                &&Integer.parseInt(temp.substring(8)) < Integer.parseInt(startDate.substring(8))){
+                            startDate = new String(temp);
                         }
                         else{
 
