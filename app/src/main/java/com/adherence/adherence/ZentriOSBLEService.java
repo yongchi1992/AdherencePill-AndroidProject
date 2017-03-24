@@ -145,6 +145,10 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
     private RequestQueue mRequestQueue;
 
+    private NotificationManager mNotificationManager;
+    private Notification mNotification;
+    private Context mContext = this;
+
 
     ArrayList<String> devices = new ArrayList<String>();
 
@@ -162,6 +166,8 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
         mZentriOSBLEManager = new ZentriOSBLEManager();
         mBroadcastManager = LocalBroadcastManager.getInstance(this);
+
+        mNotificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
 
         initCallbacks();
         initTruconnectManager();
@@ -237,7 +243,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
     private void initCallbacks() {
         mCallbacks = new BLECallbacks() {
             @Override
-            public void onScanResult(String deviceName, String address) {   //这个address就是mac address
+            public void onScanResult(String deviceName, String address) {   //This address is mac address
                 scan_times++;
                 if (scan_times == 30) {
                     mZentriOSBLEManager.stopScan();
@@ -262,15 +268,6 @@ public class ZentriOSBLEService extends Service implements Serializable {
                         }
 
                     }
-
-
-
-
-//                if (deviceName != null && deviceName.contains("SC")) {
-//                    mZentriOSBLEManager.stopScan();
-//                    delay_while();
-//                    mZentriOSBLEManager.connect(deviceName);
-//                }
                 }
             }
 
@@ -293,24 +290,18 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 {
                     mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
                 }
-                //delay_while();
-                //delay_while();
                 startDeviceInfoActivity();
             }
 
             @Override
-            public void onDisconnected() {
+            public void onDisconnected()
+            {
 
                 Log.d(TAG, "onDisconnected");
 
                 Intent intent = new Intent(ACTION_DISCONNECTED);
                 isBack = false;
                 index = (index + 1) % devices.size() ;
-                //mBroadcastManager.sendBroadcast(intent);
-                //String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
-
-                ///////////////////////////////////////////////////////////////////
-
 
                 String[] info = allinfo.split("\n");
 
@@ -335,28 +326,6 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 String info_battery = info[3];
                 String info_voltage = info[4];
 
-
-//这段的错误信息：02-08 09:05:38.611 11991-11991/com.adherence.adherence D/score: Error: java.lang.NullPointerException
-
-//                ParseQuery<ParseObject> query = ParseQuery.getQuery("Bottle");
-//                query.whereEqualTo("Name", deviceinfo);
-//                query.findInBackground(new FindCallback<ParseObject>() {
-//                    @Override
-//                    public void done(List<ParseObject> objects, ParseException e) {
-//                        if(e == null) {
-//                            Log.d("score", objects.get(0).getString("Name"));
-//                        } else {
-//                            Log.d("score", "Error: " + e.getMessage());
-//                        }
-//                    }
-//                });
-
-
-                ParseObject testObject = new ParseObject("TestXZ");
-
-                testObject.put("name", "Christina");
-                testObject.saveEventually();
-
                 //push it to server
                 ParseObject testObject1 = new ParseObject("BottleUpdates");
                 testObject1.put("Name", deviceinfo);
@@ -365,7 +334,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 testObject1.put("Battery", info_battery);
                 testObject1.put("Voltage", info_voltage);
 
-                //要用回Parse
+                //Update data
                 testObject1.saveEventually();
 
 
@@ -374,17 +343,15 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 ///////////////////////////////////////////////////////////////////
 
 
-//                NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-//                Notification notification = new Notification(R.drawable.ic_launcher, "用电脑时间过长了！白痴！"
-//                        , System.currentTimeMillis());
-//                notification.setLatestEventInfo(context, "快去休息！！！",
-//                        "一定保护眼睛,不然遗传给孩子，老婆跟别人跑啊。", null);
-//                notification.defaults = Notification.DEFAULT_ALL;
-//                manager.notify(1, notification);
+                Notification notification = new Notification(R.drawable.ic_launcher, ""
+                        , System.currentTimeMillis());
+                notification.setLatestEventInfo(mContext, "Please take the pills on time.",
+                        "", null);
+                notification.defaults = Notification.DEFAULT_ALL;
+                mNotificationManager.notify(1, notification);
 
 
             }
-
             @Override
             public void onModeWritten(int mode) {
                 Log.d(TAG, "onModeWritten");
@@ -432,8 +399,10 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     mZentriOSBLEManager.setReceiveMode(com.zentri.zentri_ble.BLECallbacks.ReceiveMode.BINARY);
                     count_bytes = 0;
                     header_done = false;
-                } else if (data.equals("N")) {
-                    ;
+                } else if (data.contains("N") && data.contains("*gn")) {
+                    mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+                    gi = false;
+                    aiflag = false;
                 } else if(data.contains("Inval") || data.contains("Command")){
                     String dataToSend = "*gn#";
                     mZentriOSBLEManager.writeData(dataToSend);
@@ -450,9 +419,6 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     if(gi==false){
                         String dataToSend = "*gi#";
                         mZentriOSBLEManager.writeData(dataToSend);
-                        //delay_while();
-                        //delay_while();
-                        //mZentriOSBLEManager.writeData(dataToSend);
                         gi = true;
                     }
                     Log.d(TAG, "Bytes: " + count_bytes);
@@ -531,14 +497,13 @@ public class ZentriOSBLEService extends Service implements Serializable {
 //                            mToggleIm.setChecked(false);
                     doStopRecording();
                     stopRecording();
-                    Log.d(TAG, "SDFADSFASDFASFASFASFASFA   photo show");
-                    //显示图片
+
+                    //save photos
 
                     mZentriOSBLEManager.setReceiveMode(com.zentri.zentri_ble.BLECallbacks.ReceiveMode.STRING);
                     receiveimage=1;
 
                 }
-                Log.d(TAG, "Bytes: " + count_bytes + "Val: " + data[0]);
 
             }
 
@@ -665,35 +630,21 @@ public class ZentriOSBLEService extends Service implements Serializable {
         //GUISetCommandMode();
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_COMMAND_REMOTE);
-        mZentriOSBLEManager.setSystemCommandMode(CommandMode.MACHINE);//第一个set mode
+        mZentriOSBLEManager.setSystemCommandMode(CommandMode.MACHINE);//set mode
         mZentriOSBLEManager.getVersion();
-        //startActivity(new Intent(getApplicationContext(), DeviceInfoActivity.class));
-        //delay_while();
+
         delay_while();
-        mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);//第二个set mode
-        //delay_while();
+        mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);//set mode
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);
-        //delay_while();
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);
 
-
-        //delay_while();
-        //delay_while();
-        //delay_while();
-        //delay_while();
-        //delay_while();
         delay_while();
         String dataToSend = "*gn#";
         mZentriOSBLEManager.writeData(dataToSend);
-        //delay_while();
-        //delay_while();
-        //delay_while();
         delay_while();
-
         mZentriOSBLEManager.writeData(dataToSend);
-        //gi = false;
     }
 
     private boolean writeLog(String buffer) {
@@ -879,7 +830,8 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     System.out.println(prescriptions[j].getPillNumber());
 
 
-//                    获取周一的信息
+//                    Get information of Monday
+
 //                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
 //                    while(itr.hasNext()){
 //                        Map.Entry<String, Integer> entry = itr.next();

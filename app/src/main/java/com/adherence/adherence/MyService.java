@@ -31,14 +31,14 @@ public class MyService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
 
         AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        //提醒间隔时间
+        //Notification time interval
         int Minutes = 60*1000;
-        //SystemClock.elapsedRealtime()表示1970年1月1日0点至今所经历的时间
+        //SystemClock.elapsedRealtime() shows time starting from 1970.1.1
         long triggerAtTime = SystemClock.elapsedRealtime() + Minutes;
-        //此处设置开启AlarmReceiver这个Service
+        //start AlarmReceiver Service
         Intent i = new Intent(this, AlarmReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);
-        //ELAPSED_REALTIME_WAKEUP表示让定时任务的出发时间从系统开机算起，并且会唤醒CPU。
+
         manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTime, pi);
 
 
@@ -49,7 +49,6 @@ public class MyService extends Service {
     public void onDestroy() {
         super.onDestroy();
 
-        //在Service结束后关闭AlarmManager
         AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
         Intent i = new Intent(this, AlarmReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);

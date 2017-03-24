@@ -25,16 +25,16 @@ import static android.app.PendingIntent.getActivity;
  */
 
 public class Prescription {
-    private String name;
-    private String note;
-    private String pill;
+    private String name;//prescription name
+    private String note;//prescription note
+    private String pill;//pill name
     private String prescriptionId;
     private String bottleName;
-    private Boolean newAdded;
-    private int pillNumber;
-
-
+    private Boolean newAdded;//whether the prescription is newly added
+    private int pillNumber; //pill ID
     private Map<String, Map<String,Integer>> schedule = new HashMap<String, Map<String,Integer>>();
+
+
     public void setName(String name){
         this.name = name;
     }
@@ -45,7 +45,7 @@ public class Prescription {
         this.pill = pill;
     }
     public void setPrescriptionId(String prescptionId){this.prescriptionId = prescptionId;}
-    public void setBottleName(String bottleName){this.bottleName = bottleName;Log.d("TAG","bottle name is set");}
+    public void setBottleName(String bottleName){this.bottleName = bottleName;}
     public void setNewAdded (Boolean newAdded){this.newAdded = newAdded;}
     public void setPillNumber(int pillNumber){this.pillNumber = pillNumber;}
 
@@ -69,6 +69,8 @@ public class Prescription {
     public Map<String, Map<String,Integer>> getSchedule(){
         return schedule;
     }
+
+    //input a week day and return all the time and amount to take pills in this day
     public HashMap<String, Integer> getTimeAmount(String day){
         HashMap<String, Integer> set = new HashMap<String, Integer>();
         int amount;
