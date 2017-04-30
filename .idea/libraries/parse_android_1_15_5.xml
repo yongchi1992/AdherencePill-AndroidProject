@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="parse-android-1.15.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/ea84bb17b2affcaeaeda889df4687d267174ae02/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ea84bb17b2affcaeaeda889df4687d267174ae02/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.15.5/26f6c952b2cb6882c58e1741846a927ad2a13c2d/parse-android-1.15.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

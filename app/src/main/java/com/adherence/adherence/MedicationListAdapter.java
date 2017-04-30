@@ -51,4 +51,6 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
     public int getItemCount() {
         return medicineListHardcode.length;
     }
+
+
 }

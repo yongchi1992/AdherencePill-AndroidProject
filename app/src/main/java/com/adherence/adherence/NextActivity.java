@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -387,8 +388,11 @@ public class NextActivity extends AppCompatActivity
             Intent intent = new Intent();
             intent.setClass(NextActivity.this, MainActivity.class);
             NextActivity.this.startActivity(intent);
-
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    public void onClick(View v) {
+        Toast.makeText(getApplicationContext(),"Are you sure",Toast.LENGTH_SHORT).show();
     }
 }

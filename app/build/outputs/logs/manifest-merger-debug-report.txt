@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:2:1-79:12
+	package
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:7:22-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:9:5-96
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:10:5-97
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:10:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:12:5-14:35
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:32:5-34:35
+	android:required
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:14:9-32
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:13:9-53
+application
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:16:5-77:19
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:design:22.2.0] /Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/AndroidManifest.xml:22:5-20
+MERGED from [com.parse:parse-android:1.15.5] /Users/dauphin/.android/build-cache/ea84bb17b2affcaeaeda889df4687d267174ae02/output/AndroidManifest.xml:20:5-20
+MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/AndroidManifest.xml:12:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/dauphin/.android/build-cache/63287158bda3d4285c7c648de57d2da4e2deab4d/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/dauphin/.android/build-cache/ff6131584e1ea8f6269b308d10d833057f688565/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/dauphin/.android/build-cache/9d6df51669607b890a71e235fa64c2f95bb189f6/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.2.1] /Users/dauphin/.android/build-cache/12ca8e79f2d97b96223dd97429df9287a1eabe31/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/dauphin/.android/build-cache/3bc4f31a08c7e6bf0a088ae6f79a51f03dc13742/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/dauphin/.android/build-cache/76e923efbb684b0faace8ee354304dbb646d10dd/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/dauphin/.android/build-cache/08d25344d0acdc9287e1493a0747b550d7f94210/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/dauphin/.android/build-cache/272969ede2485fbcd65a256dd365e0696bb1f776/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/dauphin/.android/build-cache/78c464d6ca8929e8b295562213d4014d4ca56717/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:20:9-41
+	android:allowBackup
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:17:9-35
+	android:icon
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:18:9-43
+	android:theme
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:19:9-45
+activity#com.adherence.adherence.FirstActivity
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:22:9-31:20
+	android:label
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:25:13-45
+	android:configChanges
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:24:13-63
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:23:13-42
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.adherence.adherence.MainActivity
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:33:9-34:20
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:33:19-47
+activity#com.adherence.adherence.NextActivity
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:35:5-36:16
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:35:15-43
+receiver#com.adherence.adherence.NotificationReceiver
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:37:9-58
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:37:19-55
+service#com.adherence.adherence.NotificationService
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:38:9-56
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:38:18-53
+activity#com.adherence.adherence.MainActivity2
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:40:9-48:20
+	android:label
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:42:13-45
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:41:13-42
+service#com.adherence.adherence.ZentriOSBLEService
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:50:9-55:19
+	android:label
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:53:13-49
+	android:exported
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:54:13-36
+	android:icon
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:52:13-47
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:51:13-47
+service#com.adherence.adherence.MyService
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:57:9-59:19
+	android:exported
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:57:18-43
+receiver#com.adherence.adherence.AlarmReceiver
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:61:9-66:20
+	android:exported
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:62:13-36
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:61:19-48
+intent-filter#Alarm
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:63:13-65:29
+action#Alarm
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:64:17-50
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:64:25-47
+receiver#com.adherence.adherence.projectBroadcastReceiver
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:68:9-75:20
+	android:exported
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:69:13-36
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:68:19-59
+intent-filter#ACTION_SCAN_RESULT
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:70:13-74:29
+action#ACTION_SCAN_RESULT
+ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:72:17-63
+	android:name
+		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:72:25-60
+uses-sdk
+INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:22.2.0] /Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/AndroidManifest.xml:20:5-43
+MERGED from [com.parse:parse-android:1.15.5] /Users/dauphin/.android/build-cache/ea84bb17b2affcaeaeda889df4687d267174ae02/output/AndroidManifest.xml:16:5-18:41
+MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.volley:volley:1.0.0] /Users/dauphin/.android/build-cache/63287158bda3d4285c7c648de57d2da4e2deab4d/output/AndroidManifest.xml:7:5-43
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:25:5-27:41
+MERGED from [ADP_Android:zentri_ble_command:unspecified] /Users/dauphin/.android/build-cache/f50586c36b37d31dab6cf77d913bb68a11d6ea66/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/dauphin/.android/build-cache/ff6131584e1ea8f6269b308d10d833057f688565/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/dauphin/.android/build-cache/9d6df51669607b890a71e235fa64c2f95bb189f6/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.2.1] /Users/dauphin/.android/build-cache/12ca8e79f2d97b96223dd97429df9287a1eabe31/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/dauphin/.android/build-cache/3bc4f31a08c7e6bf0a088ae6f79a51f03dc13742/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/dauphin/.android/build-cache/76e923efbb684b0faace8ee354304dbb646d10dd/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/dauphin/.android/build-cache/08d25344d0acdc9287e1493a0747b550d7f94210/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/dauphin/.android/build-cache/272969ede2485fbcd65a256dd365e0696bb1f776/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] /Users/dauphin/.android/build-cache/78c464d6ca8929e8b295562213d4014d4ca56717/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.2.1] /Users/dauphin/.android/build-cache/12ca8e79f2d97b96223dd97429df9287a1eabe31/output/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:23:9-25:56
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:25:13-53
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:24:13-66
+uses-permission#android.permission.BLUETOOTH
+ADDED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:29:5-68
+	android:name
+		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:29:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:30:5-74
+	android:name
+		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:30:22-71
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/dauphin/.android/build-cache/9d6df51669607b890a71e235fa64c2f95bb189f6/output/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/dauphin/.android/build-cache/9d6df51669607b890a71e235fa64c2f95bb189f6/output/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/dauphin/.android/build-cache/9d6df51669607b890a71e235fa64c2f95bb189f6/output/AndroidManifest.xml:22:13-58

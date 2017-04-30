@@ -285,4 +285,8 @@ public class MainActivity extends AppCompatActivity {
         client.disconnect();
         finish();
     }
+
+//    public void onClick(View v) {
+//        int temp =  0;
+//    }
 }

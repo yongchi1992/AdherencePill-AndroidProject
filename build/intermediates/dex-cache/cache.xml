@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e6c0aa35e53d3daab0a53f15f1b24176569858f">
+        <dex dex="/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/pre-dexed/debug/classes_f07a8fac19e62c92c322be47ebd8e912f15d7194.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dauphin/.android/build-cache/f50586c36b37d31dab6cf77d913bb68a11d6ea66/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d34e116b24748a585f3c1612aa123a46f161006">
+        <dex dex="/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/pre-dexed/debug/classes_c522c2a1ff987a735cb2c491e9ef5f16fa8e73c2.jar" />
+    </item>
+
+</items>

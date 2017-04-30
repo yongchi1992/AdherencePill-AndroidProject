@@ -103,8 +103,6 @@ public class MedicationFragment extends Fragment {
         mContext = this.getContext();
         mRequestQueue = Volley.newRequestQueue(getActivity());
         Log.d("sequence", "onCreate!");
-
-
     }
 
     @Override
@@ -115,7 +113,6 @@ public class MedicationFragment extends Fragment {
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
             //mRequestQueue= Volley.newRequestQueue(getActivity());
-
 
         String url="http://129.105.36.93:5000/patient/prescriptions";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
@@ -229,15 +226,7 @@ public class MedicationFragment extends Fragment {
                             System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
                         }
                     }
-
-
-
-
                 }
-
-
-
-
 
 
                 mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
@@ -263,16 +252,6 @@ public class MedicationFragment extends Fragment {
         //prescriptions[0].requestSetBottleName(sessionToken, mRequestQueue);
 
         mRequestQueue.add(prescriptionRequest);
-
-
-
-
-
-
-
-
-
-
 
 
         Log.d("sequence","onCreateView!");
@@ -437,4 +416,8 @@ public class MedicationFragment extends Fragment {
         }
         return windowPos;
     }
+
+//    public void onClick(View v) {
+//        int temp =  0;
+//    }
 }
