@@ -14,6 +14,6 @@ public class ParseInitialize extends android.app.Application {
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("myAppId")
                 .clientKey("myClientKey")
-                .server("http://129.105.36.93:5000/parse").build());
+                .server("http://129.105.36.93:5000/parse/").build());
     }
 }

@@ -31,11 +31,11 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
         Parse.enableLocalDatastore(this);
-
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("myAppId")
                 .clientKey("myClientKey")
                 .server("http://129.105.36.93:5000/parse/").build());
+
 //        Parse.initialize(this, "BDo39lSOtPuBwDfq0EBDgIjTzztIQE38Fuk03EcR", "6exCVtTYC6JhQP6gw1OFByyP2RRq5McznAsoQ3Gq");
 
 

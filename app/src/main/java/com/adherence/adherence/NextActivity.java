@@ -5,6 +5,7 @@ import android.app.DownloadManager;
 import android.app.Instrumentation;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -14,6 +15,7 @@ import android.os.Bundle;
 import android.support.annotation.IntegerRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,7 +24,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -38,9 +42,14 @@ import com.parse.ParseObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -244,13 +253,6 @@ public class NextActivity extends AppCompatActivity
 
     }
 
-//    public void restoreActionBar() {
-//        ActionBar actionBar = getActionBar();
-//        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-//        actionBar.setDisplayShowTitleEnabled(true);
-//        actionBar.setTitle(mTitle);
-//    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -392,7 +394,44 @@ public class NextActivity extends AppCompatActivity
         return super.onKeyDown(keyCode, event);
     }
 
+
+
     public void onClick(View v) {
-        Toast.makeText(getApplicationContext(),"Are you sure",Toast.LENGTH_SHORT).show();
+
+        TextView tv = (TextView)v;
+        try {
+            String time_amount = tv.getText().toString();
+            String time = time_amount.substring(0, 8);
+            DateFormat df = new SimpleDateFormat("HH:mm:ss");
+            Date currentTime = df.parse(time);
+            String today_time = new SimpleDateFormat("HH:mm:ss, MM/dd/yy").format(currentTime);
+            fireDialog(today_time);
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected void fireDialog(final String today_time)
+    {
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Alert");
+        alertDialog.setMessage("Are you sure to report for taking pill?");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Sure",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        postUpdate(today_time);
+                    }
+                });
+        alertDialog.show();
+    }
+
+    protected void postUpdate(String today_time) {
+        //push it to server
+        ParseObject testObject1 = new ParseObject("BottleUpdates");
+        testObject1.put("timeStamp", today_time);
+
+        //Update data
+        testObject1.saveEventually();
     }
 }

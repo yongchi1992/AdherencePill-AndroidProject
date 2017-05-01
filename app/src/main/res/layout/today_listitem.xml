@@ -6,7 +6,9 @@
     <TextView
         android:text="pillName"
         style="@style/ListTitle"
-        android:id="@+id/pill_name"/>
+        android:id="@+id/pill_name"
+        android:onClick="onClick"
+        android:clickable="true"/>
 
     <TextView
         style="@style/ListSecondaryTitle"
@@ -14,7 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/pill_name"
-        android:id="@+id/time_amount"/>
+        android:id="@+id/time_amount"
+        android:onClick="onClick"
+        android:clickable="true"/>
 
 
 

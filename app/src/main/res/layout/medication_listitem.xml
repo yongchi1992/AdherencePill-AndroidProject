@@ -7,8 +7,6 @@
         android:text="Test"
         style="@style/ListTitle"
         android:id="@+id/medicine_name"
-        android:onClick="onClick"
-        android:clickable="true"
         />
 
 

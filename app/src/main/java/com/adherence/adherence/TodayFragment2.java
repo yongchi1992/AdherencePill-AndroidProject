@@ -101,8 +101,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         return fragment;
     }
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -180,6 +178,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                     final int finalK = k;
 
                     String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
+
                     Log.d("prescription", prescriptReq);
                     mRequestQueue.add(new JsonArrayRequest(prescriptReq, new Response.Listener<JSONArray>() {
                         @Override
@@ -201,7 +200,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                         if (date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)) {
                                             todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
                                         }
-
                                     }
 
                                 }else{

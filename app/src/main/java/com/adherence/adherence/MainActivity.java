@@ -286,7 +286,4 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-//    public void onClick(View v) {
-//        int temp =  0;
-//    }
 }

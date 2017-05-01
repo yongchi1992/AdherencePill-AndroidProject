@@ -31,6 +31,8 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         public View listRootView;
         private TextView pillName;
         private TextView time_amount;
+
+
         public TextView getPillName(){
             return pillName;
         }
