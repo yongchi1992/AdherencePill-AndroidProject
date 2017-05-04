@@ -19,5 +19,14 @@
         sha1="4d34e116b24748a585f3c1612aa123a46f161006">
         <dex dex="/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/pre-dexed/debug/classes_c522c2a1ff987a735cb2c491e9ef5f16fa8e73c2.jar" />
     </item>
+    <item
+        is-multidex="false"
+        jar="/Users/dauphin/.android/build-cache/47b8525934318424ec8176f3f88af913d145f8b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d32d3e9a67d6cbe7271a583c9e6662b82e7f256a">
+        <dex dex="/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/pre-dexed/debug/classes_e7f685167f4e4c18dabe5ce4223c78ae15285d79.jar" />
+    </item>
 
 </items>

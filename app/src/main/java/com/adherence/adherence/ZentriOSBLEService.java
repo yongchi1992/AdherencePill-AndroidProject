@@ -592,7 +592,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
     public class ZentriBroadcastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.d(TAG, "Madeshoudaole");
+            Log.d(TAG, "Madeshoudaole"); // duo da chou, 23333
 
             devices.clear();
 
@@ -622,7 +622,6 @@ public class ZentriOSBLEService extends Service implements Serializable {
             }else if(!devices.isEmpty()) {
                 mZentriOSBLEManager.startScan();
             }
-
         }
     }
 

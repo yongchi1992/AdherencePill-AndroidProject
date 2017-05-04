@@ -396,20 +396,18 @@ public class NextActivity extends AppCompatActivity
 
 
 
-    public void onClick(View v) {
+    public void onClick(View v) throws ParseException {
 
         TextView tv = (TextView)v;
-        try {
-            String time_amount = tv.getText().toString();
-            String time = time_amount.substring(0, 8);
+        String time_amount = tv.getText().toString();
+        String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
+        String time = time_amount.substring(0, 8);
             DateFormat df = new SimpleDateFormat("HH:mm:ss");
             Date currentTime = df.parse(time);
-            String today_time = new SimpleDateFormat("HH:mm:ss, MM/dd/yy").format(currentTime);
-            fireDialog(today_time);
+//        String today_time = new SimpleDateFormat("HH:mm:ss").format(time);
+        String today_time = time + ", " + date;
+        fireDialog(today_time);
 
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
     }
 
     protected void fireDialog(final String today_time)
@@ -427,11 +425,22 @@ public class NextActivity extends AppCompatActivity
     }
 
     protected void postUpdate(String today_time) {
-        //push it to server
-        ParseObject testObject1 = new ParseObject("BottleUpdates");
-        testObject1.put("timeStamp", today_time);
 
-        //Update data
-        testObject1.saveEventually();
+        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
+        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
+        //testdb.delete("DeviceTable"," name = ? ", new String[]{"dfsds"});
+        Cursor c = testdb.rawQuery("SELECT * FROM DeviceTable", null);
+        while (c.moveToNext()) {
+            String d_name = c.getString(c.getColumnIndex("name"));
+            ParseObject testObject1 = new ParseObject("BottleUpdates");
+            testObject1.put("timeStamp", today_time);
+            testObject1.put("Name", d_name);
+            testObject1.saveEventually();
+
+        }
+        c.close();
+        testdb.close();
+
+
     }
 }

@@ -176,6 +176,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                 }
                 for(int k = 0; k < prescriptions.length; k++){
                     final int finalK = k;
+                    Log.d("prescription_id : ", prescriptions[finalK].getPrescriptionId());
 
                     String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
 
@@ -197,7 +198,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     JSONArray updates = response.getJSONObject(0).getJSONArray("updates");
                                     int len = updates.length();
                                     for (int j = 0; j < len; j++) {
-                                        if (date == updates.getJSONObject(j).getString("timestamp").substring(10, 18)) {
+                                        if (date.equals(updates.getJSONObject(j).getString("timestamp").substring(10, 18))) {
                                             todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
                                         }
                                     }

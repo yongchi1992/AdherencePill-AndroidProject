@@ -48,12 +48,12 @@
         "source": "/Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/res/layout/layout_snackbar_include.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
-        "source": "/Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/res/layout/design_navigation_menu.xml"
-    },
-    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/res/layout/design_navigation_menu.xml"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",

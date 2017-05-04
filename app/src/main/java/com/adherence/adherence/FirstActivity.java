@@ -61,9 +61,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent();
-//                TODO: switch back
                 intent.setClass(FirstActivity.this, MainActivity.class);
-//                intent.setClass(FirstActivity.this, NextActivity.class);
                 FirstActivity.this.startActivity(intent);
             }
         }, 2000);
