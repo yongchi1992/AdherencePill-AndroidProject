@@ -405,6 +405,7 @@ public class NextActivity extends AppCompatActivity
             DateFormat df = new SimpleDateFormat("HH:mm:ss");
             Date currentTime = df.parse(time);
 //        String today_time = new SimpleDateFormat("HH:mm:ss").format(time);
+
         String today_time = time + ", " + date;
         fireDialog(today_time);
 
@@ -434,7 +435,9 @@ public class NextActivity extends AppCompatActivity
             String d_name = c.getString(c.getColumnIndex("name"));
             ParseObject testObject1 = new ParseObject("BottleUpdates");
             testObject1.put("timeStamp", today_time);
-            testObject1.put("Name", d_name);
+            testObject1.put("Name", "Adderal");
+//            testObject1.saveEventually();
+//            testObject1.put("Name", d_name);
             testObject1.saveEventually();
 
         }

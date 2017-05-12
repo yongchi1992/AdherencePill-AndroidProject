@@ -4,7 +4,6 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,11 +13,8 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,9 +24,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -41,7 +35,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -51,8 +44,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import bolts.Bolts;
 
 public class TodayFragment2 extends Fragment implements View.OnClickListener {
     static HashMap<String, HashMap<String, String>> patient = new HashMap<String, HashMap<String, String>>();
@@ -65,6 +56,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     private ArrayList<String> pillName;
     private ArrayList<String> time_amount;
     private ArrayList<Integer> flag;
+    private Map<String, Integer> pillMap;
 
     private Prescription[] prescriptions;
     private RequestQueue mRequestQueue;
@@ -111,6 +103,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
         pillName=new ArrayList<>();
         time_amount=new ArrayList<>();
+        pillMap = new HashMap<>();
         flag=new ArrayList<>();
         dayofweek= (TextView) view.findViewById(R.id.m_day);
 
@@ -187,7 +180,9 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                             try {
                                 String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
                                 String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
+
                                 DateFormat df = new SimpleDateFormat("HH:mm:ss");
+//                                Date currentTime = df.parse(time + ", " + date);
                                 Date currentTime = df.parse(time);
                                 Log.d("Date:", date);
                                 Log.d("Time", time);
@@ -199,12 +194,13 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     int len = updates.length();
                                     for (int j = 0; j < len; j++) {
                                         if (date.equals(updates.getJSONObject(j).getString("timestamp").substring(10, 18))) {
+
                                             todayList.add(updates.getJSONObject(j).getString("timestamp").substring(0, 8));
                                         }
                                     }
 
                                 }else{
-                                    todayList = new ArrayList<String>();
+//                                    todayList = new ArrayList<String>();
                                 }
                                 Iterator<Map.Entry<String, Integer>> itr = prescriptions[finalK].getTimeAmount(mDay).entrySet().iterator();
 
@@ -212,27 +208,34 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     Map.Entry<String, Integer> entry = itr.next();
                                     int eaten = 1;
                                     int updatesLen = todayList.size();
-                                    if ((currentTime.getTime() - df.parse(entry.getKey()).getTime()) > 0){
-                                        if (updatesLen == 0){
+
+//                                    if ((currentTime.getTime() - df.parse(entry.getKey()).getTime()) > 0){
+
+                                        if (updatesLen == 0 && (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0)){
                                             eaten = 2;
-                                        }else{
+                                        }else
+                                        {
                                             for(int j = 0; j < updatesLen; j++){
-                                                if(Math.abs(currentTime.getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000){
+                                                long l1 = df.parse(entry.getKey()).getTime();
+                                                long l2 = df.parse(todayList.get(j)).getTime();
+                                                if(Math.abs(df.parse(entry.getKey()).getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000 * 2){
+//                                                if(Math.abs(currentTime.getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000){
                                                     eaten = 3;
-                                                }else{
+                                                    break;
+                                                }else if (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0) {
                                                     eaten = 2;
                                                 }
                                             }
                                         }
-                                        Log.d("eaten", Integer.toString(eaten));
-                                        flag.add(new Integer(eaten));
-                                    }else{
-                                        Log.d("eaten", Integer.toString(eaten));
-                                        flag.add(new Integer(eaten));
-                                    }
+//                                    }
 
+                                    String tempPillName = prescriptions[finalK].getPill();
+                                    if (pillMap.containsKey(tempPillName)) eaten = Math.max(eaten, pillMap.get(tempPillName));
 
-                                    pillName.add(prescriptions[finalK].getPill());
+                                    Log.d("eaten", Integer.toString(eaten));
+                                    flag.add(new Integer(eaten));
+
+                                    pillName.add(tempPillName);
                                     int amount=entry.getValue();
                                     String pill="pill";
                                     if(amount>1) pill=pill+"s";
