@@ -4,6 +4,7 @@
     <string name="title_section1">Today</string>
     <string name="title_section2">Medication</string>
     <string name="title_section3">Calendar</string>
+    <string name="title_section4">Table</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -67,4 +68,7 @@
     <string name="retry">Retry</string>
 
     <string name="service_name">TruConnect service</string>
+
+    <string name="arg_section_number">section_number</string>
+    <string name="arg_section_token">session_token</string>
 </resources>
