@@ -216,7 +216,6 @@ public class NextActivity extends AppCompatActivity
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, TodayFragment2.newInstance(sessionToken,position + 1))
                         .commit();
-
                 break;
             case 1:
                 String[] medicineList = getResources().getStringArray(R.array.medicine_hardcode);
@@ -228,6 +227,13 @@ public class NextActivity extends AppCompatActivity
             case 2:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, CalendarFragment.newInstance(sessionToken,startDate,position + 1))
+                        .commit();
+                break;
+            case 3:
+                SharedPreferences data2=getSharedPreferences("data",MODE_PRIVATE);
+                sessionToken=data2.getString("sessionToken","null");
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, TableFragment.newInstance(sessionToken, position +1))
                         .commit();
                 break;
             default:
@@ -245,6 +251,9 @@ public class NextActivity extends AppCompatActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            case 4:
+                mTitle = "Table";
                 break;
         }
         if (toolbar != null) {
