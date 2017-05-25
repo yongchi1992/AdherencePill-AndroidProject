@@ -2314,10 +2314,11 @@ containing a value of this type.
         public static final int logo=0x7f02006b;
         public static final int mcv_action_next=0x7f02006c;
         public static final int mcv_action_previous=0x7f02006d;
-        public static final int notification_template_icon_bg=0x7f020071;
+        public static final int notification_template_icon_bg=0x7f020072;
         public static final int pill_button=0x7f02006e;
-        public static final int shape=0x7f02006f;
-        public static final int snackbar_background=0x7f020070;
+        public static final int prescription_button=0x7f02006f;
+        public static final int shape=0x7f020070;
+        public static final int snackbar_background=0x7f020071;
     }
     public static final class id {
         public static final int Asprin=0x7f0d008b;

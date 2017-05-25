@@ -1,4 +1,7 @@
-#Thu May 25 11:01:52 CDT 2017
-base.0=/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Thu May 25 13:39:42 CDT 2017
+base.0=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8a82090ee8fb6aa0f850fb5d7e98bc0bf834755a
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_fabf130fe88351fe326af8cf842bc2b8aa3eb86c\\classes.dex
+base.1=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_fabf130fe88351fe326af8cf842bc2b8aa3eb86c
+file.0=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8a82090ee8fb6aa0f850fb5d7e98bc0bf834755a\\classes.dex

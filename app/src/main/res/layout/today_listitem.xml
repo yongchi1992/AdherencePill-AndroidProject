@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/MedicineList"
+    style="@style/MedicineList" android:background="@drawable/prescription_button_nottaken"
     android:orientation="vertical">
 
     <TextView
@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ListTitle"
-        android:background="@drawable/pill_button"
+        android:textSize="20sp"
         android:id="@+id/pill_name"
         android:onClick="onClick"
         android:clickable="true"/>
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pill_name"
-        android:background="@drawable/pill_button"
+        android:textSize="20sp"
         android:id="@+id/time_amount"
         android:onClick="onClick"
         android:clickable="true"/>

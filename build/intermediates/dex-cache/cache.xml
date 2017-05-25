@@ -2,13 +2,40 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/dauphin/.android/build-cache/446b84912e4f37cb7e20fda7e80977c3a7ffd740/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="93eb8e6b2424135c50f2dfccb117a9611a2a6f3c">
-        <dex dex="/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/pre-dexed/debug/classes_2c71c182fb7d97f50dd144d14e0277cb17bf6167.jar" />
+        sha1="03c57eb6917faaf83e14c7628de67e7ed1bf95c1">
+        <dex dex="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_fabf130fe88351fe326af8cf842bc2b8aa3eb86c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sohum Mehrotra\.android\build-cache\e951b1d60b04aa60971652b72ad411da344c725b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4d34e116b24748a585f3c1612aa123a46f161006">
+        <dex dex="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_184cf93efc8138f9d44c94d69f4c8352488b3021\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8a82090ee8fb6aa0f850fb5d7e98bc0bf834755a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sohum Mehrotra\.android\build-cache\0c86e668cbc65d150796ea65b0ff42932446fe88\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e6c0aa35e53d3daab0a53f15f1b24176569858f">
+        <dex dex="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_63100884ff1df6a657179db21c9de2571bed1dca\classes.dex" />
     </item>
 
 </items>

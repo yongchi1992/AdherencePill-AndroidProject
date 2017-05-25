@@ -1,242 +1,62 @@
 [
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_search_url_text.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/color/common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b3d9f5ea40ca68dae998412f2acbd05307ba9367\\output\\res\\color\\mcv_text_date_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\1cb6cc14b860153e578de4e8b890bef2bfd9b275\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\1cb6cc14b860153e578de4e8b890bef2bfd9b275\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/color/common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/color/common_plus_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\1cb6cc14b860153e578de4e8b890bef2bfd9b275\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\03b18036fff008dc6ea723a9937d30768de08664\\output\\res\\color\\mcv_text_date_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_dark.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\243ad5f930697d8096dff0fa2d3c8f47a59776fc\\output\\res\\color\\mcv_text_date_dark.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/mcv_text_date_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/res/color/mcv_text_date_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\084855ec3d7b990b37a9208b89677a2120678b9f\\output\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\1cb6cc14b860153e578de4e8b890bef2bfd9b275\\output\\res\\color\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b3d9f5ea40ca68dae998412f2acbd05307ba9367\\output\\res\\color\\mcv_text_date_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\03b18036fff008dc6ea723a9937d30768de08664\\output\\res\\color\\mcv_text_date_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\03b18036fff008dc6ea723a9937d30768de08664\\output\\res\\color\\mcv_text_date_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/color/common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\color\\common_plus_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b3d9f5ea40ca68dae998412f2acbd05307ba9367\\output\\res\\color\\mcv_text_date_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_plus_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_plus_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_google_signin_btn_text_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/color/abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\color\\common_google_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/color/mcv_text_date_dark.xml",
-        "source": "/Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/res/color/mcv_text_date_dark.xml"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\common_google_signin_btn_text_light.xml",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\color\\mcv_text_date_light.xml",
+        "source": "C:\\Users\\Sohum Mehrotra\\.android\\build-cache\\243ad5f930697d8096dff0fa2d3c8f47a59776fc\\output\\res\\color\\mcv_text_date_light.xml"
     }
 ]

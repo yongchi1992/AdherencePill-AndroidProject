@@ -250,24 +250,27 @@ public class TableFragment extends Fragment implements View.OnClickListener {
 
                                     String prescriptionTime = entry.getKey().substring(0,2);
                                     int pTime = Integer.parseInt(prescriptionTime);
-                                    String takenCondition;
+                                    String takenCondition = "Not taken";
+                                    if(eaten == 3){
+                                        takenCondition = "Taken";
+                                    }
                                     if(pTime >= 6 && pTime < 12){
                                         //Morning
-                                        morning.add("Not taken");
+                                        morning.add(takenCondition);
                                         afternoon.add("Not necessary");
                                         night.add("Not necessary");
                                     }
                                     else if(pTime >= 12 && pTime < 18){
                                         //Afternoon
                                         morning.add("Not necessary");
-                                        afternoon.add("Not taken");
+                                        afternoon.add(takenCondition);
                                         night.add("Not necessary");
                                     }
                                     else{
                                         //Night
                                         morning.add("Not necessary");
                                         afternoon.add("Not necessary");
-                                        night.add("Not taken");
+                                        night.add(takenCondition);
                                     }
 
                                     Log.d("flag.size:",flag.size()+"");
