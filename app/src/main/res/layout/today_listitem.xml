@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/ListTitle"
-
+        android:background="@drawable/pill_button"
         android:id="@+id/pill_name"
         android:onClick="onClick"
         android:clickable="true"/>
@@ -18,7 +18,8 @@
         android:text="time: amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pill_name"
+        android:layout_below="@+id/pill_name"
+        android:background="@drawable/pill_button"
         android:id="@+id/time_amount"
         android:onClick="onClick"
         android:clickable="true"/>
@@ -28,12 +29,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pill_name2"
-
+        android:background="@drawable/pill_button"
         android:onClick="onClick"
         android:clickable="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/pill_name"/>
+        android:layout_toRightOf="@+id/pill_name"/>
 
 
 
