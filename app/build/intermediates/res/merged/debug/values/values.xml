@@ -349,6 +349,8 @@
     <string name="adc_value_title">ADC:</string>
     <string name="app_name">Adherence</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="arg_section_number">section_number</string>
+    <string name="arg_section_token">session_token</string>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <string name="ble_unsupported_msg">This device does not support bluetooth!</string>
@@ -425,6 +427,7 @@
     <string name="title_section1">Today</string>
     <string name="title_section2">Medication</string>
     <string name="title_section3">Calendar</string>
+    <string name="title_section4">Table</string>
     <string name="update">update</string>
     <string name="update_button_text">Read Values</string>
     <string name="version_heading">Adherence Pill </string>
