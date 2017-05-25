@@ -9,6 +9,10 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -67,6 +71,8 @@ public class NextActivity extends AppCompatActivity
 
     private String startDate;
     private List<String> createAt;
+
+//    private SensorManager sensorMgr;
 //
 //    private ListView listView;
 //    private ArrayAdapter<String>arrayAdapter;
@@ -76,6 +82,9 @@ public class NextActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.next_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+//        sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
+//        sensorMgr.unregisterListener(this);
 
         ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
@@ -453,4 +462,5 @@ public class NextActivity extends AppCompatActivity
 
 
     }
+
 }
