@@ -90,6 +90,7 @@ public class TableListAdapter extends RecyclerView.Adapter<TableListAdapter.View
         }else if(flag.get(position)==2) {
             //not have pills in time
             holder.getTimeAmount().setTextColor(Color.RED);
+
         }
         else{
             //have pills in time

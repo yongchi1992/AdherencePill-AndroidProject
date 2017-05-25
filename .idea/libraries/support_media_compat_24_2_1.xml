@@ -1,9 +1,15 @@
 <component name="libraryTable">
   <library name="support-media-compat-24.2.1">
     <CLASSES>
+<<<<<<< Updated upstream
       <root url="file://$USER_HOME$/.android/build-cache/2f702acc900f8d609e90f53b2b3d3c2eea9bf542/output/res" />
       <root url="jar://$USER_HOME$/.android/build-cache/2f702acc900f8d609e90f53b2b3d3c2eea9bf542/output/jars/classes.jar!/" />
       <root url="jar://$USER_HOME$/.android/build-cache/2f702acc900f8d609e90f53b2b3d3c2eea9bf542/output/jars/libs/internal_impl-24.2.1.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.android/build-cache/e46eca62b9f8ba71c00776b173a9f88d27e5c870/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e46eca62b9f8ba71c00776b173a9f88d27e5c870/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e46eca62b9f8ba71c00776b173a9f88d27e5c870/output/jars/libs/internal_impl-24.2.1.jar!/" />
+>>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES>

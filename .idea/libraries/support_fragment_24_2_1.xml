@@ -1,9 +1,15 @@
 <component name="libraryTable">
   <library name="support-fragment-24.2.1">
     <CLASSES>
+<<<<<<< Updated upstream
       <root url="jar://$USER_HOME$/.android/build-cache/7ce00aa26c5d6a1b32f202f430222ea8f3d51052/output/jars/libs/internal_impl-24.2.1.jar!/" />
       <root url="jar://$USER_HOME$/.android/build-cache/7ce00aa26c5d6a1b32f202f430222ea8f3d51052/output/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.android/build-cache/7ce00aa26c5d6a1b32f202f430222ea8f3d51052/output/res" />
+=======
+      <root url="jar://$USER_HOME$/.android/build-cache/87a9050bfc3a8b7d66dcca7d38cd95c6d01bc607/output/jars/libs/internal_impl-24.2.1.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/87a9050bfc3a8b7d66dcca7d38cd95c6d01bc607/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/87a9050bfc3a8b7d66dcca7d38cd95c6d01bc607/output/jars/classes.jar!/" />
+>>>>>>> Stashed changes
     </CLASSES>
     <JAVADOC />
     <SOURCES>

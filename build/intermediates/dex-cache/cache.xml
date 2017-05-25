@@ -3,6 +3,7 @@
 
     <item
         is-multidex="true"
+<<<<<<< Updated upstream
         jar="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
@@ -36,6 +37,32 @@
         revision="25.0.0"
         sha1="9e6c0aa35e53d3daab0a53f15f1b24176569858f">
         <dex dex="C:\Users\Sohum Mehrotra\Desktop\Summer\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_63100884ff1df6a657179db21c9de2571bed1dca\classes.dex" />
+=======
+        jar="C:\Users\dauphin\Dropbox\Platforms\AndroidStudio\ADP\ADP_Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\dauphin\Dropbox\Platforms\AndroidStudio\ADP\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d4909079b5cb36ba0626d316b657ca6df744caee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dauphin\.android\build-cache\27bed5be1a75955fd5a00b22c011944e35c6544c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93eb8e6b2424135c50f2dfccb117a9611a2a6f3c">
+        <dex dex="C:\Users\dauphin\Dropbox\Platforms\AndroidStudio\ADP\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bafef79debc987351f687d70408548404b4419b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dauphin\Dropbox\Platforms\AndroidStudio\ADP\ADP_Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1132ffee4f8b908fd3bd9b5f1eecf83cc721881a">
+        <dex dex="C:\Users\dauphin\Dropbox\Platforms\AndroidStudio\ADP\ADP_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9bcbf492962e801c7faf1916386caa6c249aa94d\classes.dex" />
+>>>>>>> Stashed changes
     </item>
 
 </items>

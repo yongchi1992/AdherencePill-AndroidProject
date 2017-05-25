@@ -37,9 +37,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.adherence.adherence.MainActivity" >
+        <activity
+            android:name="com.adherence.adherence.MainActivity"
+            android:configChanges="orientation|keyboardHidden" >
         </activity>
-        <activity android:name="com.adherence.adherence.NextActivity" >
+        <activity
+            android:name="com.adherence.adherence.NextActivity"
+            android:configChanges="orientation|keyboardHidden" >
         </activity>
 
         <receiver android:name="com.adherence.adherence.NotificationReceiver" />
