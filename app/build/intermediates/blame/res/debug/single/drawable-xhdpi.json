@@ -1,123 +1,423 @@
 [
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_pressed_holo_dark.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_commit_search_api_mtrl_alpha.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
         "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_full_open_on_phone.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_full_open_on_phone.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_pressed_holo_light.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_full_open_on_phone.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_focused.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_focused.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_full_open_on_phone.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_text_cursor_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_text_cursor_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_drawer.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/res/drawable-xhdpi/ic_drawer.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_full_open_on_phone.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_normal.9.png",
@@ -132,56 +432,672 @@
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_rating_star_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_clear_mtrl_alpha.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_focused.9.png",
         "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_normal.9.png",
         "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_spinner_mtrl_am_alpha.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_disabled.9.png",
         "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_focused_holo.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_pressed_holo_dark.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_full_open_on_phone.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_rating_star_on_mtrl_alpha.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_longpressed_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_longpressed_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_text_cursor_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_pressed_holo_light.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_drawer.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_focused_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_longpressed_holo.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_disabled.9.png",
@@ -192,111 +1108,95 @@
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\drawer_shadow.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\drawable-xhdpi\\drawer_shadow.9.png"
+    },
+    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/drawer_shadow.9.png",
         "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_light_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_light_focused.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_dark_disabled.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\e9c1d81306a9514c939dc1ae0383fa2d94c46f16\\output\\res\\drawable-xhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_dark_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_icon_dark_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_text_cursor_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_text_cursor_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_ic_search_api_mtrl_alpha.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_cab_background_top_mtrl_alpha.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_longpressed_holo.9.png",
         "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_drawer.png",
-        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/res/drawable-xhdpi/ic_drawer.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_google_signin_btn_text_dark_pressed.9.png"
-    },
-    {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_icon_light_pressed.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_icon_light_pressed.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_dark_pressed.9.png",
         "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png",
-        "source": "/Users/dauphin/.android/build-cache/3359a16802abbb1fb6352bfd7b63b9b7f3ad6906/output/res/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\2d28f37dbb14807c3e4d2177e47c952453bd5131\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_focused_holo.9.png",
-        "source": "/Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/res/drawable-xhdpi/abc_list_focused_holo.9.png"
+        "merged": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\C:\\Users\\dauphin\\.android\\build-cache\\3359a16802abbb1fb6352bfd7b63b9b7f3ad6906\\output\\res\\drawable-xhdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
     }
 ]

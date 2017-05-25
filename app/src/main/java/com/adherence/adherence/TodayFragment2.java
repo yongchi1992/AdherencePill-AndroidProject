@@ -80,6 +80,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
      */
     private static final String ARG_SESSION_TOKEN="session_token";
 
+
     private String sessionToken;
 
     public static TodayFragment2 newInstance(String sessionToken,int sectionNumber) {
@@ -269,7 +270,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                         }
                     });
                 }
-
             }
         }, new Response.ErrorListener() {
             @Override

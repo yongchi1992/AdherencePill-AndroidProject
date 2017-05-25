@@ -625,7 +625,7 @@ int id Lipitor 0x7f0d008c
 int id PillList 0x7f0d00a4
 int id Truvada 0x7f0d008a
 int id action0 0x7f0d00b0
-int id action_about 0x7f0d00cc
+int id action_about 0x7f0d00cd
 int id action_bar 0x7f0d0071
 int id action_bar_activity_content 0x7f0d0000
 int id action_bar_container 0x7f0d0070
@@ -650,7 +650,7 @@ int id app_name 0x7f0d0081
 int id auto 0x7f0d0047
 int id autobutton 0x7f0d0092
 int id beginning 0x7f0d002a
-int id bluetooth 0x7f0d00cb
+int id bluetooth 0x7f0d00cc
 int id bottom 0x7f0d001b
 int id buttonPanel 0x7f0d0067
 int id button_scan 0x7f0d008e
@@ -724,7 +724,7 @@ int id listMode 0x7f0d000b
 int id listView 0x7f0d0090
 int id list_item 0x7f0d005b
 int id logo 0x7f0d0080
-int id logout 0x7f0d00c9
+int id logout 0x7f0d00ca
 int id m_day 0x7f0d00c6
 int id matCal 0x7f0d00a0
 int id match_parent 0x7f0d0033
@@ -748,6 +748,7 @@ int id parallax 0x7f0d0019
 int id parentPanel 0x7f0d005e
 int id pill_count 0x7f0d00be
 int id pill_name 0x7f0d00bf
+int id pill_name2 0x7f0d00c9
 int id pin 0x7f0d001a
 int id pop_instruction 0x7f0d00c2
 int id pop_pillinfo 0x7f0d00c1
@@ -814,7 +815,7 @@ int id top 0x7f0d0028
 int id topPanel 0x7f0d005f
 int id tuesday 0x7f0d0039
 int id up 0x7f0d0009
-int id update 0x7f0d00ca
+int id update 0x7f0d00cb
 int id useLogo 0x7f0d0014
 int id username 0x7f0d0084
 int id vertical 0x7f0d003e

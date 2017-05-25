@@ -15,10 +15,12 @@ ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/sr
 		INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.parse:parse-android:1.15.7] /Users/dauphin/.android/build-cache/446b84912e4f37cb7e20fda7e80977c3a7ffd740/output/AndroidManifest.xml:19:5-67
 	android:name
 		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.parse:parse-android:1.15.7] /Users/dauphin/.android/build-cache/446b84912e4f37cb7e20fda7e80977c3a7ffd740/output/AndroidManifest.xml:20:5-79
 	android:name
 		ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.WAKE_LOCK
@@ -45,7 +47,7 @@ ADDED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/sr
 MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:design:22.2.0] /Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/AndroidManifest.xml:22:5-20
-MERGED from [com.parse:parse-android:1.15.6] /Users/dauphin/.android/build-cache/47b8525934318424ec8176f3f88af913d145f8b8/output/AndroidManifest.xml:20:5-20
+MERGED from [com.parse:parse-android:1.15.7] /Users/dauphin/.android/build-cache/446b84912e4f37cb7e20fda7e80977c3a7ffd740/output/AndroidManifest.xml:22:5-20
 MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/AndroidManifest.xml:12:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/dauphin/.android/build-cache/63287158bda3d4285c7c648de57d2da4e2deab4d/output/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/dauphin/.android/build-cache/ff6131584e1ea8f6269b308d10d833057f688565/output/AndroidManifest.xml:19:5-20
@@ -151,7 +153,7 @@ INJECTED from /Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app
 MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/dauphin/.android/build-cache/4e8d22cd721124ec71917af3a56a5f2235324e22/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:22.2.0] /Users/dauphin/.android/build-cache/76d3cf20d272877708b2142c3ec9f9d1affe1ced/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/dauphin/.android/build-cache/e9c1d81306a9514c939dc1ae0383fa2d94c46f16/output/AndroidManifest.xml:20:5-43
-MERGED from [com.parse:parse-android:1.15.6] /Users/dauphin/.android/build-cache/47b8525934318424ec8176f3f88af913d145f8b8/output/AndroidManifest.xml:16:5-18:41
+MERGED from [com.parse:parse-android:1.15.7] /Users/dauphin/.android/build-cache/446b84912e4f37cb7e20fda7e80977c3a7ffd740/output/AndroidManifest.xml:15:5-17:41
 MERGED from [com.prolificinteractive:material-calendarview:1.4.2] /Users/dauphin/.android/build-cache/03b18036fff008dc6ea723a9937d30768de08664/output/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.volley:volley:1.0.0] /Users/dauphin/.android/build-cache/63287158bda3d4285c7c648de57d2da4e2deab4d/output/AndroidManifest.xml:7:5-43
 MERGED from [ADP_Android:zentri_ble:unspecified] /Users/dauphin/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/AndroidManifest.xml:25:5-27:41

@@ -5,7 +5,10 @@
 
     <TextView
         android:text="pillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         style="@style/ListTitle"
+
         android:id="@+id/pill_name"
         android:onClick="onClick"
         android:clickable="true"/>
@@ -19,6 +22,18 @@
         android:id="@+id/time_amount"
         android:onClick="onClick"
         android:clickable="true"/>
+
+    <TextView
+        android:text="p3illwah2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pill_name2"
+
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/pill_name"/>
 
 
 

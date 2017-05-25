@@ -1,7 +1,5 @@
 package com.adherence.adherence;
 
-import java.util.Date;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -30,32 +28,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import com.parse.ParseObject;
 import com.zentri.zentri_ble.BLECallbacks.ReceiveMode;
 import com.zentri.zentri_ble_command.Command;
 import com.zentri.zentri_ble_command.CommandMode;
 import com.zentri.zentri_ble_command.ErrorCode;
-import com.zentri.zentri_ble_command.GPIODirection;
-import com.zentri.zentri_ble_command.GPIOFunction;
 import com.zentri.zentri_ble_command.Result;
 import com.zentri.zentri_ble_command.ZentriOSBLEManager;
-
-
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothGatt;
-import android.bluetooth.BluetoothGattCallback;
-import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothGattService;
-import android.bluetooth.BluetoothManager;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -254,7 +239,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             }
         });
 
-        delay_while();delay_while();delay_while();delay_while();delay_while();
+//        delay_while();delay_while();delay_while();delay_while();delay_while();
         Intent ii = new Intent();
         ii.setAction(AL1);
         ii.putExtra(EXTRA_DATA, command1);

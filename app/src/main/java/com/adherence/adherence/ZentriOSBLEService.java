@@ -6,19 +6,14 @@ import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Binder;
 import android.os.Environment;
-import android.os.Handler;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
-import android.content.IntentFilter;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.RequestQueue;
@@ -26,21 +21,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
-import com.parse.FindCallback;
-import com.parse.Parse;
-import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
-import com.parse.ParseUser;
-
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-
 import com.zentri.zentri_ble_command.BLECallbacks;
 import com.zentri.zentri_ble_command.Command;
 import com.zentri.zentri_ble_command.CommandMode;
@@ -57,7 +38,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class ZentriOSBLEService extends Service implements Serializable {
@@ -266,7 +252,6 @@ public class ZentriOSBLEService extends Service implements Serializable {
                             mZentriOSBLEManager.connect(deviceName);
 
                         }
-
                     }
                 }
             }
@@ -327,6 +312,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 String info_voltage = info[4];
 
                 //push it to server
+                Log.d(TAG, "start upload");
                 ParseObject testObject1 = new ParseObject("BottleUpdates");
                 testObject1.put("Name", deviceinfo);
                 testObject1.put("timeStamp", info_time);
@@ -502,9 +488,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
                     mZentriOSBLEManager.setReceiveMode(com.zentri.zentri_ble.BLECallbacks.ReceiveMode.STRING);
                     receiveimage=1;
-
                 }
-
             }
 
             @Override

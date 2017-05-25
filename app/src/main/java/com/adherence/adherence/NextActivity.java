@@ -1,8 +1,6 @@
 package com.adherence.adherence;
 
 import android.app.AlarmManager;
-import android.app.DownloadManager;
-import android.app.Instrumentation;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,7 +10,6 @@ import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.IntegerRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
@@ -23,9 +20,6 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,7 +36,6 @@ import com.parse.ParseObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -51,7 +44,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -85,6 +77,7 @@ public class NextActivity extends AppCompatActivity
 
         ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
+//        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
 //        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
 //        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
 //        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
@@ -269,6 +262,9 @@ public class NextActivity extends AppCompatActivity
         else{
             menuItem.setEnabled(false);
         }
+
+//        TODO: delete this temporary code
+        menu.findItem(R.id.logout).setEnabled(false);
 
 //            restoreActionBar();
         return true;

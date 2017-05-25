@@ -144,8 +144,9 @@ public class MainActivity extends AppCompatActivity {
         EditText pwd = (EditText) findViewById(R.id.pwd);
         Button bt = (Button) findViewById(arg0.getId());
         String text = bt.getText().toString();
-        if (text.equals("login")) {
+//        loginParse(name, pwd);
 
+        if (text.equals("login")) {
             loginParse(name,pwd);
         }
         else{
@@ -161,8 +162,12 @@ public class MainActivity extends AppCompatActivity {
         String url = "http://129.105.36.93:5000/login";
 
         Map<String, String> map = new HashMap<>();
-        map.put("username", name.getText().toString());
-        map.put("password", password.getText().toString());
+//        map.put("username", name.getText().toString());
+//        map.put("password", password.getText().toString());
+
+        map.put("username", "1@1");
+        map.put("password", "1");
+
         JSONObject jsonObject = new JSONObject(map);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, jsonObject,
                 new Response.Listener<JSONObject>() {
@@ -176,7 +181,8 @@ public class MainActivity extends AppCompatActivity {
                             SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
                             SharedPreferences.Editor editor=data.edit();
                             editor.putString("sessionToken",sessionToken);
-                            editor.putString("username",name.getText().toString());
+//                            editor.putString("username",name.getText().toString());
+                            editor.putString("username","1@1");
                             Intent intent=new Intent();
 //                            intent.putExtra("sessionToken",sessionToken);
 //                            intent.putExtra("username",name.getText().toString());
@@ -188,8 +194,6 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                             Log.d("res","get token wrong!");
                         }
-
-
                     }
                 },
                 new Response.ErrorListener() {
