@@ -20,6 +20,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -74,6 +75,7 @@ public class NextActivity extends AppCompatActivity
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.next_main);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
