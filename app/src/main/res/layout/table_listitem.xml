@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MedicineList"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="pillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListTitle"
+        android:id="@+id/pill_name"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        style="@style/ListSecondaryTitle"
+        android:text="time: amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pill_name"
+        android:id="@+id/time_amount"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListTitle"
+        android:id="@+id/morning"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/pill_name"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListTitle"
+        android:id="@+id/afternoon"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/morning"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:text="night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ListTitle"
+        android:id="@+id/night"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/afternoon"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+</RelativeLayout>
