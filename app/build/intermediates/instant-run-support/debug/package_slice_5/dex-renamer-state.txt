@@ -1,9 +1,0 @@
-<<<<<<< Updated upstream
-#Thu May 25 13:45:36 CDT 2017
-base.0=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5
-=======
-#Thu May 25 13:40:20 CDT 2017
-base.0=C\:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5
->>>>>>> Stashed changes
-renamed.0=classes.dex
-file.0=C\:\\Users\\Sohum Mehrotra\\Desktop\\Summer\\ADP_Android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5\\classes.dex

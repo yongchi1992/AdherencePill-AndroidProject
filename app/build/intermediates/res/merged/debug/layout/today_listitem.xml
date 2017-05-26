@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/MedicineList" android:background="@drawable/prescription_button"
+    style="@style/MedicineList" android:background="@drawable/prescription_button_nottaken"
+    android:id="@+id/pill_layout"
     android:orientation="vertical">
-    android:background=
-
 
     <TextView
         android:text="pillName"

@@ -1,13 +1,8 @@
 <component name="libraryTable">
   <library name="zentri_ble-unspecified">
     <CLASSES>
-<<<<<<< Updated upstream
-      <root url="file://$USER_HOME$/.android/build-cache/0c86e668cbc65d150796ea65b0ff42932446fe88/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/0c86e668cbc65d150796ea65b0ff42932446fe88/output/jars/classes.jar!/" />
-=======
-      <root url="file://$USER_HOME$/.android/build-cache/07dc464345b3eaa50ffb87fe72c22cfe956aff77/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/07dc464345b3eaa50ffb87fe72c22cfe956aff77/output/jars/classes.jar!/" />
->>>>>>> Stashed changes
+      <root url="file://$USER_HOME$/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/96a6466bff0765de2dc0944c63dcf25f17076f73/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

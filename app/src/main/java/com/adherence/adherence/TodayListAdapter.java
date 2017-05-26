@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         public View listRootView;
         private TextView pillName;
         private TextView time_amount;
+        private RelativeLayout pillLayout;
 
 
         public TextView getPillName(){
@@ -39,12 +41,15 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         public TextView getTimeAmount(){
             return time_amount;
         }
+        public RelativeLayout getLayout() { return pillLayout; }
+
 
         public ViewHolder(View itemView) {
             super(itemView);
             listRootView=itemView;
             pillName= (TextView) itemView.findViewById(R.id.pill_name);
             time_amount= (TextView) itemView.findViewById(R.id.time_amount);
+            pillLayout = (RelativeLayout) itemView.findViewById(R.id.pill_layout);
         }
     }
 
@@ -67,16 +72,22 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         holder.getTimeAmount().setText(time_amount.get(position));
         //flag==1, not arrive time
         if(flag.get(position)==1){
-            holder.getTimeAmount().setTextColor(Color.BLACK);
+
+//            holder.getTimeAmount().setTextColor(Color.BLACK);
+
 
         }else if(flag.get(position)==2) {
             //not have pills in time
-            holder.getTimeAmount().setTextColor(Color.RED);
+//            holder.getTimeAmount().setTextColor(Color.RED);
 
+            holder.getLayout().setBackgroundResource(R.drawable.prescription_button_nottaken);
         }
         else{
             //have pills in time
-            holder.getTimeAmount().setTextColor(Color.parseColor("#01a532"));
+//            holder.getTimeAmount().setTextColor(Color.parseColor("#01a532"));
+//            holder.getLayout().setBackgroundColor(Color.GREEN);
+            holder.getLayout().setBackgroundResource(R.drawable.prescription_button);
+//            holder.getLayout().setBackgroundResource(R.drawable.prescription_button_nottaken);
         }
     }
 

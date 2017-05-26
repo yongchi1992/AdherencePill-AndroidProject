@@ -314,7 +314,8 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 //push it to server
                 Log.d(TAG, "start upload");
                 ParseObject testObject1 = new ParseObject("BottleUpdates");
-                testObject1.put("Name", deviceinfo);
+                testObject1.put("Name", "Adderal");
+//                testObject1.put("Name", deviceinfo);
                 testObject1.put("timeStamp", info_time);
                 testObject1.put("Units", info_units);
                 testObject1.put("Battery", info_battery);

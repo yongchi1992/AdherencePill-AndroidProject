@@ -83,11 +83,12 @@ public class NextActivity extends AppCompatActivity
 
         ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
-//        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
-//        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
-//        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
-//        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
-//        testdb.close();
+        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
+        SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
+        testdb.execSQL("DROP TABLE IF EXISTS DeviceTable");
+        testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
+        testdb.execSQL("REPLACE INTO DeviceTable VALUES (?)", new Object[]{tempDeviceName});
+        testdb.close();
         ///////////////////////////////2.7///////////////////////////////////////
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
