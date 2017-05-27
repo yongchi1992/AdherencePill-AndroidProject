@@ -83,7 +83,11 @@ public class NextActivity extends AppCompatActivity
 
         ///////////////////////////////2.7///////////////////////////////////////
 //        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
-        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
+        SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
+        String tempDeviceName = data.getString("bottle", null);
+//        Log.d("username", username_temp);
+
+//        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
         SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
         testdb.execSQL("DROP TABLE IF EXISTS DeviceTable");
         testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
@@ -111,8 +115,8 @@ public class NextActivity extends AppCompatActivity
         Intent intent=getIntent();
         //      sessionToken=intent.getStringExtra("sessionToken");
         //      username=intent.getStringExtra("username");
-        SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
-        sessionToken=data.getString("sessionToken","null");
+        SharedPreferences user_data=getSharedPreferences("data",MODE_PRIVATE);
+        sessionToken=user_data.getString("sessionToken","null");
         username=data.getString("username","null");
         Log.d("nextactivity session",sessionToken);
         startDate="3000-12-31";
