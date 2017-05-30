@@ -1702,7 +1702,7 @@
         ]
     },
     {
-        "outputFile": "/home/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+        "outputFile": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
         "map": [
             {
                 "to": {
@@ -1713,7 +1713,7 @@
                     "endOffset": 112
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/f1412bac6cbb0801eb9394ae20f29a472c8058e6/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\4a1588b35145e43556c801408ececf735a297315\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1733,7 +1733,7 @@
                     "endOffset": 399
                 },
                 "from": {
-                    "file": "/home/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/src/main/res/values-v21/styles.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\Dropbox\\Platforms\\AndroidStudio\\ADP\\ADP_Android\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1753,7 +1753,7 @@
                     "endOffset": 490
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1772,7 +1772,7 @@
                     "endOffset": 593
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1791,7 +1791,7 @@
                     "endOffset": 696
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1810,7 +1810,7 @@
                     "endOffset": 801
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1829,7 +1829,7 @@
                     "endOffset": 908
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1848,7 +1848,7 @@
                     "endOffset": 1017
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1867,7 +1867,7 @@
                     "endOffset": 1126
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1886,7 +1886,7 @@
                     "endOffset": 1235
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1905,7 +1905,7 @@
                     "endOffset": 1344
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1924,7 +1924,7 @@
                     "endOffset": 1453
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1943,7 +1943,7 @@
                     "endOffset": 1560
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1962,7 +1962,7 @@
                     "endOffset": 1663
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1981,7 +1981,7 @@
                     "endOffset": 1782
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -2001,7 +2001,7 @@
                     "endOffset": 1937
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -2022,7 +2022,7 @@
                     "endOffset": 2092
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -2042,7 +2042,7 @@
                     "endOffset": 2197
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -2061,7 +2061,7 @@
                     "endOffset": 2318
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -2080,7 +2080,7 @@
                     "endOffset": 2419
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -2100,7 +2100,7 @@
                     "endOffset": 2566
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -2121,7 +2121,7 @@
                     "endOffset": 2707
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -2141,7 +2141,7 @@
                     "endOffset": 2810
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -2160,7 +2160,7 @@
                     "endOffset": 2929
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -2179,7 +2179,7 @@
                     "endOffset": 3036
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -2198,7 +2198,7 @@
                     "endOffset": 3139
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -2218,7 +2218,7 @@
                     "endOffset": 3286
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -2239,7 +2239,7 @@
                     "endOffset": 3441
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -2260,7 +2260,7 @@
                     "endOffset": 3612
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -2281,7 +2281,7 @@
                     "endOffset": 3761
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -2302,7 +2302,7 @@
                     "endOffset": 3926
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -2323,7 +2323,7 @@
                     "endOffset": 4083
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -2344,7 +2344,7 @@
                     "endOffset": 4234
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -2365,7 +2365,7 @@
                     "endOffset": 4383
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -2386,7 +2386,7 @@
                     "endOffset": 4532
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -2406,7 +2406,7 @@
                     "endOffset": 4644
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -2425,7 +2425,7 @@
                     "endOffset": 4791
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -2445,7 +2445,7 @@
                     "endOffset": 4944
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
@@ -2466,7 +2466,7 @@
                     "endOffset": 5091
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -2486,7 +2486,7 @@
                     "endOffset": 5166
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 4,
@@ -2505,7 +2505,7 @@
                     "endOffset": 5255
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 4,
@@ -2524,7 +2524,7 @@
                     "endOffset": 5342
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -2543,7 +2543,7 @@
                     "endOffset": 5443
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 75,
                         "startColumn": 4,
@@ -2563,7 +2563,7 @@
                     "endOffset": 8927
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 76,
                         "startColumn": 4,
@@ -2584,7 +2584,7 @@
                     "endOffset": 9113
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 125,
                         "startColumn": 4,
@@ -2605,7 +2605,7 @@
                     "endOffset": 12609
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 128,
                         "startColumn": 4,
@@ -2626,7 +2626,7 @@
                     "endOffset": 12807
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 177,
                         "startColumn": 4,
@@ -2647,7 +2647,7 @@
                     "endOffset": 12930
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 182,
                         "startColumn": 4,
@@ -2668,7 +2668,7 @@
                     "endOffset": 13053
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 184,
                         "startColumn": 4,
@@ -2689,7 +2689,7 @@
                     "endOffset": 13166
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 186,
                         "startColumn": 4,
@@ -2710,7 +2710,7 @@
                     "endOffset": 13349
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 188,
                         "startColumn": 4,
@@ -2731,7 +2731,7 @@
                     "endOffset": 13480
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 191,
                         "startColumn": 4,
@@ -2751,7 +2751,7 @@
                     "endOffset": 13597
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 193,
                         "startColumn": 4,
@@ -2770,7 +2770,7 @@
                     "endOffset": 13686
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 194,
                         "startColumn": 4,
@@ -2789,7 +2789,7 @@
                     "endOffset": 13797
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 195,
                         "startColumn": 4,
@@ -2808,7 +2808,7 @@
                     "endOffset": 13924
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 196,
                         "startColumn": 4,
@@ -2827,7 +2827,7 @@
                     "endOffset": 14025
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 197,
                         "startColumn": 4,
@@ -2846,7 +2846,7 @@
                     "endOffset": 14120
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 198,
                         "startColumn": 4,
@@ -2865,7 +2865,7 @@
                     "endOffset": 14243
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 199,
                         "startColumn": 4,
@@ -2884,7 +2884,7 @@
                     "endOffset": 14372
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 200,
                         "startColumn": 4,
@@ -2903,7 +2903,7 @@
                     "endOffset": 14489
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 201,
                         "startColumn": 4,
@@ -2922,7 +2922,7 @@
                     "endOffset": 14582
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 202,
                         "startColumn": 4,
@@ -2942,7 +2942,7 @@
                     "endOffset": 14717
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 203,
                         "startColumn": 4,
@@ -2963,7 +2963,7 @@
                     "endOffset": 14860
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 205,
                         "startColumn": 4,
@@ -2984,7 +2984,7 @@
                     "endOffset": 14995
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 207,
                         "startColumn": 4,
@@ -3005,7 +3005,7 @@
                     "endOffset": 15114
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 209,
                         "startColumn": 4,
@@ -3026,7 +3026,7 @@
                     "endOffset": 15315
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 211,
                         "startColumn": 4,
@@ -3047,7 +3047,7 @@
                     "endOffset": 15434
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 215,
                         "startColumn": 4,
@@ -3067,7 +3067,7 @@
                     "endOffset": 15527
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 217,
                         "startColumn": 4,
@@ -3086,7 +3086,7 @@
                     "endOffset": 15638
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 218,
                         "startColumn": 4,
@@ -3105,7 +3105,7 @@
                     "endOffset": 15694
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 219,
                         "startColumn": 4,
@@ -3125,7 +3125,7 @@
                     "endOffset": 15801
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 220,
                         "startColumn": 4,
@@ -3146,7 +3146,7 @@
                     "endOffset": 15996
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 222,
                         "startColumn": 4,
@@ -3167,7 +3167,7 @@
                     "endOffset": 16107
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 226,
                         "startColumn": 4,
@@ -3188,7 +3188,7 @@
                     "endOffset": 16240
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 228,
                         "startColumn": 4,
@@ -3208,7 +3208,7 @@
                     "endOffset": 16335
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 230,
                         "startColumn": 4,
@@ -3227,7 +3227,7 @@
                     "endOffset": 16426
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 231,
                         "startColumn": 4,
@@ -3247,7 +3247,7 @@
                     "endOffset": 16735
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 232,
                         "startColumn": 4,
@@ -3267,7 +3267,7 @@
                     "endOffset": 16848
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 237,
                         "startColumn": 4,
@@ -3286,7 +3286,7 @@
                     "endOffset": 16965
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 238,
                         "startColumn": 4,
@@ -3306,7 +3306,7 @@
                     "endOffset": 17104
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 239,
                         "startColumn": 4,
@@ -3327,7 +3327,7 @@
                     "endOffset": 17457
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 243,
                         "startColumn": 4,
@@ -3348,7 +3348,7 @@
                     "endOffset": 17822
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 250,
                         "startColumn": 4,
@@ -3369,7 +3369,7 @@
                     "endOffset": 18507
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 257,
                         "startColumn": 4,
@@ -3390,7 +3390,7 @@
                     "endOffset": 19193
                 },
                 "from": {
-                    "file": "/home/dauphin/.android/build-cache/b694c5386423eac9d00a4d7408f183878f2b72e0/output/res/values-v21/values-v21.xml",
+                    "file": "/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/C:\\Users\\dauphin\\.android\\build-cache\\b9821aa24f9a1c14fdd194a3c6770efa585b6394\\output\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 267,
                         "startColumn": 4,

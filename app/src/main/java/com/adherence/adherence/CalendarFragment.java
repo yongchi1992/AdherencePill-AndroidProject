@@ -195,7 +195,7 @@ public class CalendarFragment extends Fragment {
         }
         //Query database to calclulate the real percentage every day
         mRequestQueue = Volley.newRequestQueue(getActivity());
-        String url = "http://129.105.36.93:5000/patient/prescription";
+        String url = R.string.parseURL + "/patient/prescription";
         JsonArrayRequest request = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -295,7 +295,7 @@ public class CalendarFragment extends Fragment {
                         nextDay = getSpecifiedDayAfter(nextDay);
                     }
                     //???
-                    String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId=" + prescriptions[finalK].getPrescriptionId();
+                    String prescriptReq = R.string.parseURL + "/prescription?prescriptionId=" + prescriptions[finalK].getPrescriptionId();
                     // Log.d("prescription", prescriptReq);
                     mRequestQueue.add(new JsonArrayRequest(prescriptReq, new Response.Listener<JSONArray>() {
                         @Override

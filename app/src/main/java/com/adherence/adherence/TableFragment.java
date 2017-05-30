@@ -127,7 +127,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
         }
         dayofweek.setText("This is "+mDay);
         mRequestQueue= Volley.newRequestQueue(getActivity());
-        String url="http://129.105.36.93:5000/patient/prescription";
+        String url= getString(R.string.parseURL)  + "/patient/prescription";
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -178,7 +178,7 @@ public class TableFragment extends Fragment implements View.OnClickListener {
                     final int finalK = k;
                     Log.d("prescription_id : ", prescriptions[finalK].getPrescriptionId());
 
-                    String prescriptReq = "http://129.105.36.93:5000/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
+                    String prescriptReq = getString(R.string.parseURL)  + "/prescription?prescriptionId="+prescriptions[finalK].getPrescriptionId();
 
                     Log.d("prescription", prescriptReq);
                     mRequestQueue.add(new JsonArrayRequest(prescriptReq, new Response.Listener<JSONArray>() {

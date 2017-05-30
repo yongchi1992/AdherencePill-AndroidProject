@@ -409,6 +409,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="next">next</string>
     <string name="ok">OK</string>
+    <string name="parseURL">http://129.105.36.93:5000</string>
     <string name="prev">prev</string>
     <string name="previous">Go to previous</string>
     <string name="progress_message">Connecting to BLE device</string>

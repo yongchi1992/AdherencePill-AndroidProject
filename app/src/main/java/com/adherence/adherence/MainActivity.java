@@ -15,28 +15,22 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseUser;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
-import com.android.volley.*;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static android.R.attr.name;
-import static com.adherence.adherence.R.id.pwd;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -159,7 +153,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void loginParse(final EditText name, final EditText password) {
         mRequestQueue = Volley.newRequestQueue(this);
-        String url = "http://129.105.36.93:5000/login";
+
+        String url = getString(R.string.parseURL) + "/login";
 
         Map<String, String> map = new HashMap<>();
 //        map.put("username", name.getText().toString());

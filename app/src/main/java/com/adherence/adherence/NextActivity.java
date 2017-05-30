@@ -126,7 +126,7 @@ public class NextActivity extends AppCompatActivity
         traverse prescriptions to get the startDate, namely the min create date of prescription
          */
         mRequestQueue=Volley.newRequestQueue(this);
-        String url="http://129.105.36.93:5000/patient/prescription";
+        String url= getString(R.string.parseURL)  + "/patient/prescription";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -321,7 +321,7 @@ public class NextActivity extends AppCompatActivity
             //ParseObject.unpinAllInBackground("user");
             //use logout API
 
-            String url="http://129.105.36.93:5000/logout";
+            String url= getString(R.string.parseURL)  + "/logout";
             JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
@@ -383,7 +383,7 @@ public class NextActivity extends AppCompatActivity
         //override the function of back button
         if(keyCode==KeyEvent.KEYCODE_BACK){
             mRequestQueue=Volley.newRequestQueue(this);
-            String url="http://129.105.36.93:5000/logout";
+            String url= getString(R.string.parseURL)  + "/logout";
             JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {

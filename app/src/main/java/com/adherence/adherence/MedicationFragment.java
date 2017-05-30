@@ -114,7 +114,7 @@ public class MedicationFragment extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
             //mRequestQueue= Volley.newRequestQueue(getActivity());
 
-        String url="http://129.105.36.93:5000/patient/prescriptions";
+        String url= R.string.parseURL + "/patient/prescriptions";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {

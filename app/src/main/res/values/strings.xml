@@ -71,4 +71,6 @@
 
     <string name="arg_section_number">section_number</string>
     <string name="arg_section_token">session_token</string>
+
+    <string name="parseURL">http://129.105.36.93:5000</string>
 </resources>
