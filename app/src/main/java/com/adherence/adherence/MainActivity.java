@@ -173,16 +173,16 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             String sessionToken=res.getString("sessionToken");
                             Log.d("sessiontoken", sessionToken);
-                            String bottle_temp = res.getString("bottle");
-                            Log.d("code", bottle_temp);
+//                            String bottle_temp = res.getString("bottle");
+//                            Log.d("code", bottle_temp);
                             SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
                             SharedPreferences.Editor editor=data.edit();
                             editor.putString("sessionToken",sessionToken);
                             editor.putString("username",name.getText().toString());
-                            editor.putString("bottle", res.getString("bottle"));
+//                            editor.putString("bottle", "SC36-05  4C:55:CC:10:7B:12");
                             Intent intent=new Intent();
-//                            intent.putExtra("sessionToken",sessionToken);
-//                            intent.putExtra("username",name.getText().toString());
+                            intent.putExtra("sessionToken",sessionToken);
+                            intent.putExtra("username",name.getText().toString());
                             intent.setClass(MainActivity.this, NextActivity.class);
                             MainActivity.this.startActivity(intent);
 
