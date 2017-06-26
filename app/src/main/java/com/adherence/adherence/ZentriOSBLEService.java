@@ -723,7 +723,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
 
         mRequestQueue= Volley.newRequestQueue(getApplicationContext());
-        String url="http://129.105.36.93:5000/patient/prescriptions";
+        String url= getString(R.string.parseURL) + "/patient/prescriptions";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {

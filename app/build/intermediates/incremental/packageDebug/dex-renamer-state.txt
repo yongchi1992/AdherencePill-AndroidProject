@@ -1,4 +1,7 @@
-#Thu Jun 01 00:18:15 CDT 2017
-base.0=/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/dauphin/Dropbox/Platforms/AndroidStudio/ADP/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Mon Jun 26 14:31:02 CDT 2017
+base.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex
+base.1=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64
+file.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a/classes.dex

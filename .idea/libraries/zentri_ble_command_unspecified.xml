@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="zentri_ble_command-unspecified">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/f50586c36b37d31dab6cf77d913bb68a11d6ea66/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/f50586c36b37d31dab6cf77d913bb68a11d6ea66/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/c13a34b838c4d5a9c517fdd260db2bc5fc4f4a5c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c13a34b838c4d5a9c517fdd260db2bc5fc4f4a5c/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

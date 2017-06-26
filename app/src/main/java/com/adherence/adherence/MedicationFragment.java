@@ -112,9 +112,10 @@ public class MedicationFragment extends Fragment {
         mRecyclerView = (RecyclerView) rootView.findViewById(R.id.medication_list);
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-            //mRequestQueue= Volley.newRequestQueue(getActivity());
+//            mRequestQueue= Volley.newRequestQueue(getActivity());
 
-        String url= R.string.parseURL + "/patient/prescription";
+        String url= getString(R.string.parseURL) + "/patient/prescription";
+
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -132,7 +133,7 @@ public class MedicationFragment extends Fragment {
                     prescriptions[j] = new Prescription();
                     try {
                         JSONObject prescript = response.getJSONObject(j);
-                        prescriptions[j].setName(prescript.getString("prescriptionName"));
+                        prescriptions[j].setName(prescript.getString("name"));
                         if(prescript.has("bottle")){
                             if(prescript.getJSONObject("bottle").has("bottleName")){
                             prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));

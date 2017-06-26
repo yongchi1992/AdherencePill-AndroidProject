@@ -1,10 +1,10 @@
 package com.adherence.adherence;
 
-import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -33,6 +33,8 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         private TextView pillName;
         private TextView time_amount;
         private RelativeLayout pillLayout;
+        private ImageView tick;
+        private TextView pillAmount;
 
 
         public TextView getPillName(){
@@ -42,14 +44,18 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
             return time_amount;
         }
         public RelativeLayout getLayout() { return pillLayout; }
+        public ImageView getTick() {return tick;}
+//        public TextView getPillAmount() {return pillAmount;}
 
 
         public ViewHolder(View itemView) {
             super(itemView);
             listRootView=itemView;
-            pillName= (TextView) itemView.findViewById(R.id.pill_name);
+            pillName= (TextView) itemView.findViewById(R.id.pill_name3);
             time_amount= (TextView) itemView.findViewById(R.id.time_amount);
             pillLayout = (RelativeLayout) itemView.findViewById(R.id.pill_layout);
+            tick = (ImageView) itemView.findViewById(R.id.tick);
+//            pillAmount = (TextView) itemView.findViewById(R.id.pill_num);
         }
     }
 
@@ -69,7 +75,8 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
     @Override
     public void onBindViewHolder(TodayListAdapter.ViewHolder holder, int position) {
         holder.getPillName().setText(pillName.get(position));
-        holder.getTimeAmount().setText(time_amount.get(position));
+        holder.getTimeAmount().setText(time_amount.get(position).substring(0, 8));
+//        holder.getPillAmount().setText(time_amount.get(position).substring(15, 16));
         //flag==1, not arrive time
         if(flag.get(position)==1){
 
@@ -80,14 +87,19 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
             //not have pills in time
 //            holder.getTimeAmount().setTextColor(Color.RED);
 
-            holder.getLayout().setBackgroundResource(R.drawable.prescription_button_nottaken);
+            //holder.getLayout().setBackgroundResource(R.drawable.prescription_button_nottaken);
+            holder.getTick().setImageResource(R.drawable.red_cross);
+            holder.getTick().setVisibility(View.VISIBLE);
         }
         else{
             //have pills in time
 //            holder.getTimeAmount().setTextColor(Color.parseColor("#01a532"));
 //            holder.getLayout().setBackgroundColor(Color.GREEN);
-            holder.getLayout().setBackgroundResource(R.drawable.prescription_button);
+            //holder.getLayout().setBackgroundResource(R.drawable.prescription_button);
 //            holder.getLayout().setBackgroundResource(R.drawable.prescription_button_nottaken);
+            holder.getTick().setImageResource(R.drawable.green_tick);
+            holder.getTick().setVisibility(View.VISIBLE);
+
         }
     }
 

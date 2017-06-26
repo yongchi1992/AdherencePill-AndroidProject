@@ -32,6 +32,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.parse.ParseObject;
+import com.parse.SaveCallback;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -113,9 +114,9 @@ public class NextActivity extends AppCompatActivity
 
         toolbar.setTitle(mTitle);
         Intent intent=getIntent();
-        //      sessionToken=intent.getStringExtra("sessionToken");
+//        sessionToken=intent.getStringExtra("sessionToken");
         //      username=intent.getStringExtra("username");
-        SharedPreferences user_data=getSharedPreferences("data",MODE_PRIVATE);
+        SharedPreferences user_data=getSharedPreferences("user_data",MODE_PRIVATE);
         sessionToken=user_data.getString("sessionToken","null");
         username=data.getString("username","null");
         Log.d("nextactivity session",sessionToken);
@@ -213,17 +214,21 @@ public class NextActivity extends AppCompatActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
+        SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
+        sessionToken=data.getString("sessionToken","null");
+
         switch(position) {
             case 0:
-                SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
-                sessionToken=data.getString("sessionToken","null");
+
+
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, TodayFragment2.newInstance(sessionToken,position + 1))
+                        .replace(R.id.container, TodayFragment3.newInstance(sessionToken,position + 1))
                         .commit();
                 break;
             case 1:
                 String[] medicineList = getResources().getStringArray(R.array.medicine_hardcode);
                 String[] detailList = getResources().getStringArray(R.array. detail_hardcode);
+
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, MedicationFragment.newInstance(medicineList,detailList,sessionToken,position + 1))
                         .commit();
@@ -234,8 +239,8 @@ public class NextActivity extends AppCompatActivity
                         .commit();
                 break;
             case 3:
-                SharedPreferences data2=getSharedPreferences("data",MODE_PRIVATE);
-                sessionToken=data2.getString("sessionToken","null");
+//                SharedPreferences data2=getSharedPreferences("data",MODE_PRIVATE);
+//                sessionToken=data2.getString("sessionToken","null");
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, TableFragment.newInstance(sessionToken, position +1))
                         .commit();
@@ -432,6 +437,13 @@ public class NextActivity extends AppCompatActivity
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("Alert");
         alertDialog.setMessage("Are you sure to report for taking pill?");
+//        alertDialog.setNeutralButton(getResources().getString(R.string.parseURL), new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                postUpdate(today_time);
+//
+//            }
+//        });
         alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "Sure",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
@@ -442,6 +454,8 @@ public class NextActivity extends AppCompatActivity
     }
 
     protected void postUpdate(String today_time) {
+
+
 
         SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
         testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
@@ -454,8 +468,17 @@ public class NextActivity extends AppCompatActivity
             testObject1.put("Name", "Adderal");
 //            testObject1.saveEventually();
 //            testObject1.put("Name", d_name);
-            testObject1.saveEventually();
 
+            testObject1.saveEventually(new SaveCallback() {
+                @Override
+                public void done(com.parse.ParseException e) {
+                    if (e == null) {
+                        Log.d("Parse", "Successful");
+                    } else {
+                        Log.d("Parse", e.toString());
+                    }
+                }
+            });
         }
         c.close();
         testdb.close();

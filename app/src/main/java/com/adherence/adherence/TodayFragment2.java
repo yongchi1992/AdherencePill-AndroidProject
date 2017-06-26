@@ -49,17 +49,38 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     static HashMap<String, HashMap<String, String>> patient = new HashMap<String, HashMap<String, String>>();
     private HashMap<String, HashMap<String, String>> display = new HashMap<String, HashMap<String, String>>();
 
-    private RecyclerView mRecyclerView;
+    private RecyclerView mRecyclerView1;
+    private RecyclerView mRecyclerView2;
+    private RecyclerView mRecyclerView3;
+    private RecyclerView mRecyclerView4;
     private TodayListAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    private ArrayList<String> pillName;
-    private ArrayList<String> time_amount;
-    private ArrayList<Integer> flag;
+    private ArrayList<String> pillName1;
+    private ArrayList<String> time_amount1;
+    private ArrayList<Integer> flag1;
+
+    private ArrayList<String> pillName2;
+    private ArrayList<String> time_amount2;
+    private ArrayList<Integer> flag2;
+
+    private ArrayList<String> pillName3;
+    private ArrayList<String> time_amount3;
+    private ArrayList<Integer> flag3;
+
+    private ArrayList<String> pillName4;
+    private ArrayList<String> time_amount4;
+    private ArrayList<Integer> flag4;
+
     private Map<String, Integer> pillMap;
 
     private Prescription[] prescriptions;
     private RequestQueue mRequestQueue;
+
+    private ArrayList<String> prescription_morning;
+    private ArrayList<String> prescription_afternoon;
+    private ArrayList<String> prescription_evening;
+    private ArrayList<String> prescription_bedtime;
 
 
 
@@ -87,7 +108,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         TodayFragment2 fragment = new TodayFragment2();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-//        Log.d("today_frag_newinstance",sessionToken);
         args.putString(ARG_SESSION_TOKEN,sessionToken);
         fragment.setArguments(args);
 
@@ -98,14 +118,39 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.today2_fragment, container, false);
-        mRecyclerView= (RecyclerView) view.findViewById(R.id.today_schedule);
+        mRecyclerView1= (RecyclerView) view.findViewById(R.id.today_schedule);
         mLayoutManager=new LinearLayoutManager(getActivity());
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView1.setLayoutManager(mLayoutManager);
+
+        mRecyclerView2= (RecyclerView) view.findViewById(R.id.today_schedule2);
+        mLayoutManager=new LinearLayoutManager(getActivity());
+        mRecyclerView2.setLayoutManager(mLayoutManager);
+
+        mRecyclerView3= (RecyclerView) view.findViewById(R.id.today_schedule3);
+        mLayoutManager=new LinearLayoutManager(getActivity());
+        mRecyclerView3.setLayoutManager(mLayoutManager);
+
+        mRecyclerView4= (RecyclerView) view.findViewById(R.id.today_schedule4);
+        mLayoutManager=new LinearLayoutManager(getActivity());
+        mRecyclerView4.setLayoutManager(mLayoutManager);
+
+
         sessionToken=getArguments().getString(ARG_SESSION_TOKEN);
-        pillName=new ArrayList<>();
-        time_amount=new ArrayList<>();
         pillMap = new HashMap<>();
-        flag=new ArrayList<>();
+
+        pillName1=new ArrayList<>();
+        time_amount1=new ArrayList<>();
+        flag1=new ArrayList<>();
+
+        pillName2=new ArrayList<>();
+        time_amount2=new ArrayList<>();
+        flag2=new ArrayList<>();
+
+        prescription_morning = new ArrayList<>();
+        prescription_afternoon = new ArrayList<>();
+        prescription_evening = new ArrayList<>();
+        prescription_bedtime = new ArrayList<>();
+
         dayofweek= (TextView) view.findViewById(R.id.m_day);
 
         String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
@@ -122,6 +167,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         dayofweek.setText("This is "+mDay);
         mRequestQueue= Volley.newRequestQueue(getActivity());
         String url= getString(R.string.parseURL)  + "/patient/prescription";
+
         JsonArrayRequest request=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -183,7 +229,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                 String time = new SimpleDateFormat("HH:mm:ss").format(new Date());
 
                                 DateFormat df = new SimpleDateFormat("HH:mm:ss");
-//                                Date currentTime = df.parse(time + ", " + date);
                                 Date currentTime = df.parse(time);
                                 Log.d("Date:", date);
                                 Log.d("Time", time);
@@ -201,7 +246,6 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     }
 
                                 }else{
-//                                    todayList = new ArrayList<String>();
                                 }
                                 Iterator<Map.Entry<String, Integer>> itr = prescriptions[finalK].getTimeAmount(mDay).entrySet().iterator();
 
@@ -210,45 +254,51 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                                     int eaten = 1;
                                     int updatesLen = todayList.size();
 
-//                                    if ((currentTime.getTime() - df.parse(entry.getKey()).getTime()) > 0){
 
-                                        if (updatesLen == 0 && (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0)){
-                                            eaten = 2;
-                                        }else
-                                        {
-                                            for(int j = 0; j < updatesLen; j++){
-                                                long l1 = df.parse(entry.getKey()).getTime();
-                                                long l2 = df.parse(todayList.get(j)).getTime();
-                                                if(Math.abs(df.parse(entry.getKey()).getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000 * 2){
-//                                                if(Math.abs(currentTime.getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000){
-                                                    eaten = 3;
-                                                    break;
-                                                }else if (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0) {
-                                                    eaten = 2;
-                                                }
+                                    if (updatesLen == 0 && (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0)){
+                                        eaten = 2;
+                                    }else
+                                    {
+                                        for(int j = 0; j < updatesLen; j++){
+                                            long l1 = df.parse(entry.getKey()).getTime();
+                                            long l2 = df.parse(todayList.get(j)).getTime();
+                                            if(Math.abs(df.parse(entry.getKey()).getTime() - df.parse(todayList.get(j)).getTime()) <= 7200000 * 2){
+                                                eaten = 3;
+                                                break;
+                                            }else if (currentTime.getTime() - df.parse(entry.getKey()).getTime() > 0) {
+                                                eaten = 2;
                                             }
                                         }
+                                    }
 //                                    }
 
                                     String tempPillName = prescriptions[finalK].getPill();
                                     if (pillMap.containsKey(tempPillName)) eaten = Math.max(eaten, pillMap.get(tempPillName));
 
-                                    Log.d("eaten", Integer.toString(eaten));
-                                    flag.add(new Integer(eaten));
+                                    int cur_hour = Integer.parseInt(entry.getKey().substring(0, 2));
 
-                                    pillName.add(tempPillName);
                                     int amount=entry.getValue();
                                     String pill="pill";
                                     if(amount>1) pill=pill+"s";
-                                    time_amount.add(entry.getKey()+": take "+entry.getValue()+" "+pill);
+                                    String temp_time_amount = entry.getKey()+": take "+entry.getValue()+" "+pill;
 
-                                    Log.d("flag.size:",flag.size()+"");
-                                    Log.d("pillName.size:",pillName.size()+"");
-                                    if(pillName.size()==flag.size()) {
-                                        Log.d("flag.size:",flag.size()+"");
-                                        mAdapter = new TodayListAdapter(pillName, time_amount, flag);
-                                        mRecyclerView.setAdapter(mAdapter);
+                                    if (7 <= cur_hour && cur_hour < 12) {
+                                        applyAdapter(pillName1, time_amount1, flag1, tempPillName, temp_time_amount, eaten, mRecyclerView1);
                                     }
+
+                                    if (12 <= cur_hour && cur_hour < 18) {
+                                        applyAdapter(pillName2, time_amount2, flag2, tempPillName, temp_time_amount, eaten, mRecyclerView2);
+                                    }
+
+                                    if (18 <= cur_hour && cur_hour <= 24) {
+                                        applyAdapter(pillName3, time_amount3, flag3, tempPillName, temp_time_amount, eaten, mRecyclerView3);
+                                    }
+
+                                    if (0 <= cur_hour && cur_hour < 7) {
+                                        applyAdapter(pillName4, time_amount4, flag4, tempPillName, temp_time_amount, eaten, mRecyclerView4);
+                                    }
+
+
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();
@@ -288,6 +338,19 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
         return view;
 
     }
+
+
+    private void applyAdapter(ArrayList<String> pillName, ArrayList<String> time_amount, ArrayList<Integer> flag, String tempPillName, String temp_time_amount, int eaten, RecyclerView mRecyclerView) {
+        if (pillName == null || flag == null || pillName.size() != flag.size()) return;
+
+        pillName.add(tempPillName);
+        time_amount.add(temp_time_amount);
+        flag.add(eaten);
+
+        mAdapter = new TodayListAdapter(pillName, time_amount, flag);
+        mRecyclerView.setAdapter(mAdapter);
+    }
+
     //
     @Override
     public void onClick(View v) {
@@ -332,7 +395,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
             ParseObject.unpinAllInBackground("schedules");
             ParseRelation exportContactRelation = currentUser.getRelation( "Prescription" );
             //Toast.makeText(getActivity(), "exportContactRelation: " + exportContactRelation, Toast.LENGTH_LONG).show();
-           Toast.makeText(getContext(),"",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"",Toast.LENGTH_SHORT).show();
             try {
                 List<ParseObject> prescriptions = exportContactRelation.getQuery().find();
 //                Toast.makeText(getActivity(), "prescriptions: " + prescriptions, Toast.LENGTH_LONG).show();
@@ -426,7 +489,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                 if(apm.equals("pm")&&(hourtime != 12)){hourtime+=12;}
                 if(hourtime>currenthour || (hourtime == currenthour && minutetime>=currentminute)){
                     View  pillView = timeViewInflater.inflate(R.layout.pill_list_view, null);
-                    TextView pillName = (TextView) pillView.findViewById(R.id.pill_name);
+                    TextView pillName = (TextView) pillView.findViewById(R.id.pill_name3);
                     pillName.setText(key2);
                     TextView pillCount = (TextView) pillView.findViewById(R.id.pill_count);
                     pillCount.setText(display.get(key1).get(key2));
