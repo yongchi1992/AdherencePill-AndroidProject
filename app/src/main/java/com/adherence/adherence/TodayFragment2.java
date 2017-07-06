@@ -489,7 +489,7 @@ public class TodayFragment2 extends Fragment implements View.OnClickListener {
                 if(apm.equals("pm")&&(hourtime != 12)){hourtime+=12;}
                 if(hourtime>currenthour || (hourtime == currenthour && minutetime>=currentminute)){
                     View  pillView = timeViewInflater.inflate(R.layout.pill_list_view, null);
-                    TextView pillName = (TextView) pillView.findViewById(R.id.pill_name3);
+                    TextView pillName = (TextView) pillView.findViewById(R.id.pill_name4);
                     pillName.setText(key2);
                     TextView pillCount = (TextView) pillView.findViewById(R.id.pill_count);
                     pillCount.setText(display.get(key1).get(key2));

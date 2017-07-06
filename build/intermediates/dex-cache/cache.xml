@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/sam/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.13.0_352a6155bc3b9ed1b8384e5f59183463576d03f9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/sam/GitHub/ADP_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/jars/classes.jar"
+        jar="/Users/sam/GitHub/ADP_Android/app/libs/AndroidSwipeLayout-v1.1.8.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9e6c0aa35e53d3daab0a53f15f1b24176569858f">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9db4d2f5f2e63ba84645df71af4ba74a9b9c162/classes.dex" />
+        sha1="c092dd2f2bdea6c04c5bf4122db66cb3495a3c35">
+        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/AndroidSwipeLayout-v1.1.8_868f84d81b14540a5ea01fd75336c466b7969506/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -34,35 +25,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5a442a0ca732810b30f225372631e082bd9f86b1">
+        sha1="6b855e6b244fcc66a6d8e26b81167dcab1c3cb9e">
         <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sam/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.8.0_8704665d08eb1fc1d6e6523d970b1271229c9ed9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sam/.android/build-cache/c13a34b838c4d5a9c517fdd260db2bc5fc4f4a5c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4d34e116b24748a585f3c1612aa123a46f161006">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3b0a2f8d18bb23238596d0cdf6bebe43ae1751c4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sam/.android/build-cache/f059d07ed8ffb7c8d1dc627f5c2ee956e59987a6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="83c0b2c13a1736fcf8d25f8d5e05976c87142d44">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5477d9ce5cccc3a8b1fe3a40bb18cb55e3c5496a/classes.dex" />
     </item>
 
 </items>

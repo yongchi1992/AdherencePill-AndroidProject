@@ -46,6 +46,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -67,7 +68,9 @@ public class MedicationFragment extends Fragment {
 
     private String[] medicineListHardcode;
     private String[] detailListHardcode;
+    private String[] timeListHardcode;
     private String sessionToken;
+    private String mDay;
 
     private Context mContext=null;
 
@@ -77,6 +80,8 @@ public class MedicationFragment extends Fragment {
 
     private Prescription[] prescriptions;
     private static RequestQueue mRequestQueue;
+
+    public Calendar c = Calendar.getInstance();
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -114,6 +119,18 @@ public class MedicationFragment extends Fragment {
         mRecyclerView.setLayoutManager(mLayoutManager);
 //            mRequestQueue= Volley.newRequestQueue(getActivity());
 
+        String int_day=String.valueOf(c.get(c.DAY_OF_WEEK));
+        switch (int_day){
+            case "1":mDay="Sunday";break;
+            case "2":mDay="Monday";break;
+            case "3":mDay="Tuesday";break;
+            case "4":mDay="Wednesday";break;
+            case "5":mDay="Thursday";break;
+            case "6":mDay="Friday";break;
+            case "7":mDay="Saturday";break;
+            default:mDay="Sunday";break;
+        }
+
         String url= getString(R.string.parseURL) + "/patient/prescription";
 
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
@@ -125,6 +142,7 @@ public class MedicationFragment extends Fragment {
                 int i = response.length();
                 medicineListHardcode=new String[i];
                 detailListHardcode=new String[i];
+                timeListHardcode = new String[i];
 
 
 
@@ -202,9 +220,51 @@ public class MedicationFragment extends Fragment {
                     Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
                     while(itr.hasNext()){
                         Map.Entry<String, Integer> entry = itr.next();
-                        System.out.println(entry.getKey());
-                        System.out.println(entry.getValue());
+                        int cur_hour = Integer.parseInt(entry.getKey().substring(0, 2));
+
+
+
+                        if (7 <= cur_hour && cur_hour < 12) {
+                            if (timeListHardcode[j] == null) {
+                                timeListHardcode[j] = "Morning" + "\n";
+                            }else {
+                                timeListHardcode[j] += "Morning" + "\n";
+                            }
+                        }
+
+                        if (12 <= cur_hour && cur_hour < 18) {
+                            if (timeListHardcode[j] == null) {
+                                timeListHardcode[j] = "Afternoon" + "\n";
+                            }else {
+                                timeListHardcode[j] += "Afternoon" + "\n";
+                            }
+                        }
+
+                        if (18 <= cur_hour && cur_hour <= 24) {
+                            if (timeListHardcode[j] == null) {
+                                timeListHardcode[j] = "Evening" + "\n";
+                            }else {
+                                timeListHardcode[j] += "Evening" + "\n";
+                            }
+                        }
+
+                        if (0 <= cur_hour && cur_hour < 7) {
+                            if (timeListHardcode[j] == null) {
+                                timeListHardcode[j] = "Bedtime" + "\n";
+                            }else {
+                                timeListHardcode[j] += "Bedtime" + "\n";
+                            }
+                        }
+
+                        timeListHardcode[j].trim();
+                        Log.d("row", Integer.toString(j));
+                        Log.d("time string", timeListHardcode[j]);
+
+//                        Log.d("medic day", entry.getKey());
+//                        Log.d("medic amount", entry.getValue().toString());
                     }
+//                    Log.d("test time", timeListHardcode);
+
 
 
                     //traverse with Map.Entry
@@ -230,7 +290,7 @@ public class MedicationFragment extends Fragment {
                 }
 
 
-                mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
+                mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode, timeListHardcode);
                 mRecyclerView.setAdapter(mAdapter);
 
 

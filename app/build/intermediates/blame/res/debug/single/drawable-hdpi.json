@@ -152,12 +152,12 @@
         "source": "/Users/sam/.android/build-cache/29044f68ee494242a90cc5eae0f100b85a662e60/output/res/drawable-hdpi/common_plus_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_drawer.png",
-        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable-hdpi/ic_drawer.png"
-    },
-    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/common_google_signin_btn_icon_dark_pressed.9.png",
         "source": "/Users/sam/.android/build-cache/29044f68ee494242a90cc5eae0f100b85a662e60/output/res/drawable-hdpi/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/ic_drawer.png",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable-hdpi/ic_drawer.png"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-hdpi/abc_popup_background_mtrl_mult.9.png",

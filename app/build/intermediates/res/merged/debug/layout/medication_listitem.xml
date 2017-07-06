@@ -23,8 +23,10 @@
     <TextView
         android:id="@+id/medicine_name"
         style="@style/ListTitle"
+        android:layout_alignTop="@+id/medicine_image"
         android:layout_marginLeft="5dp"
         android:layout_toEndOf="@+id/medicine_image"
+        android:layout_toLeftOf="@+id/time"
         android:padding="2dp"
         android:text="Pill Name"
         android:textStyle="bold" />
@@ -33,12 +35,25 @@
     <TextView
         android:id="@+id/medicine_detail"
         style="@style/ListSecondaryTitle"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/medicine_name"
+        android:layout_below="@+id/medicine_name"
         android:layout_marginLeft="5dp"
         android:layout_toEndOf="@+id/medicine_image"
+        android:layout_toLeftOf="@+id/time"
         android:padding="2dp"
         android:text="Note" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/medicine_image"
+        android:gravity="top|right"
+        android:inputType="textMultiLine"
+        android:textAlignment="textEnd"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/medicine_detail" />
 
 </RelativeLayout>

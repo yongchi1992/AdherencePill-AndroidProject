@@ -44,7 +44,6 @@ MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache
 		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:13:9-53
 application
 ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:16:5-88:19
-MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/.android/build-cache/efd73418dc0a5690bc37e878efa22f05d874b001/output/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:design:22.2.0] /Users/sam/.android/build-cache/7fd821fa81dfdac940031cb59012d8cb7549c501/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/AndroidManifest.xml:22:5-20
 MERGED from [com.parse:parse-android:1.15.8] /Users/sam/.android/build-cache/f059d07ed8ffb7c8d1dc627f5c2ee956e59987a6/output/AndroidManifest.xml:22:5-20
@@ -154,7 +153,7 @@ ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:83:17-
 		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:83:25-60
 uses-sdk
 INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/.android/build-cache/efd73418dc0a5690bc37e878efa22f05d874b001/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:22.2.0] /Users/sam/.android/build-cache/96dd99786bed160f0e94e3830c9686c22f0b8bb3/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:22.2.0] /Users/sam/.android/build-cache/7fd821fa81dfdac940031cb59012d8cb7549c501/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/AndroidManifest.xml:20:5-43
 MERGED from [com.parse:parse-android:1.15.8] /Users/sam/.android/build-cache/f059d07ed8ffb7c8d1dc627f5c2ee956e59987a6/output/AndroidManifest.xml:15:5-17:41
@@ -179,12 +178,6 @@ MERGED from [com.android.support:support-compat:24.2.1] /Users/sam/.android/buil
 	android:minSdkVersion
 		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
-activity#android.support.v7.widget.TestActivity
-ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/.android/build-cache/efd73418dc0a5690bc37e878efa22f05d874b001/output/AndroidManifest.xml:23:9-25:56
-	android:label
-		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/.android/build-cache/efd73418dc0a5690bc37e878efa22f05d874b001/output/AndroidManifest.xml:25:13-53
-	android:name
-		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/sam/.android/build-cache/efd73418dc0a5690bc37e878efa22f05d874b001/output/AndroidManifest.xml:24:13-66
 uses-permission#android.permission.BLUETOOTH
 ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:29:5-68
 	android:name

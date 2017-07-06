@@ -51,7 +51,7 @@ public class TodayListAdapter extends RecyclerView.Adapter<TodayListAdapter.View
         public ViewHolder(View itemView) {
             super(itemView);
             listRootView=itemView;
-            pillName= (TextView) itemView.findViewById(R.id.pill_name3);
+            pillName= (TextView) itemView.findViewById(R.id.pill_name4);
             time_amount= (TextView) itemView.findViewById(R.id.time_amount);
             pillLayout = (RelativeLayout) itemView.findViewById(R.id.pill_layout);
             tick = (ImageView) itemView.findViewById(R.id.tick);

@@ -14,6 +14,7 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
 
     private String[] medicineListHardcode;
     private String[] detailListHardcode;
+    private String[] timeListHardcode;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public View listRootView;
@@ -23,10 +24,12 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
         }
         public TextView getMedicineDetail() {return medicineDetail; }
         public ImageView getMedicineImage() {return medicineImage; }
+        public TextView getTime() {return time;}
 
         private TextView medicineName;
         private TextView medicineDetail;
         private ImageView medicineImage;
+        private TextView time;
 
 
         public ViewHolder(View v1) {
@@ -35,13 +38,15 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
             medicineName = (TextView) v1.findViewById(R.id.medicine_name);
             medicineDetail = (TextView) v1.findViewById(R.id.medicine_detail);
             medicineImage = (ImageView) v1.findViewById(R.id.medicine_image);
+            time = (TextView) v1.findViewById(R.id.time);
 
         }
     }
 
-    public MedicationListAdapter(String[] hardCode, String[] detailCode) {
+    public MedicationListAdapter(String[] hardCode, String[] detailCode, String[] time) {
         medicineListHardcode = hardCode;
         detailListHardcode = detailCode;
+        timeListHardcode = time;
     }
 
     @Override
@@ -55,6 +60,8 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
     public void onBindViewHolder(MedicationListAdapter.ViewHolder vh, int position) {
         vh.getMedicineName().setText(medicineListHardcode[position]);
         vh.getMedicineDetail().setText(detailListHardcode[position]);
+        vh.getTime().setText(timeListHardcode[position]);
+//        vh.getTime().setText("morning \n afternoon \n night \n bedtime");
 
     }
 

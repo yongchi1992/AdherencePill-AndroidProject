@@ -222,7 +222,7 @@ public class NextActivity extends AppCompatActivity
 
 
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, TodayFragment3.newInstance(sessionToken,position + 1))
+                        .replace(R.id.container, TodayFragment4.newInstance(sessionToken,position + 1))
                         .commit();
                 break;
             case 1:
@@ -419,16 +419,16 @@ public class NextActivity extends AppCompatActivity
 
     public void onClick(View v) throws ParseException {
 
-        TextView tv = (TextView)v;
-        String time_amount = tv.getText().toString();
-        String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
-        String time = time_amount.substring(0, 8);
-            DateFormat df = new SimpleDateFormat("HH:mm:ss");
-            Date currentTime = df.parse(time);
-//        String today_time = new SimpleDateFormat("HH:mm:ss").format(time);
-
-        String today_time = time + ", " + date;
-        fireDialog(today_time);
+//        TextView tv = (TextView)v;
+//        String time_amount = tv.getText().toString();
+//        String date = new SimpleDateFormat("MM/dd/yy").format(new Date());
+//        String time = time_amount.substring(0, 8);
+//            DateFormat df = new SimpleDateFormat("HH:mm:ss");
+//            Date currentTime = df.parse(time);
+////        String today_time = new SimpleDateFormat("HH:mm:ss").format(time);
+//
+//        String today_time = time + ", " + date;
+//        fireDialog(today_time);
 
     }
 

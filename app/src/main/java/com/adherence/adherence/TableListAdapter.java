@@ -50,7 +50,7 @@ public class TableListAdapter extends RecyclerView.Adapter<TableListAdapter.View
         public ViewHolder(View itemView) {
             super(itemView);
             listRootView=itemView;
-            pillName= (TextView) itemView.findViewById(R.id.pill_name3);
+            pillName= (TextView) itemView.findViewById(R.id.pill_name4);
             time_amount= (TextView) itemView.findViewById(R.id.time_amount);
             morning = (TextView) itemView.findViewById(R.id.morning);
             afternoon = (TextView) itemView.findViewById(R.id.afternoon);
