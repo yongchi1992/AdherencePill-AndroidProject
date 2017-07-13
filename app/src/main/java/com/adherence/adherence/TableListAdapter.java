@@ -52,7 +52,7 @@ public class TableListAdapter extends RecyclerView.Adapter<TableListAdapter.View
             listRootView=itemView;
             pillName= (TextView) itemView.findViewById(R.id.pill_name4);
             time_amount= (TextView) itemView.findViewById(R.id.time_amount);
-            morning = (TextView) itemView.findViewById(R.id.morning);
+            morning = (TextView) itemView.findViewById(R.id.morning_text);
             afternoon = (TextView) itemView.findViewById(R.id.afternoon);
             night = (TextView) itemView.findViewById(R.id.night);
         }

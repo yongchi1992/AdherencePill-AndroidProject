@@ -22,7 +22,7 @@
         android:visibility="visible">
 
         <TextView
-            android:id="@+id/morning"
+            android:id="@+id/morning_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Morning"
@@ -32,7 +32,7 @@
             android:id="@+id/today_schedule"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/morning"
+            android:layout_below="@+id/morning_text"
             android:layout_weight="0.5"
             android:scrollbars="vertical" />
     </RelativeLayout>

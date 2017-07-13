@@ -1,4 +1,4 @@
-#Thu Jul 06 10:24:21 CDT 2017
+#Tue Jul 11 17:29:04 CDT 2017
 base.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a
 renamed.1=classes.dex
 renamed.0=classes2.dex

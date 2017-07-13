@@ -272,12 +272,20 @@
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/today_listitem4.xml"
     },
     {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/test.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/test.xml"
+    },
+    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/medication_listitem.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/medication_listitem.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/next_main.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/next_main.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/setting_fragment.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/setting_fragment.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",

@@ -31,8 +31,8 @@ public final class R {
         public static final int mcv_text_date_light = 0x7f0c006d;
     }
     public static final class drawable {
-        public static final int mcv_action_next = 0x7f020075;
-        public static final int mcv_action_previous = 0x7f020076;
+        public static final int mcv_action_next = 0x7f020077;
+        public static final int mcv_action_previous = 0x7f020078;
     }
     public static final class id {
         public static final int all = 0x7f0d002f;

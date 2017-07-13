@@ -220,7 +220,6 @@ public class NextActivity extends AppCompatActivity
         switch(position) {
             case 0:
 
-
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, TodayFragment4.newInstance(sessionToken,position + 1))
                         .commit();
@@ -234,15 +233,14 @@ public class NextActivity extends AppCompatActivity
                         .commit();
                 break;
             case 2:
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, CalendarFragment.newInstance(sessionToken,startDate,position + 1))
-                        .commit();
+//                fragmentManager.beginTransaction()
+//                        .replace(R.id.container, CalendarFragment.newInstance(sessionToken,startDate,position + 1))
+//                        .commit();
                 break;
             case 3:
-//                SharedPreferences data2=getSharedPreferences("data",MODE_PRIVATE);
-//                sessionToken=data2.getString("sessionToken","null");
+
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, TableFragment.newInstance(sessionToken, position +1))
+                        .replace(R.id.container, SettingFragment.newInstance(sessionToken, position +1))
                         .commit();
                 break;
             default:
@@ -262,7 +260,7 @@ public class NextActivity extends AppCompatActivity
                 mTitle = getString(R.string.title_section3);
                 break;
             case 4:
-                mTitle = "Table";
+                mTitle = getString(R.string.title_section4);
                 break;
         }
         if (toolbar != null) {

@@ -28,7 +28,7 @@
         android:layout_width="40dp"
         android:layout_height="20dp"
         style="@style/ListTitle"
-        android:id="@+id/morning"
+        android:id="@+id/morning_text"
         android:onClick="onClick"
         android:clickable="true"
         android:layout_alignParentTop="true"
@@ -45,7 +45,7 @@
         android:onClick="onClick"
         android:clickable="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/morning"
+        android:layout_toRightOf="@id/morning_text"
         android:layout_marginLeft="20dp"
         />
 
