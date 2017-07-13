@@ -24,6 +24,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 
         //设置通知内容并在onReceive()这个函数执行时开启
+
+        /*
         NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         Notification notification = new Notification(R.drawable.ic_launcher, ""
                 , System.currentTimeMillis());
@@ -31,6 +33,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                 "", null);
         notification.defaults = Notification.DEFAULT_ALL;
         manager.notify(1, notification);
+
+        */
 
 
         //Intent iii = new Intent(context, ZentriOSBLEService.class);

@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -40,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    private SharedPreferences loginPrefs;
+    private CheckBox saveLoginCheckBox;
+    private EditText name;
+    private EditText pwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button conformButton = (Button) this.findViewById(R.id.conformButton);
         Button cancelButton = (Button) this.findViewById(R.id.cancelButton);
+        saveLoginCheckBox = (CheckBox) findViewById(R.id.saveLoginCheckBox);
+        name = (EditText) findViewById(R.id.username);
+        pwd = (EditText) findViewById(R.id.pwd);
+
+        loginPrefs = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+
+        initLogin();
+
+        saveLoginCheckBox.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rememberMe();
+            }
+        });
+
+
         OnClickListener ocl = new OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -57,75 +78,6 @@ public class MainActivity extends AppCompatActivity {
         cancelButton.setOnClickListener(ocl);
 
 
-//        final Button button = (Button) findViewById(R.id.button_send);
-//        button.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Date now = new Date();
-//                String timestamp = new SimpleDateFormat("yyyy/MM/dd").format(now);
-//                ParseObject testObject = new ParseObject("TestXZ");
-//                testObject.put("TIME", timestamp);
-//                testObject.put("NAME", "ARYAN");
-//                testObject.saveEventually();
-//                Toast.makeText(getApplicationContext(), "Click button", Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
-//        final Button button1 = (Button) findViewById(R.id.Jarandice);
-//        button1.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Date now = new Date();
-//                String timestamp = new SimpleDateFormat("yyyy/MM/dd").format(now);
-//                ParseObject testObject = new ParseObject("TestXZ");
-//                testObject.put("TIME", timestamp);
-//                testObject.put("NAME", "Jarandice");
-//                testObject.saveEventually();
-//                Toast.makeText(getApplicationContext(), "Click button", Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
-//        final Button button2 = (Button) findViewById(R.id.Truvada);
-//        button2.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Date now = new Date();
-//                String timestamp = new SimpleDateFormat("yyyy/MM/dd").format(now);
-//                ParseObject testObject = new ParseObject("TestXZ");
-//                testObject.put("TIME", timestamp);
-//                testObject.put("NAME", "Truvada");
-//                testObject.saveEventually();
-//                Toast.makeText(getApplicationContext(), "Click button", Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
-//        final Button button3 = (Button) findViewById(R.id.Asprin);
-//        button3.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Date now = new Date();
-//                String timestamp = new SimpleDateFormat("yyyy/MM/dd").format(now);
-//                ParseObject testObject = new ParseObject("TestXZ");
-//                testObject.put("TIME", timestamp);
-//                testObject.put("NAME", "Asprin");
-//                testObject.saveEventually();
-//                Toast.makeText(getApplicationContext(), "Click button", Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
-//        final Button button4 = (Button) findViewById(R.id.Lipitor);
-//        button4.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                // Perform action on click
-//                Date now = new Date();
-//                String timestamp = new SimpleDateFormat("yyyy/MM/dd").format(now);
-//                ParseObject testObject = new ParseObject("TestXZ");
-//                testObject.put("TIME", timestamp);
-//                testObject.put("NAME", "Lipitor");
-//                testObject.saveEventually();
-//                Toast.makeText(getApplicationContext(), "Click button", Toast.LENGTH_LONG).show();
-//            }
-//        });
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -134,13 +86,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Login(View arg0) {
-        EditText name = (EditText) findViewById(R.id.username);
-        EditText pwd = (EditText) findViewById(R.id.pwd);
+
         Button bt = (Button) findViewById(arg0.getId());
         String text = bt.getText().toString();
-//        loginParse(name, pwd);
 
         if (text.equals("login")) {
+            rememberMe();
             loginParse(name,pwd);
         }
         else{
@@ -285,6 +236,26 @@ public class MainActivity extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
         finish();
+    }
+
+    public void initLogin() {
+        if (loginPrefs.getBoolean("saveLogin", false)){
+            name.setText(loginPrefs.getString("username", ""));
+            saveLoginCheckBox.setChecked(true);
+            name.setSelection(name.getText().length());
+        }
+
+    }
+
+    public void rememberMe() {
+        if (saveLoginCheckBox.isChecked()){
+            loginPrefs.edit().putBoolean("saveLogin", true).apply();
+            loginPrefs.edit().putString("username", String.valueOf(name.getText())).apply();
+
+        } else {
+            loginPrefs.edit().putBoolean("saveLogin", false).apply();
+            loginPrefs.edit().remove("username");
+        }
     }
 
 }

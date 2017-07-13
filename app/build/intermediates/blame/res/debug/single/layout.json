@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/layout/abc_screen_content_include.xml"
-    },
-    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/activity_main2.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/activity_main2.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",

@@ -3,6 +3,8 @@ package com.adherence.adherence;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.Service;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothGatt;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -38,8 +40,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -106,6 +112,10 @@ public class ZentriOSBLEService extends Service implements Serializable {
     private int count_bytes;
     private Boolean gi = false;
 
+    private ArrayList<Date> openTime=new ArrayList<>();
+    private ArrayList<Date> shouldTime=new ArrayList<>();
+    private boolean beforeTime = false;
+
     private String mFileNameLog;
     private boolean mRecording = false;
     private int len_image;
@@ -117,12 +127,22 @@ public class ZentriOSBLEService extends Service implements Serializable {
     private int index=0;
     private String sessionToken;
     private int scan_times = 0;
+    private Date now;
+    private int now_day;
+    private boolean needremid = false;
 
     public Calendar mycalendar = Calendar.getInstance();
     public String mDay;
+    public int mDayint = -1;
+    public int mDayintcom = -1;
     public String mydate;
     public String mytime;
     public boolean aiflag=false;
+
+
+    public String photostring;
+    public String photostring2;
+    public HashMap<String, HashMap<Date, Boolean>> hmp = new HashMap<>();
 
 
     private Prescription[] prescriptions;
@@ -278,15 +298,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 startDeviceInfoActivity();
             }
 
-            @Override
-            public void onDisconnected()
-            {
-
-                Log.d(TAG, "onDisconnected");
-
-                Intent intent = new Intent(ACTION_DISCONNECTED);
-                isBack = false;
-                index = (index + 1) % devices.size() ;
+            public void transmitdata() throws ParseException {
 
                 String[] info = allinfo.split("\n");
 
@@ -303,6 +315,10 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
 
                 String info_clock = timestamp[0];
+                DateFormat df = new SimpleDateFormat("HH:mm:ss");
+                Date currentTime = df.parse(info_clock);
+                openTime.add(currentTime);
+
                 String info_Date = timestamp[1];
 
                 Log.d(TAG, info_clock);
@@ -314,12 +330,16 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 //push it to server
                 Log.d(TAG, "start upload");
                 ParseObject testObject1 = new ParseObject("BottleUpdates");
-                testObject1.put("Name", "Adderal");
-//                testObject1.put("Name", deviceinfo);
+                testObject1.put("Name", deviceinfo);
                 testObject1.put("timeStamp", info_time);
                 testObject1.put("Units", info_units);
                 testObject1.put("Battery", info_battery);
                 testObject1.put("Voltage", info_voltage);
+                testObject1.put("Photo", photostring);
+                testObject1.put("Photo2", photostring2);
+
+
+                Log.d(TAG, " "+photostring);
 
                 //Update data
                 testObject1.saveEventually();
@@ -328,15 +348,50 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 allinfo="";
 
                 ///////////////////////////////////////////////////////////////////
+            }
 
 
-                Notification notification = new Notification(R.drawable.ic_launcher, ""
-                        , System.currentTimeMillis());
-                notification.setLatestEventInfo(mContext, "Please take the pills on time.",
-                        "", null);
-                notification.defaults = Notification.DEFAULT_ALL;
-                mNotificationManager.notify(1, notification);
+            @Override
+            public void onDisconnected()
+            {
+                needremid = false;
 
+
+                Log.d(TAG, "onDisconnected");
+
+                for(Date shoutime: shouldTime){
+                    for(Date open: openTime){
+                        if(open.getTime() - shoutime.getTime() <= 7200000 || open.getTime() - shoutime.getTime() <= -7200000){
+                            hmp.get(devices.get(index)).put(shoutime,true);
+                            break;
+                        }
+                    }
+                }
+
+                for(Date shoutime: shouldTime){
+                    if(now.getTime() - shoutime.getTime() > 0 && hmp.get(devices.get(index)).get(shoutime) == false){
+                        needremid = true;
+                    }
+                }
+
+
+                if(needremid == true) {
+                    Notification notification = new Notification(R.drawable.ic_launcher, ""
+                            , System.currentTimeMillis());
+                    notification.setLatestEventInfo(mContext, "Please take the pills on time.",
+                            "", null);
+                    notification.defaults = Notification.DEFAULT_ALL;
+                    mNotificationManager.notify(1, notification);
+
+                }
+
+                isBack = false;
+                index = (index + 1) % devices.size() ;
+
+                openTime.clear();
+                shouldTime.clear();
+
+                turnOffBluetooth();
 
             }
             @Override
@@ -390,16 +445,14 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
                     gi = false;
                     aiflag = false;
+                } else if(data.contains("erasing") || data.contains("Flash")){
+                    mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+                    gi = false;
+                    aiflag = false;
                 } else if(data.contains("Inval") || data.contains("Command")){
                     String dataToSend = "*gn#";
                     mZentriOSBLEManager.writeData(dataToSend);
                 } else {
-//                    if (gi == true) {
-//                        String dataToSend = "*ai#";
-//                        mZentriOSBLEManager.writeData(dataToSend);
-//                        gi = false;
-//                    }
-                    //else
                     if(data.contains("*gn")){
                         gi = false;
                     }
@@ -411,7 +464,14 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     Log.d(TAG, "Bytes: " + count_bytes);
 
                     if(aiflag == true){
-                        mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
+                        try {
+                            transmitdata();
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        String dataToSend = "*gn#";
+                        mZentriOSBLEManager.writeData(dataToSend);
+                        //mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
                         gi = false;
                         aiflag = false;
                     }
@@ -481,6 +541,16 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 if (count_bytes > 2 && imBytes[count_bytes - 2] == -1 && imBytes[count_bytes - 1] == -39) {
                     //if (count_bytes>=(len_image) && header_done) {
                     saveImage(imBytes);
+
+                    photostring2 = conver2HexStr(imBytes);
+
+                    try {
+                        photostring = new String(imBytes, "ISO-8859-1");
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+
+
 //                            mToggleIm.setChecked(false);
                     doStopRecording();
                     stopRecording();
@@ -577,11 +647,18 @@ public class ZentriOSBLEService extends Service implements Serializable {
     public class ZentriBroadcastReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.d(TAG, "Madeshoudaole"); // duo da chou, 23333
+            Log.d(TAG, "Madeshoudaole");
+
+            boolean open = false;
+            open = turnOnBluetooth();
+
+            while(!open){
+                Log.d(TAG, "turnonbluetooth");
+            }
 
             devices.clear();
 
-            getDBinfo();
+
 
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
@@ -602,9 +679,15 @@ public class ZentriOSBLEService extends Service implements Serializable {
             isBack =  true;
             gi = true;
 
+            try {
+                getDBinfo();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
             if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected()) {
                 mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
-            }else if(!devices.isEmpty()) {
+            }else if(!devices.isEmpty() && beforeTime == false) {
                 mZentriOSBLEManager.startScan();
             }
         }
@@ -686,28 +769,14 @@ public class ZentriOSBLEService extends Service implements Serializable {
         }
     }
 
-    public void delay_while()
-    {
-        int i=0,j=0,k=0;
-        while(i<500)
-        {
-            while(j<500)
-            {
-                while(k<500)
-                {
-                    k=k+1;
-                }
-                j=j+1;
-                k=0;
-            }
-            i=i+1;
-            j=0;
-        }
-    }
+    public void getDBinfo() throws ParseException {
 
-    public void getDBinfo(){
-
+        mycalendar = Calendar.getInstance();
         String int_day=String.valueOf(mycalendar.get(mycalendar.DAY_OF_WEEK));
+        mDayintcom = mycalendar.get(mycalendar.DAY_OF_WEEK);
+
+
+
         switch (int_day){
             case "1":mDay="Sunday";break;
             case "2":mDay="Monday";break;
@@ -718,12 +787,15 @@ public class ZentriOSBLEService extends Service implements Serializable {
             case "7":mDay="Saturday";break;
             default:mDay="Sunday";break;
         }
-        mydate = new SimpleDateFormat("MM/dd/yy").format(new Date());
+
         mytime = new SimpleDateFormat("HH:mm:ss").format(new Date());
+        DateFormat dff = new SimpleDateFormat("HH:mm:ss");
+        now = dff.parse(mytime);
+        now_day = mycalendar.get(mycalendar.DAY_OF_WEEK);
 
 
         mRequestQueue= Volley.newRequestQueue(getApplicationContext());
-        String url= getString(R.string.parseURL) + "/patient/prescriptions";
+        String url="http://129.105.36.93:5000/patient/prescriptions";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
@@ -814,14 +886,76 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     System.out.println(prescriptions[j].getPillNumber());
 
 
-//                    Get information of Monday
 
-//                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
-//                    while(itr.hasNext()){
-//                        Map.Entry<String, Integer> entry = itr.next();
-//                        System.out.println(entry.getKey());
-//                        System.out.println(entry.getValue());
-//                    }
+
+                    //Get information of Monday
+        /* [{"prescriptionName":"Oxycontin 30mg","pill":"Oxycontin","schedule":[{"days":[{"amount":0,"name":"Sunday"},
+        {"amount":0,"name":"Monday"},{"amount":1,"name":"Tuesday"},{"amount":1,"name":"Wednesday"},
+        {"amount":0,"name":"Thursday"},{"amount":0,"name":"Friday"},{"amount":1,"name":"Saturday"}],
+        "time":"1970-01-01T20:00:00.000Z"}],"bottle":{"bottleName":"SC36-05  4C:55:CC:10:7B:12",
+        "pillNumber":5},"note":"Take it with hot water"},{"prescriptionName":"Vicodin 35mg",
+        "pill":"Vicodin","schedule":[{"days":[{"amount":0,"name":"Sunday"},{"amount":1,"name":"Monday"},
+        {"amount":1,"name":"Tuesday"},{"amount":1,"name":"Wednesday"},
+        {"amount":1,"name":"Thursday"},{"amount":1,"name":"Friday"},
+        {"amount":1,"name":"Saturday"}],"time":"1970-01-01T08:00:00.000Z"},
+        {"days":[{"amount":1,"name":"Sunday"},{"amount":0,"name":"Monday"},
+        {"amount":0,"name":"Tuesday"},{"amount":0,"name":"Wednesday"},
+        {"amount":0,"name":"Thursday"},{"amount":0,"name":"Friday"},
+        {"amount":0,"name":"Saturday"}],"time":"1970-01-01T12:00:00.000Z"}],
+        "bottle":{"bottleName":"Adderal","pillNumber":5},"newAdded":true,"note":"Take 1 a day"},{"prescriptionName":"Antacid 30mg","pill":"Antacid","schedule":[{"days":[{"amount":1,"name":"Sunday"},{"amount":1,"name":"Monday"},{"amount":1,"name":"Tuesday"},{"amount":1,"name":"Wednesday"},{"amount":1,"name":"Thursday"},{"amount":1,"name":"Friday"},{"amount":1,"name":"Saturday"}],"time":"1970-01-01T13:00:00.000Z"}],"bottle":{"bottleName":"Adderal","pillNumber":5},"newAdded":true,"note":"Preferably take the pill with a snack or a meal"},{"prescriptionName":"Adderall 35 mg","pill":"Adderall","schedule":[{"days":[{"amount":1,"name":"Sunday"},{"amount":1,"name":"Monday"},{"amount":1,"name":"Tuesday"},{"amount":1,"name":"Wednesday"},{"amount":1,"name":"Thursday"},{"amount":1,"name":"Friday"},{"amount":1,"name":"Saturday"}],"time":"1970-01-01T21:30:00.000Z"}],"bottle":{"bottleName":"Adderal","pillNumber":5},"newAdded":true,"note":"Preferably take the pill with a snack or a meal"}]
+        */
+
+                    System.out.println("Query Today's Prescription");
+                    if(prescriptions[j].getBottleName().equals(devices.get(index))){
+                        System.out.println("Find the bottle");
+                    }
+
+                    if(mDayintcom != mDayint){
+                        mDayint = mDayintcom;
+                        hmp.put(prescriptions[j].getBottleName(),null);
+                    }
+
+                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount(mDay).entrySet().iterator();
+                    HashMap<Date, Boolean> tempMap = new HashMap<>();
+                    while(itr.hasNext()){
+                        Map.Entry<String, Integer> entry = itr.next();
+
+                        if(prescriptions[j].getBottleName().equals(devices.get(index))){
+                            DateFormat df = new SimpleDateFormat("HH:mm:ss");
+                            Date sTime = null;
+                            try {
+                                sTime = df.parse(entry.getKey());
+                            } catch (ParseException e) {
+                                e.printStackTrace();
+                            }
+                            if(hmp.containsKey(prescriptions[j].getBottleName()) && hmp.get(prescriptions[j].getBottleName()) != null && hmp.get(prescriptions[j].getBottleName()).containsKey(sTime)) {
+                                tempMap.put(sTime, hmp.get(prescriptions[j].getBottleName()).get(sTime));
+                            }else{
+                                tempMap.put(sTime, false);
+                            }
+                            shouldTime.add(sTime);
+                        }
+
+                        System.out.println("Key:  "+entry.getKey());
+                        System.out.println("Value:  "+entry.getValue());
+
+                    }
+
+                    if(shouldTime.size() == 0){
+                        beforeTime = true;
+                    }else{
+                        beforeTime = false;
+                        hmp.put(prescriptions[j].getBottleName(), tempMap);
+                    }
+
+                    System.out.println("Print shtime");
+
+                    for(Date shtime: shouldTime){
+                        System.out.println(shtime);
+                    }
+
+
+                    System.out.println("Query end");
 
 
                     //traverse with Map.Entry
@@ -853,7 +987,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
             public void onErrorResponse(VolleyError error) {
                 Log.d("error",error.toString());
             }
-        }){
+        }) {
             @Override
             public Map<String,String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
@@ -865,5 +999,75 @@ public class ZentriOSBLEService extends Service implements Serializable {
         mRequestQueue.add(prescriptionRequest);
         ///////////////////////////////////////////////////////////////////
     }
+
+    public String conver2HexStr(byte [] b)
+    {
+        StringBuffer result = new StringBuffer();
+        for(int i = 0;i<b.length;i++)
+        {
+            result.append(b[i]+",");
+        }
+        return result.toString().substring(0, result.length()-1);
+    }
+
+
+    public void delay_while()
+    {
+        int i=0,j=0,k=0;
+        while(i<500)
+        {
+            while(j<500)
+            {
+                while(k<500)
+                {
+                    k=k+1;
+                }
+                j=j+1;
+                k=0;
+            }
+            i=i+1;
+            j=0;
+        }
+    }
+
+
+    /**
+     * 强制开启当前 Android 设备的 Bluetooth
+     *
+     * @return true：强制打开 Bluetooth　成功　false：强制打开 Bluetooth 失败
+     */
+    public static boolean turnOnBluetooth()
+    {
+        BluetoothAdapter bluetoothAdapter = BluetoothAdapter
+                .getDefaultAdapter();
+
+        if (bluetoothAdapter != null)
+        {
+            return bluetoothAdapter.enable();
+        }
+
+        return false;
+    }
+
+
+    /**
+     * 强制关闭当前 Android 设备的 Bluetooth
+     *
+     * @return  true：强制关闭 Bluetooth　成功　false：强制关闭 Bluetooth 失败
+     */
+    public static boolean turnOffBluetooth()
+    {
+        BluetoothAdapter bluetoothAdapter = BluetoothAdapter
+                .getDefaultAdapter();
+
+        if (bluetoothAdapter != null)
+        {
+            return bluetoothAdapter.disable();
+        }
+
+        return false;
+    }
+
 }
+
 

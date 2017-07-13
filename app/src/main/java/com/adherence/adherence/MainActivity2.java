@@ -11,6 +11,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -124,6 +125,8 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     private String temp = "";
     private Boolean gi = false;
 
+    private String sessionToken;
+
     Calendar timeNow;
 
     private Set<String> ValidDevice = new HashSet<>();    //GL: use a set to store the valid device name
@@ -144,6 +147,9 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
+        sessionToken=data.getString("sessionToken","null");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
@@ -168,8 +174,13 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
         initBroadcastReceiver();// Receive the broadcast
         initReceiverIntentFilter();//设置过滤的信息
 
-        startService(new Intent(this, ZentriOSBLEService.class));
-        startService(new Intent(this, MyService.class));
+
+        Intent openservice = new Intent(this, ZentriOSBLEService.class);
+        openservice.putExtra("sessionToken", sessionToken);
+        startService(openservice);
+
+
+        //startService(new Intent(this, MyService.class));
 
         mHandler = new Handler();
 
@@ -1197,15 +1208,15 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     //set up gui elements for command mode operation
 //    private void GUISetCommandMode()
 //    {
-        //mSendTextButton.setEnabled(false);
-        //mTextToSendBox.setVisibility(View.INVISIBLE);
+    //mSendTextButton.setEnabled(false);
+    //mTextToSendBox.setVisibility(View.INVISIBLE);
 //    }
 
     //set up gui elements for command mode operation
     //private void GUISetStreamMode()
     //{
-        //mSendTextButton.setEnabled(true);
-        //mTextToSendBox.setVisibility(View.VISIBLE);
+    //mSendTextButton.setEnabled(true);
+    //mTextToSendBox.setVisibility(View.VISIBLE);
     //}
 
     private void updateReceivedTextBox(String newData)
@@ -1294,5 +1305,12 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public  void onBackPressed(){
+
+        startActivity(new Intent(this, NextActivity.class));
+        finish();
     }
 }

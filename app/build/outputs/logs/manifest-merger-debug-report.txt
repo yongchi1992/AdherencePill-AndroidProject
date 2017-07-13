@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:2:1-90:12
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:2:1-93:12
 	package
 		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
@@ -35,15 +35,25 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:10:5-97
 	android:name
 		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:12:5-68
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:29:5-68
+	android:name
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:12:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:13:5-74
+MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:30:5-74
+	android:name
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:13:22-71
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:12:5-14:35
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:16:5-18:35
 MERGED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:32:5-34:35
 	android:required
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:14:9-32
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:18:9-32
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:13:9-53
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:17:9-53
 application
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:16:5-88:19
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:20:5-91:19
 MERGED from [com.android.support:design:22.2.0] /Users/sam/.android/build-cache/7fd821fa81dfdac940031cb59012d8cb7549c501/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:22.2.1] /Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/AndroidManifest.xml:22:5-20
 MERGED from [com.parse:parse-android:1.15.8] /Users/sam/.android/build-cache/f059d07ed8ffb7c8d1dc627f5c2ee956e59987a6/output/AndroidManifest.xml:22:5-20
@@ -58,99 +68,107 @@ MERGED from [com.android.support:support-core-ui:24.2.1] /Users/sam/.android/bui
 MERGED from [com.android.support:support-core-utils:24.2.1] /Users/sam/.android/build-cache/138fabfa08b082374ddc4de4116fee41d3fd9ddc/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] /Users/sam/.android/build-cache/b9b777118689af8d5f5698ab7cdb9d5a63481f42/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:24:9-41
 	android:allowBackup
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:21:9-35
 	android:icon
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:22:9-43
 	android:theme
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:21:9-40
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:25:9-40
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:19:9-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:23:9-45
 activity#com.adherence.adherence.FirstActivity
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:22:9-31:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:26:9-36:20
+	android:screenOrientation
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:29:13-49
 	android:label
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:30:13-45
 	android:configChanges
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:24:13-63
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:28:13-63
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:23:13-42
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:27:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:34:27-74
 activity#com.adherence.adherence.MainActivity
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:33:9-41:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:38:9-42:20
+	android:screenOrientation
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:40:13-49
 	android:configChanges
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:35:13-63
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:41:13-63
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:34:13-41
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:39:13-41
 activity#com.adherence.adherence.NextActivity
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:43:5-47:16
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:44:9-49:20
+	android:screenOrientation
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:46:13-49
 	android:configChanges
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:45:9-59
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:47:13-63
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:44:9-37
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:45:13-41
 receiver#com.adherence.adherence.NotificationReceiver
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:48:9-58
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:50:9-58
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:48:19-55
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:50:19-55
 service#com.adherence.adherence.NotificationService
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:49:9-56
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:51:9-56
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:49:18-53
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:51:18-53
 activity#com.adherence.adherence.MainActivity2
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:51:9-59:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:53:9-62:20
+	android:screenOrientation
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:55:13-49
 	android:label
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:53:13-45
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:56:13-45
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:52:13-42
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:54:13-42
 service#com.adherence.adherence.ZentriOSBLEService
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:61:9-66:19
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:64:9-69:19
 	android:label
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:64:13-49
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:67:13-49
 	android:exported
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:65:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:68:13-36
 	android:icon
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:63:13-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:66:13-47
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:62:13-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:65:13-47
 service#com.adherence.adherence.MyService
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:68:9-70:19
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:71:9-73:19
 	android:exported
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:69:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:72:13-36
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:68:18-43
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:71:18-43
 receiver#com.adherence.adherence.AlarmReceiver
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:72:9-77:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:75:9-80:20
 	android:exported
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:73:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:76:13-36
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:72:19-48
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:75:19-48
 intent-filter#Alarm
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:74:13-76:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:77:13-79:29
 action#Alarm
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:75:17-50
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:78:17-50
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:75:25-47
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:78:25-47
 receiver#com.adherence.adherence.projectBroadcastReceiver
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:79:9-86:20
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:82:9-89:20
 	android:exported
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:80:13-36
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:83:13-36
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:79:19-59
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:82:19-59
 intent-filter#ACTION_SCAN_RESULT
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:81:13-85:29
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:84:13-88:29
 action#ACTION_SCAN_RESULT
-ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:83:17-63
+ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:86:17-63
 	android:name
-		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:83:25-60
+		ADDED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml:86:25-60
 uses-sdk
 INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:recyclerview-v7:22.2.0] /Users/sam/.android/build-cache/96dd99786bed160f0e94e3830c9686c22f0b8bb3/output/AndroidManifest.xml:20:5-43
@@ -178,14 +196,6 @@ MERGED from [com.android.support:support-compat:24.2.1] /Users/sam/.android/buil
 	android:minSdkVersion
 		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sam/GitHub/ADP_Android/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.BLUETOOTH
-ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:29:5-68
-	android:name
-		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:29:22-65
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:30:5-74
-	android:name
-		ADDED from [ADP_Android:zentri_ble:unspecified] /Users/sam/.android/build-cache/e474945c0761600a7c3c20eaac986b5616d530fa/output/AndroidManifest.xml:30:22-71
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/sam/.android/build-cache/da3467f6b7209ea6bfcec2e943ff747905625cff/output/AndroidManifest.xml:21:9-23:69
 	android:value

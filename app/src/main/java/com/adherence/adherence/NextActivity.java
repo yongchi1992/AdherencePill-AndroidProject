@@ -83,9 +83,11 @@ public class NextActivity extends AppCompatActivity
 //        sensorMgr.unregisterListener(this);
 
         ///////////////////////////////2.7///////////////////////////////////////
-//        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
+
         SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
-        String tempDeviceName = data.getString("bottle", null);
+//        String tempDeviceName = data.getString("bottle", null);
+        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
+
 //        Log.d("username", username_temp);
 
 //        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
@@ -104,6 +106,8 @@ public class NextActivity extends AppCompatActivity
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
+
+        mNavigationDrawerFragment.setMenuVisibility(false);
 
         mTitle = "Today";
 
@@ -283,7 +287,7 @@ public class NextActivity extends AppCompatActivity
             menuItem.setEnabled(true);
         }
         else{
-            menuItem.setEnabled(false);
+            menuItem.setEnabled(true);
         }
 
 //        TODO: delete this temporary code
@@ -364,9 +368,13 @@ public class NextActivity extends AppCompatActivity
 //        }
 
         if (id == R.id.bluetooth) {
-            Intent intent = new Intent();
-            intent.setClass(NextActivity.this, MainActivity2.class);
-            NextActivity.this.startActivity(intent);
+            stopService(new Intent(this, ZentriOSBLEService.class));
+            stopService(new Intent(this, MyService.class));
+
+//            Intent intent = new Intent();
+//            intent.setClass(NextActivity.this, MainActivity2.class);
+//            NextActivity.this.startActivity(intent);
+            startActivity(new Intent(NextActivity.this, MainActivity2.class));
         }
 
         return super.onOptionsItemSelected(item);

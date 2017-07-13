@@ -1,4 +1,4 @@
-#Mon Jul 10 16:15:34 CDT 2017
+#Thu Jul 13 16:25:47 CDT 2017
 base.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
 renamed.0=classes.dex
 file.0=/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex
