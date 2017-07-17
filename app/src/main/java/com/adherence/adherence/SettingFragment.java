@@ -119,7 +119,7 @@ public class SettingFragment extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences settings = view.getContext().getSharedPreferences("com.adherence.adherence", view.getContext().MODE_PRIVATE);
+                SharedPreferences settings = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
 
                 settings.edit().putBoolean("notification", notification.isChecked()).apply();
                 settings.edit().putBoolean("vibration", vibration.isChecked()).apply();
@@ -336,7 +336,7 @@ public class SettingFragment extends Fragment {
     }
 
     public void initSetting(){
-        SharedPreferences settings = view.getContext().getSharedPreferences("com.adherence.adherence", view.getContext().MODE_PRIVATE);
+        SharedPreferences settings = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
 
         morning_time.setText(settings.getString("morning_time", getString(R.string.settings_morning_time_init)));
         afternoon_time.setText(settings.getString("afternoon_time", getString(R.string.settings_afternoon_time_init)));

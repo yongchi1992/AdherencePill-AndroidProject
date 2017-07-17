@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText name;
     private EditText pwd;
 
-    public static final String MyPREFERENCES = "UserPrefs" ;
+    public static final String UserPREFERENCES = "UserPrefs" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.d("sessiontoken", sessionToken);
 //                            String bottle_temp = res.getString("bottle");
 //                            Log.d("code", bottle_temp);
-                            SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
+                            SharedPreferences data=getSharedPreferences("UserPrefs",MODE_PRIVATE);
                             SharedPreferences.Editor editor=data.edit();
                             editor.putString("sessionToken",sessionToken);
                             editor.putString("username",name.getText().toString());
