@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1500324785927"
+    timestamp="1500333714924"
     token="2095561451321740016"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1258" />
+        duration="326" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="23" />
+        duration="27" />
     <task
         name="verifier"
-        duration="2" />
+        duration="10" />
 
     <artifact
         location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -29,14 +29,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1500323603418"
+        timestamp="1500333486727"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/sam/GitHub/ADP_Android/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
@@ -48,6 +42,9 @@
             type="SPLIT" />
         <artifact
             location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
             location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -67,10 +64,13 @@
         <artifact
             location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/sam/GitHub/ADP_Android/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1500324785927"
+        timestamp="1500333714924"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/sam/GitHub/ADP_Android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"

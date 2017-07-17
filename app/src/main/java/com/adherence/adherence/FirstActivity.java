@@ -1,6 +1,7 @@
 package com.adherence.adherence;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -20,11 +21,12 @@ import java.util.List;
  * Created by weihanchu on 6/2/16.
  */
 public class FirstActivity extends AppCompatActivity {
-
+    SharedPreferences userPref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
+        userPref = getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
 
 
 //        Parse.enableLocalDatastore(this);
@@ -57,9 +59,14 @@ public class FirstActivity extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent intent = new Intent();
-                intent.setClass(FirstActivity.this, MainActivity.class);
-                FirstActivity.this.startActivity(intent);
+                if (! userPref.getString("sessionToken", "null").equals("null")){
+                    startActivity(new Intent(FirstActivity.this, NextActivity.class));
+                }else{
+                    startActivity(new Intent(FirstActivity.this, MainActivity.class));
+                }
+//                Intent intent = new Intent();
+//                intent.setClass(FirstActivity.this, MainActivity.class);
+//                FirstActivity.this.startActivity(intent);
             }
         }, 2000);
     }

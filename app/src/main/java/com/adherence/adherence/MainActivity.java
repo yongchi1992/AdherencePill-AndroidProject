@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         name = (EditText) findViewById(R.id.username);
         pwd = (EditText) findViewById(R.id.pwd);
 
-        loginPrefs = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        loginPrefs = getSharedPreferences(UserPREFERENCES, MODE_PRIVATE);
         editor = loginPrefs.edit();
 
         initLogin();
@@ -131,18 +131,18 @@ public class MainActivity extends AppCompatActivity {
                             Log.d("sessiontoken", sessionToken);
 //                            String bottle_temp = res.getString("bottle");
 //                            Log.d("code", bottle_temp);
-                            SharedPreferences data=getSharedPreferences("UserPrefs",MODE_PRIVATE);
-                            SharedPreferences.Editor editor=data.edit();
+
                             editor.putString("sessionToken",sessionToken);
                             editor.putString("username",name.getText().toString());
 //                            editor.putString("bottle", "SC36-05  4C:55:CC:10:7B:12");
+                            editor.commit();
                             Intent intent=new Intent();
                             intent.putExtra("sessionToken",sessionToken);
                             intent.putExtra("username",name.getText().toString());
                             intent.setClass(MainActivity.this, NextActivity.class);
                             MainActivity.this.startActivity(intent);
 
-                            editor.commit();
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Log.d("res","get token wrong!");

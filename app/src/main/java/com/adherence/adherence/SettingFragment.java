@@ -49,6 +49,10 @@ public class SettingFragment extends Fragment {
     private TextView interval_time;
     private TextView max_remind_time;
 
+    private SharedPreferences userPref;
+    private SharedPreferences settings;
+    private SharedPreferences.Editor editor;
+
 
     /**
      * The fragment argument representing the section number for this
@@ -103,6 +107,10 @@ public class SettingFragment extends Fragment {
 
         save = (TextView) view.findViewById(R.id.save);
 
+        userPref = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
+        settings = view.getContext().getSharedPreferences(userPref.getString("username", ""), view.getContext().MODE_PRIVATE);
+        editor = settings.edit();
+
         final int progress_num_per_hour = res.getInteger(R.integer.progress_num_per_hour);
         final int settings_period_minutes_interval = res.getInteger(R.integer.settings_period_minutes_interval);
         final int settings_morning_start_hour = res.getInteger(R.integer.settings_morning_start_hour);
@@ -119,29 +127,30 @@ public class SettingFragment extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences settings = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
 
-                settings.edit().putBoolean("notification", notification.isChecked()).apply();
-                settings.edit().putBoolean("vibration", vibration.isChecked()).apply();
-                settings.edit().putBoolean("sound", sound.isChecked()).apply();
+                editor.putBoolean("notification", notification.isChecked());
+                editor.putBoolean("vibration", vibration.isChecked());
+                editor.putBoolean("sound", sound.isChecked());
 
-                settings.edit().putString("morning_time", (String) morning_time.getText()).apply();
-                settings.edit().putString("afternoon_time", (String) afternoon_time.getText()).apply();
-                settings.edit().putString("evening_time", (String) evening_time.getText()).apply();
-                settings.edit().putString("bedtime_time", (String) bedtime_time.getText()).apply();
+                editor.putString("morning_time", (String) morning_time.getText());
+                editor.putString("afternoon_time", (String) afternoon_time.getText());
+                editor.putString("evening_time", (String) evening_time.getText());
+                editor.putString("bedtime_time", (String) bedtime_time.getText());
 
-                settings.edit().putInt("morning_progress", morningSeekBar.getProgress()).apply();
-                settings.edit().putInt("afternoon_progress", afternoonSeekBar.getProgress()).apply();
-                settings.edit().putInt("evening_progress", eveningSeekBar.getProgress()).apply();
-                settings.edit().putInt("bedtime_progress", bedtimeSeekBar.getProgress()).apply();
+                editor.putInt("morning_progress", morningSeekBar.getProgress());
+                editor.putInt("afternoon_progress", afternoonSeekBar.getProgress());
+                editor.putInt("evening_progress", eveningSeekBar.getProgress());
+                editor.putInt("bedtime_progress", bedtimeSeekBar.getProgress());
 
-                settings.edit().putInt("remind_progress", remindSeekBar.getProgress()).apply();
-                settings.edit().putInt("interval_progress", intervalSeekBar.getProgress()).apply();
-                settings.edit().putInt("maximum_progress", maxTimesSeekBar.getProgress()).apply();
+                editor.putInt("remind_progress", remindSeekBar.getProgress());
+                editor.putInt("interval_progress", intervalSeekBar.getProgress());
+                editor.putInt("maximum_progress", maxTimesSeekBar.getProgress());
 
-                settings.edit().putString("remind_time", (String) remind_time.getText()).apply();
-                settings.edit().putString("interval_time", (String) interval_time.getText()).apply();
-                settings.edit().putString("max_remind_time", (String) max_remind_time.getText()).apply();
+                editor.putString("remind_time", (String) remind_time.getText());
+                editor.putString("interval_time", (String) interval_time.getText());
+                editor.putString("max_remind_time", (String) max_remind_time.getText());
+
+                editor.commit();
 
                 Toast.makeText(view.getContext(), "Save Clicked", Toast.LENGTH_SHORT).show();
             }
@@ -336,8 +345,7 @@ public class SettingFragment extends Fragment {
     }
 
     public void initSetting(){
-        SharedPreferences settings = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
-
+//        SharedPreferences settings = view.getContext().getSharedPreferences(MainActivity.UserPREFERENCES, view.getContext().MODE_PRIVATE);
         morning_time.setText(settings.getString("morning_time", getString(R.string.settings_morning_time_init)));
         afternoon_time.setText(settings.getString("afternoon_time", getString(R.string.settings_afternoon_time_init)));
         evening_time.setText(settings.getString("evening_time", getString(R.string.settings_evening_time_init)));

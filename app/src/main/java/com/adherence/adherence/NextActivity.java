@@ -66,16 +66,20 @@ public class NextActivity extends AppCompatActivity
     private RequestQueue mRequestQueue;
 
     private String startDate;
-    private List<String> createAt;
+    private ArrayList createAt;
 
-//    private SensorManager sensorMgr;
-//
-//    private ListView listView;
-//    private ArrayAdapter<String>arrayAdapter;
+    private SharedPreferences userPref;
+    private SharedPreferences.Editor editor;
+
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        userPref = getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
+        editor = userPref.edit();
+
         setContentView(R.layout.next_main);
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
@@ -84,8 +88,9 @@ public class NextActivity extends AppCompatActivity
 
         ///////////////////////////////2.7///////////////////////////////////////
 
-        SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
+//        SharedPreferences data=getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
 //        String tempDeviceName = data.getString("bottle", null);
+
         String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
 
 //        Log.d("username", username_temp);
@@ -120,9 +125,9 @@ public class NextActivity extends AppCompatActivity
         Intent intent=getIntent();
 //        sessionToken=intent.getStringExtra("sessionToken");
         //      username=intent.getStringExtra("username");
-        SharedPreferences user_data=getSharedPreferences("user_data",MODE_PRIVATE);
-        sessionToken=user_data.getString("sessionToken","null");
-        username=data.getString("username","null");
+
+        sessionToken=userPref.getString("sessionToken", "null");
+        username=userPref.getString("username", "null");
         Log.d("nextactivity session",sessionToken);
         startDate="3000-12-31";
         createAt=new ArrayList<>();
@@ -218,8 +223,7 @@ public class NextActivity extends AppCompatActivity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
-        SharedPreferences data=getSharedPreferences("user_data",MODE_PRIVATE);
-        sessionToken=data.getString("sessionToken","null");
+        sessionToken = userPref.getString("sessionToken","null");
 
         switch(position) {
             case 0:
@@ -386,6 +390,7 @@ public class NextActivity extends AppCompatActivity
         finish();
     }
 
+
     @Override
     /*
     back button equals to log out
@@ -398,7 +403,10 @@ public class NextActivity extends AppCompatActivity
             JsonObjectRequest jsonObjectRequest=new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+
                     Toast.makeText(getApplicationContext(),"Logout successful",Toast.LENGTH_SHORT).show();
+                    editor.remove("sessionToken");
+                    editor.commit();
                 }
             }, new Response.ErrorListener() {
                 @Override
