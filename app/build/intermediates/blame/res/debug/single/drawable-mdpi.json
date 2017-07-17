@@ -12,12 +12,12 @@
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable-mdpi/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "/Users/sam/.android/build-cache/29044f68ee494242a90cc5eae0f100b85a662e60/output/res/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png",
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/sam/.android/build-cache/29044f68ee494242a90cc5eae0f100b85a662e60/output/res/drawable-mdpi/common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_list_focused_holo.9.png",

@@ -73,4 +73,14 @@
     <string name="arg_section_token">session_token</string>
 
     <string name="parseURL">http://129.105.36.93:5000</string>
+
+    <string name="settings_remind_time_init">1hr00min</string>
+    <string name="settings_interval_time_init">30min</string>
+    <string name="settings_max_remind_times_init">3</string>
+
+    <string name="settings_morning_time_init">7:00</string>
+    <string name="settings_afternoon_time_init">14:00</string>
+    <string name="settings_evening_time_init">19:00</string>
+    <string name="settings_bedtime_time_init">21:00</string>
+
 </resources>

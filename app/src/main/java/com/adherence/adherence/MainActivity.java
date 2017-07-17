@@ -3,6 +3,7 @@ package com.adherence.adherence;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInstaller;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private SharedPreferences loginPrefs;
+    private SharedPreferences.Editor editor;
     private CheckBox saveLoginCheckBox;
     private EditText name;
     private EditText pwd;
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         pwd = (EditText) findViewById(R.id.pwd);
 
         loginPrefs = getSharedPreferences("loginPrefs", MODE_PRIVATE);
+        editor = loginPrefs.edit();
 
         initLogin();
 
@@ -108,11 +111,11 @@ public class MainActivity extends AppCompatActivity {
         String url = getString(R.string.parseURL) + "/login";
 
         Map<String, String> map = new HashMap<>();
-//        map.put("username", name.getText().toString());
-//        map.put("password", password.getText().toString());
+        map.put("username", name.getText().toString());
+        map.put("password", password.getText().toString());
 
-        map.put("username", "1@1");
-        map.put("password", "1");
+//        map.put("username", "1@1");
+//        map.put("password", "1");
 
         JSONObject jsonObject = new JSONObject(map);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, jsonObject,
@@ -191,15 +194,15 @@ public class MainActivity extends AppCompatActivity {
     }
     */
 
-    private boolean isNetworkConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo ni = cm.getActiveNetworkInfo();
-        if (ni == null) {
-            // There are no active networks.
-            return false;
-        } else
-            return true;
-    }
+//    private boolean isNetworkConnected() {
+//        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo ni = cm.getActiveNetworkInfo();
+//        if (ni == null) {
+//            // There are no active networks.
+//            return false;
+//        } else
+//            return true;
+//    }
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -241,6 +244,7 @@ public class MainActivity extends AppCompatActivity {
     public void initLogin() {
         if (loginPrefs.getBoolean("saveLogin", false)){
             name.setText(loginPrefs.getString("username", ""));
+            pwd.setText(loginPrefs.getString("password", ""));
             saveLoginCheckBox.setChecked(true);
             name.setSelection(name.getText().length());
         }
@@ -249,12 +253,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void rememberMe() {
         if (saveLoginCheckBox.isChecked()){
-            loginPrefs.edit().putBoolean("saveLogin", true).apply();
-            loginPrefs.edit().putString("username", String.valueOf(name.getText())).apply();
+            editor.putBoolean("saveLogin", true);
+            editor.putString("username", String.valueOf(name.getText()));
+            editor.putString("password", String.valueOf(pwd.getText()));
+            editor.commit();
 
         } else {
-            loginPrefs.edit().putBoolean("saveLogin", false).apply();
-            loginPrefs.edit().remove("username");
+            editor.putBoolean("saveLogin", false);
+            editor.remove("username");
+            editor.remove("password");
+            editor.commit();
         }
     }
 

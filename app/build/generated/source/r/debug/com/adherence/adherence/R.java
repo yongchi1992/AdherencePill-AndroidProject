@@ -2694,8 +2694,30 @@ containing a value of this type.
         public static final int abc_max_action_buttons=0x7f0a0000;
         public static final int cancel_button_image_alpha=0x7f0a0004;
         public static final int google_play_services_version=0x7f0a0005;
+        public static final int progress_num_per_hour=0x7f0a0006;
+        public static final int setting_evening_start_hour=0x7f0a0007;
+        public static final int setting_remind_progress_max=0x7f0a0008;
+        public static final int settings_afternoon_progress_init=0x7f0a0009;
+        public static final int settings_afternoon_progress_max=0x7f0a000a;
+        public static final int settings_afternoon_start_hour=0x7f0a000b;
+        public static final int settings_bedtime_progress_init=0x7f0a000c;
+        public static final int settings_bedtime_progress_max=0x7f0a000d;
+        public static final int settings_evening_progress_init=0x7f0a000e;
+        public static final int settings_evening_progress_max=0x7f0a000f;
+        public static final int settings_interval_minutes_interval=0x7f0a0010;
+        public static final int settings_interval_progress_init=0x7f0a0011;
+        public static final int settings_interval_progress_max=0x7f0a0012;
+        public static final int settings_max_remind_progress_init=0x7f0a0013;
+        public static final int settings_max_remind_progress_max=0x7f0a0014;
+        public static final int settings_morning_progress_init=0x7f0a0015;
+        public static final int settings_morning_progress_max=0x7f0a0016;
+        public static final int settings_morning_start_hour=0x7f0a0017;
+        public static final int settings_notifi_minutes_interval=0x7f0a0018;
+        public static final int settings_notifi_progress_num_per_hour=0x7f0a0019;
+        public static final int settings_period_minutes_interval=0x7f0a001a;
+        public static final int settings_remind_progress_init=0x7f0a001b;
         public static final int snackbar_text_max_lines=0x7f0a0001;
-        public static final int status_bar_notification_info_maxnum=0x7f0a0006;
+        public static final int status_bar_notification_info_maxnum=0x7f0a001c;
     }
     public static final class layout {
         public static final int abc_action_bar_title_item=0x7f040000;
@@ -2879,16 +2901,23 @@ containing a value of this type.
         public static final int send_data_button_text=0x7f06005e;
         public static final int send_data_hint=0x7f06005f;
         public static final int service_name=0x7f060060;
-        public static final int status_bar_notification_info_overflow=0x7f060061;
-        public static final int title_activity_device_info=0x7f060062;
-        public static final int title_section1=0x7f060063;
-        public static final int title_section2=0x7f060064;
-        public static final int title_section3=0x7f060065;
-        public static final int title_section4=0x7f060066;
-        public static final int update=0x7f060067;
-        public static final int update_button_text=0x7f060068;
-        public static final int version_heading=0x7f060069;
-        public static final int website_docs_display=0x7f06006a;
+        public static final int settings_afternoon_time_init=0x7f060061;
+        public static final int settings_bedtime_time_init=0x7f060062;
+        public static final int settings_evening_time_init=0x7f060063;
+        public static final int settings_interval_time_init=0x7f060064;
+        public static final int settings_max_remind_times_init=0x7f060065;
+        public static final int settings_morning_time_init=0x7f060066;
+        public static final int settings_remind_time_init=0x7f060067;
+        public static final int status_bar_notification_info_overflow=0x7f060068;
+        public static final int title_activity_device_info=0x7f060069;
+        public static final int title_section1=0x7f06006a;
+        public static final int title_section2=0x7f06006b;
+        public static final int title_section3=0x7f06006c;
+        public static final int title_section4=0x7f06006d;
+        public static final int update=0x7f06006e;
+        public static final int update_button_text=0x7f06006f;
+        public static final int version_heading=0x7f060070;
+        public static final int website_docs_display=0x7f060071;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f080075;
