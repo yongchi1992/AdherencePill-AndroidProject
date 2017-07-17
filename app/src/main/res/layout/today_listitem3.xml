@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/today_RL"
+    style="@style/MedicineList"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/today_item_layer"
+    android:onClick="onClick"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/period"
+        style="@style/ListSecondaryTitle"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:gravity="right"
+        android:padding="2dp"
+        android:text="time: amount"
+        android:textAlignment="textEnd"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pill_name4"
+        style="@style/ListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/pillImage4"
+        android:clickable="true"
+        android:padding="2dp"
+        android:text="pillName"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/pillImage4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/capsule" />
+
+    <TextView
+        android:id="@+id/pillNote3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="note"
+        android:layout_below="@+id/pillAmount4"
+        android:layout_toEndOf="@+id/pillImage4" />
+
+    <ImageView
+        android:id="@+id/tick3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/pillImage4"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/pillAmount4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toStartOf="@+id/period"
+        android:background="@drawable/bullet"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

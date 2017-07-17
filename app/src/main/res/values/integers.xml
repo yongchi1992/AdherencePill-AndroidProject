@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="settings_period_minutes_interval">15</integer>
+    <!--60 min / 15-->
+    <integer name="progress_num_per_hour">4</integer>
+
+    <integer name="settings_notifi_minutes_interval">10</integer>
+    <!--60 min / 10-->
+    <integer name="settings_notifi_progress_num_per_hour">6</integer>
+
+    <integer name="settings_interval_minutes_interval">5</integer>
+
+    <integer name="setting_remind_progress_max">12</integer>
+    <integer name="settings_interval_progress_max">12</integer>
+    <integer name="settings_max_remind_progress_max">6</integer>
+
+    <integer name="settings_remind_progress_init">6</integer>
+    <integer name="settings_interval_progress_init">6</integer>
+    <integer name="settings_max_remind_progress_init">3</integer>
+
+    <integer name="settings_morning_start_hour">0</integer>
+    <integer name="settings_afternoon_start_hour">12</integer>
+    <integer name="setting_evening_start_hour">17</integer>
+
+    <integer name="settings_morning_progress_max">47</integer>
+    <integer name="settings_afternoon_progress_max">19</integer>
+    <integer name="settings_evening_progress_max">27</integer>
+    <integer name="settings_bedtime_progress_max">96</integer>
+
+    <integer name="settings_morning_progress_init">28</integer>
+    <integer name="settings_afternoon_progress_init">8</integer>
+    <integer name="settings_evening_progress_init">8</integer>
+    <integer name="settings_bedtime_progress_init">84</integer>
+
+</resources>

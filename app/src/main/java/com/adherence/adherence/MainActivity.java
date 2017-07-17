@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText name;
     private EditText pwd;
 
+    public static final String MyPREFERENCES = "UserPrefs" ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
