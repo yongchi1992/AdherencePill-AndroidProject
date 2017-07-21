@@ -2,7 +2,13 @@ package com.adherence.adherence;
 
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,6 +51,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -66,11 +74,14 @@ public class MedicationFragment extends Fragment {
     private MedicationListAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
 
-    private String[] medicineListHardcode;
-    private String[] detailListHardcode;
-    private String[] timeListHardcode;
+//    private String[] medicineListHardcode;
+//    private String[] detailListHardcode;
+//    private String[] timeListHardcode;
+    private int position;
+    private ArrayList<Prescription> prescriptions;
     private String sessionToken;
     private String mDay;
+    private String imageTempName;
 
     private Context mContext=null;
 
@@ -78,7 +89,7 @@ public class MedicationFragment extends Fragment {
     private TextView pop_pillinfo;
     private TextView pop_pillinstruction;
 
-    private Prescription[] prescriptions;
+//    private Prescription[] prescriptions;
     private static RequestQueue mRequestQueue;
 
     public Calendar c = Calendar.getInstance();
@@ -139,44 +150,41 @@ public class MedicationFragment extends Fragment {
                 Log.d("response",response.toString());
 
                 //retrive data from JSONobject
-                int i = response.length();
-                medicineListHardcode=new String[i];
-                detailListHardcode=new String[i];
-                timeListHardcode = new String[i];
+                int size = response.length();
+                prescriptions = new ArrayList<>();
 
-
-
-                prescriptions = new Prescription[i];
-                for (int j = 0;j < i;j++){
-                    prescriptions[j] = new Prescription();
+                for (int j = 0;j < size;j++){
+                    Prescription newPrescrip = new Prescription();
+                    //TODO:set image from server
+                    newPrescrip.setHaveImage(false);
                     try {
                         JSONObject prescript = response.getJSONObject(j);
-                        prescriptions[j].setName(prescript.getString("name"));
+                        newPrescrip.setName(prescript.getString("name"));
                         if(prescript.has("bottle")){
                             if(prescript.getJSONObject("bottle").has("bottleName")){
-                            prescriptions[j].setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
+                                newPrescrip.setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
                             }
                             if(prescript.getJSONObject("bottle").has("pillNumber")){
-                            prescriptions[j].setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
+                                newPrescrip.setPillNumber(prescript.getJSONObject("bottle").getInt("pillNumber"));
                             }
                         }else{
-                            prescriptions[j].setBottleName("null");
-                            prescriptions[j].setPillNumber(0);
+                            newPrescrip.setBottleName("null");
+                            newPrescrip.setPillNumber(0);
                         }
                         if(prescript.has("note")) {
-                            prescriptions[j].setNote(prescript.getString("note"));
+                            newPrescrip.setNote(prescript.getString("note"));
                         }else{
-                            prescriptions[j].setNote("none");
+                            newPrescrip.setNote("none");
                         }
                         if(prescript.has("pill")) {
-                            prescriptions[j].setPill(prescript.getString("pill"));
+                            newPrescrip.setPill(prescript.getString("pill"));
                         }else{
-                            prescriptions[j].setPill("none");
+                            newPrescrip.setPill("none");
                         }
                         if(prescript.has("newAdded")){
-                            prescriptions[j].setNewAdded(prescript.getBoolean("newAdded"));
+                            newPrescrip.setNewAdded(prescript.getBoolean("newAdded"));
                         }else {
-                            prescriptions[j].setNewAdded(false);
+                            newPrescrip.setNewAdded(false);
                         }
                         //prescriptions[j].setPrescriptionId(prescript.getString("objectId"));
 
@@ -196,101 +204,60 @@ public class MedicationFragment extends Fragment {
                                     days.put(takeDays.getString("name"), 0);
                                 }
                             }
-                            prescriptions[j].setSchedule(time, days);
+                            newPrescrip.setSchedule(time, days);
                         }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-                // test if data stored in prescriptions
 
-                for(int j = 0; j < i; j++) {
+                        Iterator<Map.Entry<String, Integer>> itr = newPrescrip.getTimeAmount("Monday").entrySet().iterator();
 
-                    System.out.println(prescriptions[j].getName());
-                    medicineListHardcode[j]=prescriptions[j].getName();
-                    System.out.println(prescriptions[j].getNote());
-                    detailListHardcode[j]=prescriptions[j].getNote();
-
-                    System.out.println(prescriptions[j].getBottleName());
-                    System.out.println(prescriptions[j].getNewAdded());
-                    System.out.println(prescriptions[j].getPillNumber());
-
-
-
-                    Iterator<Map.Entry<String, Integer>> itr = prescriptions[j].getTimeAmount("Monday").entrySet().iterator();
-                    while(itr.hasNext()){
+                        while(itr.hasNext()){
+//                            TODO: Implement this function in Prescription Class
                         Map.Entry<String, Integer> entry = itr.next();
                         int cur_hour = Integer.parseInt(entry.getKey().substring(0, 2));
 
-
-
                         if (7 <= cur_hour && cur_hour < 12) {
-                            if (timeListHardcode[j] == null) {
-                                timeListHardcode[j] = "Morning" + "\n";
+                            if (newPrescrip.getTimeList() == null) {
+                                newPrescrip.setTimeList("Morning" + "\n");
                             }else {
-                                timeListHardcode[j] += "Morning" + "\n";
+                                newPrescrip.setTimeList(newPrescrip.getTimeList() + "Morning" + "\n");
                             }
                         }
 
                         if (12 <= cur_hour && cur_hour < 18) {
-                            if (timeListHardcode[j] == null) {
-                                timeListHardcode[j] = "Afternoon" + "\n";
+                            if (newPrescrip.getTimeList() == null) {
+                                newPrescrip.setTimeList("Afternoon" + "\n");
                             }else {
-                                timeListHardcode[j] += "Afternoon" + "\n";
+                                newPrescrip.setTimeList(newPrescrip.getTimeList() + "Afternoon" + "\n");
                             }
                         }
 
                         if (18 <= cur_hour && cur_hour <= 24) {
-                            if (timeListHardcode[j] == null) {
-                                timeListHardcode[j] = "Evening" + "\n";
+                            if (newPrescrip.getTimeList() == null) {
+                                newPrescrip.setTimeList("Evening" + "\n");
                             }else {
-                                timeListHardcode[j] += "Evening" + "\n";
+                                newPrescrip.setTimeList(newPrescrip.getTimeList() + "Evening" + "\n");
                             }
                         }
 
                         if (0 <= cur_hour && cur_hour < 7) {
-                            if (timeListHardcode[j] == null) {
-                                timeListHardcode[j] = "Bedtime" + "\n";
+                            if (newPrescrip.getTimeList() == null) {
+                                newPrescrip.setTimeList("Bedtime" + "\n");
                             }else {
-                                timeListHardcode[j] += "Bedtime" + "\n";
+                                newPrescrip.setTimeList(newPrescrip.getTimeList() + "Bedtime" + "\n");
                             }
                         }
 
-                        timeListHardcode[j].trim();
-                        Log.d("row", Integer.toString(j));
-                        Log.d("time string", timeListHardcode[j]);
+                        newPrescrip.trimTimeList();
 
-//                        Log.d("medic day", entry.getKey());
-//                        Log.d("medic amount", entry.getValue().toString());
                     }
-//                    Log.d("test time", timeListHardcode);
 
 
-
-                    //traverse with Map.Entry
-                    Iterator<Map.Entry<String, Map<String, Integer>>> it = prescriptions[j].getSchedule().entrySet().iterator();
-
-                    while (it.hasNext()) {
-
-                        // entry.getKey() return key
-                        // entry.getValue() return value
-                        Map.Entry<String, Map<String, Integer>> entry = (Map.Entry) it.next();
-                        System.out.println(entry.getKey());
-
-                        HashMap<String, Integer> tmp_in_hashmap = (HashMap) entry.getValue();
-
-                        Iterator<Map.Entry<String, Integer>> in_iterator = tmp_in_hashmap
-                                .entrySet().iterator();
-
-                        while (in_iterator.hasNext()) {
-                            Map.Entry in_entry = (Map.Entry) in_iterator.next();
-                            System.out.println(in_entry.getKey() + ":" + in_entry.getValue());
-                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
+                    prescriptions.add(newPrescrip);
                 }
 
-
-                mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode, timeListHardcode);
+                mAdapter = new MedicationListAdapter(prescriptions, getContext(), MedicationFragment.this);
                 mRecyclerView.setAdapter(mAdapter);
 
 
@@ -316,85 +283,6 @@ public class MedicationFragment extends Fragment {
 
 
         Log.d("sequence","onCreateView!");
-
-
-        //prescriptions[0].requestSetBottleName(sessionToken, mRequestQueue);
-        //mRequestQueue.add(prescriptions[0].requestSetBottleName(sessionToken, prescriptions[0]));
-       // System.out.println(prescriptions[0].getBottleName());
-
-
-     /*   ParseQuery<ParseObject> query2=ParseQuery.getQuery("Prescription");
-        query2.whereNotEqualTo("pill",null);
-        query2.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> objects, ParseException e) {
-                if(objects==null){
-                    Toast.makeText(getActivity(),"objects is null!", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                Log.i("objects.size another:",objects.size()+"");
-                medicineListHardcode=new String[objects.size()];
-                detailListHardcode=new String[objects.size()];
-                Log.i("medicineListHardcode", medicineListHardcode.length+"");
-                Log.i("detailListHardcode",detailListHardcode.length+"");
-                for(int i=0;i<objects.size();i++){
-                    medicineListHardcode[i]=objects.get(i).getString("name");
-                    detailListHardcode[i]=objects.get(i).getString("note");
-                }
-                mAdapter = new MedicationListAdapter(medicineListHardcode,detailListHardcode);
-                mRecyclerView.setAdapter(mAdapter);
-                mAdapter.setOnItemClickListener(new MedicationListAdapter.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(final View view, int position) {
-                        //Toast.makeText(getActivity(),position+"", Toast.LENGTH_SHORT).show();
-                        ParseQuery<ParseObject>query3= ParseQuery.getQuery("Prescription");
-                        query3.whereEqualTo("name",medicineListHardcode[position]);
-                        query3.findInBackground(new FindCallback<ParseObject>() {
-                            @Override
-                            public void done(List<ParseObject> objects, ParseException e) {
-                                String pillID=objects.get(0).getParseObject("pill").getObjectId();
-                                ParseQuery<ParseObject>query4=ParseQuery.getQuery("PillLib");
-                                query4.whereEqualTo("objectId",pillID);
-                                query4.findInBackground(new FindCallback<ParseObject>() {
-                                    @Override
-                                    public void done(List<ParseObject> objects, ParseException e) {
-                                        String pillname=objects.get(0).getString("pillName");
-                                        String pillinfo=objects.get(0).getString("pillInfo");
-                                        String pillinstruction=objects.get(0).getString("pillInstruction");
-                                        showPopupWindow(view,"pillName: "+pillname,"pillInfo: "+pillinfo,"pillInstruction: "+pillinstruction);
-                                    }
-                                });
-                            }
-                        });
-                        //   showPopupWindow(view);
-                    }
-                    @Override
-                    public void onItemLongClick(final View view, int position) {
-                        ParseQuery<ParseObject>query3= ParseQuery.getQuery("Prescription");
-                        query3.whereEqualTo("name",medicineListHardcode[position]);
-                        query3.findInBackground(new FindCallback<ParseObject>() {
-                            @Override
-                            public void done(List<ParseObject> objects, ParseException e) {
-                                String pillID=objects.get(0).getParseObject("pill").getObjectId();
-                                ParseQuery<ParseObject>query4=ParseQuery.getQuery("PillLib");
-                                query4.whereEqualTo("objectId",pillID);
-                                query4.findInBackground(new FindCallback<ParseObject>() {
-                                    @Override
-                                    public void done(List<ParseObject> objects, ParseException e) {
-                                        String pillname=objects.get(0).getString("pillName");
-                                        String pillinfo=objects.get(0).getString("pillInfo");
-                                        String pillinstruction=objects.get(0).getString("pillInstruction");
-                                        showPopupWindow(view,"pillName: "+pillname,"pillInfo: "+pillinfo,"pillInstruction: "+pillinstruction);
-                                    }
-                                });
-                            }
-                        });
-                    }
-                });
-            }
-        });*/
-//        mAdapter = new MedicationListAdapter(detailListHardcode,detailListHardcode);
-//        mRecyclerView.setAdapter(mAdapter);
 
         return rootView;
     }
@@ -450,7 +338,6 @@ public class MedicationFragment extends Fragment {
         windowPos[0] -= xOff;
         popupWindow.showAtLocation(view, Gravity.TOP | Gravity.START, windowPos[0], windowPos[1]);
 
-
     }
 
     private static int[] calculatePopWindowPos(final View anchorView, final View contentView) {
@@ -478,7 +365,59 @@ public class MedicationFragment extends Fragment {
         return windowPos;
     }
 
-//    public void onClick(View v) {
-//        int temp =  0;
-//    }
+
+
+
+    public String getRealPathFromURI(Uri uri) {
+        Cursor cursor = getContext().getContentResolver().query(uri, null, null, null, null);
+        cursor.moveToFirst();
+        int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+        return cursor.getString(idx);
+    }
+
+    public Uri getImageUri(Context inContext, Bitmap inImage, String imageName) {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        inImage.compress(Bitmap.CompressFormat.JPEG, 90, bytes);
+        String path = MediaStore.Images.Media.insertImage(inContext.getContentResolver(), inImage, imageName, null);
+        return Uri.parse(path);
+    }
+
+    private void onCaptureImageResult(Intent data) {
+
+        Bundle extras = data.getExtras();
+        Bitmap imageBitmap = (Bitmap) extras.get("data");
+
+        // CALL THIS METHOD TO GET THE URI FROM THE BITMAP
+        Uri tempUri = getImageUri(getContext(), imageBitmap, imageTempName);
+        String picturePath = getRealPathFromURI(tempUri);
+        mAdapter.setImageInItem(position, imageBitmap);
+
+    }
+
+    public Bitmap convertSrcToBitmap(String imageSrc) {
+        Bitmap myBitmap = null;
+        File imgFile = new File(imageSrc);
+        if (imgFile.exists()) {
+            myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+        }
+        return myBitmap;
+    }
+
+    public void captureImage(int pos, String imageName) {
+        position = pos;
+        imageTempName = imageName;
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, 100);
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != Activity.RESULT_CANCELED) {
+            if (requestCode == 100) {
+                onCaptureImageResult(data);
+            }
+        }
+    }
 }

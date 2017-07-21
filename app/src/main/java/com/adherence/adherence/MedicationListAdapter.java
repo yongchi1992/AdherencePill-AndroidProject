@@ -1,20 +1,39 @@
 package com.adherence.adherence;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
 
 
 public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAdapter.ViewHolder>{
 
-    private String[] medicineListHardcode;
-    private String[] detailListHardcode;
-    private String[] timeListHardcode;
+//    private String[] medicineListHardcode;
+//    private String[] detailListHardcode;
+//    private String[] timeListHardcode;
+    private ArrayList<Prescription> prescriptions;
+    private Context context;
+    private ViewHolder vh;
+    private MedicationFragment medicationFragment;
+
+    public static final int CAMERA_REQUEST = 101;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public View listRootView;
@@ -32,6 +51,8 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
         private TextView time;
 
 
+
+
         public ViewHolder(View v1) {
             super(v1);
             listRootView = v1;
@@ -43,31 +64,122 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
         }
     }
 
-    public MedicationListAdapter(String[] hardCode, String[] detailCode, String[] time) {
-        medicineListHardcode = hardCode;
-        detailListHardcode = detailCode;
-        timeListHardcode = time;
+    public MedicationListAdapter(ArrayList<Prescription> prescriptions, Context context, MedicationFragment medicationFragment) {
+        this.prescriptions = prescriptions;
+        this.context = context;
+        this.medicationFragment = medicationFragment;
     }
 
     @Override
     public MedicationListAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.medication_listitem, viewGroup, false);
-        ViewHolder vh = new ViewHolder(v);
+        vh = new ViewHolder(v);
         return vh;
     }
 
     @Override
-    public void onBindViewHolder(MedicationListAdapter.ViewHolder vh, int position) {
-        vh.getMedicineName().setText(medicineListHardcode[position]);
-        vh.getMedicineDetail().setText(detailListHardcode[position]);
-        vh.getTime().setText(timeListHardcode[position]);
-//        vh.getTime().setText("morning \n afternoon \n night \n bedtime");
+    public void onBindViewHolder(MedicationListAdapter.ViewHolder vh, final int position) {
+        final Prescription prescription = prescriptions.get(position);
+        prescription.setListItemPosition(position);
+        vh.getMedicineName().setText(prescription.getName());
+        vh.getMedicineDetail().setText(prescription.getNote());
+        vh.getTime().setText(prescription.getTimeList());
+        if (!prescription.isHaveImage()){
+            vh.getMedicineImage().setImageResource(R.drawable.capsule);
+
+        }else{
+            vh.getMedicineImage().setImageDrawable(null);
+            vh.getMedicineImage().setImageBitmap(prescription.getImage());
+        }
+
+        vh.getMedicineImage().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectImage(view, prescription);
+            }
+        });
 
     }
 
     @Override
     public int getItemCount() {
-        return medicineListHardcode.length;
+        return prescriptions.size();
+    }
+
+    private void selectImage(final View view, final Prescription prescription){
+        final CharSequence[] options = { "Take Photo", "Choose from Gallery", "Cancel" };
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+
+        builder.setTitle("Add a Pill Photo");
+
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+
+            @Override
+
+            public void onClick(DialogInterface dialog, int item) {
+
+                if (options[item].equals("Take Photo"))
+                {
+
+                    medicationFragment.captureImage(prescription.getListItemPosition(), prescription.getName());
+
+                }
+
+                else if (options[item].equals("Choose from Gallery"))
+
+                {
+
+                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+                    ((NextActivity)view.getContext()).startActivityForResult(intent, 2);
+
+                }
+
+                else if (options[item].equals("Cancel")) {
+
+                    dialog.dismiss();
+
+                }
+
+            }
+
+        });
+        builder.show();
+    }
+
+
+
+    private File saveBitmap(Bitmap bmp) {
+        String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
+        OutputStream outStream = null;
+        // String temp = null;
+        File file = new File(extStorageDirectory, "temp.png");
+        if (file.exists()) {
+            file.delete();
+            file = new File(extStorageDirectory, "temp.png");
+
+        }
+
+        try {
+            outStream = new FileOutputStream(file);
+            bmp.compress(Bitmap.CompressFormat.PNG, 100, outStream);
+            outStream.flush();
+            outStream.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+        return file;
+    }
+
+    public void setImageInItem(int position, Bitmap imageSrc) {
+        Prescription dataSet = prescriptions.get(position);
+        dataSet.setImage(imageSrc);
+//        dataSet.setStatus(false);
+        dataSet.setHaveImage(true);
+        notifyDataSetChanged();
     }
 
 

@@ -1,5 +1,6 @@
 package com.adherence.adherence;
 
+import android.graphics.Bitmap;
 import android.util.Log;
 
 import com.android.volley.AuthFailureError;
@@ -32,8 +33,19 @@ public class Prescription {
     private String bottleName;
     private Boolean newAdded;//whether the prescription is newly added
     private int pillNumber; //pill ID
+
+    private Bitmap image;
+//    private String imageSrc;
+    private int listItemPosition;
+    private boolean haveImage;
+    private String details;
+    private String timeList;
+
     private Map<String, Map<String,Integer>> schedule = new HashMap<String, Map<String,Integer>>();
 
+    public Prescription() {
+
+    }
 
     public void setName(String name){
         this.name = name;
@@ -48,6 +60,22 @@ public class Prescription {
     public void setBottleName(String bottleName){this.bottleName = bottleName;}
     public void setNewAdded (Boolean newAdded){this.newAdded = newAdded;}
     public void setPillNumber(int pillNumber){this.pillNumber = pillNumber;}
+    public void setImage(Bitmap image) {
+        this.image = image;
+    }
+    public void setListItemPosition(int listItemPosition) {
+        this.listItemPosition = listItemPosition;
+    }
+    public void setHaveImage(boolean haveImage) {
+        this.haveImage = haveImage;
+    }
+    public void setDetails(String details) {
+        this.details = details;
+    }
+    public void setTimeList(String timeList){
+        this.timeList = timeList;
+    }
+
 
     public String getName(){
         return name;
@@ -62,12 +90,29 @@ public class Prescription {
     public String getBottleName(){return bottleName;}
     public Boolean getNewAdded(){return newAdded;}
     public int getPillNumber(){return pillNumber;}
+    public Bitmap getImage() {
+        return image;
+    }
+    public int getListItemPosition() {return  listItemPosition;}
+    public boolean isHaveImage() {
+        return haveImage;
+    }
+    public String getDetails() {
+        return details;
+    }
+    public String getTimeList() {
+        return timeList;
+    }
 
     public void setSchedule(String time, Map<String,Integer> days){
         this.schedule.put(time, days);
     }
     public Map<String, Map<String,Integer>> getSchedule(){
         return schedule;
+    }
+
+    public void trimTimeList() {
+        timeList.trim();
     }
 
     //input a week day and return all the time and amount to take pills in this day

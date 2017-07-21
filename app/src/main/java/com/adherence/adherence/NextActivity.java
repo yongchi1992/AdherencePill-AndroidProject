@@ -1,5 +1,6 @@
 package com.adherence.adherence;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -9,7 +10,11 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
@@ -38,6 +43,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -47,6 +53,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import static com.adherence.adherence.AdherenceApplication.getContext;
 
 
 public class NextActivity extends AppCompatActivity
@@ -70,7 +78,8 @@ public class NextActivity extends AppCompatActivity
 
     private SharedPreferences userPref;
     private SharedPreferences.Editor editor;
-
+    private int position;
+    private String imageTempName;
 
 
     @Override
@@ -387,7 +396,7 @@ public class NextActivity extends AppCompatActivity
     @Override
     protected void onStop() {
         super.onStop();
-        finish();
+//        finish();
     }
 
 
@@ -499,6 +508,5 @@ public class NextActivity extends AppCompatActivity
 
 
     }
-
 
 }

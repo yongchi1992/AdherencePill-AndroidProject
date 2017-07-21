@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInstaller;
+import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -44,11 +45,15 @@ public class MainActivity extends AppCompatActivity {
     private GoogleApiClient client;
     private SharedPreferences loginPrefs;
     private SharedPreferences.Editor editor;
+    private SharedPreferences settings;
+    private SharedPreferences.Editor setting_editor;
     private CheckBox saveLoginCheckBox;
     private EditText name;
     private EditText pwd;
 
-    public static final String UserPREFERENCES = "UserPrefs" ;
+    private Resources res;
+
+    public static final String UserPREFERENCES = "UserPrefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         saveLoginCheckBox = (CheckBox) findViewById(R.id.saveLoginCheckBox);
         name = (EditText) findViewById(R.id.username);
         pwd = (EditText) findViewById(R.id.pwd);
+        res = getResources();
 
         loginPrefs = getSharedPreferences(UserPREFERENCES, MODE_PRIVATE);
         editor = loginPrefs.edit();
-
         initLogin();
 
         saveLoginCheckBox.setOnClickListener(new OnClickListener() {
@@ -136,6 +141,10 @@ public class MainActivity extends AppCompatActivity {
                             editor.putString("username",name.getText().toString());
 //                            editor.putString("bottle", "SC36-05  4C:55:CC:10:7B:12");
                             editor.commit();
+                            settings = getSharedPreferences(loginPrefs.getString("username", ""), MODE_PRIVATE);
+                            setting_editor = settings.edit();
+                            initSettings();
+
                             Intent intent=new Intent();
                             intent.putExtra("sessionToken",sessionToken);
                             intent.putExtra("username",name.getText().toString());
@@ -266,6 +275,24 @@ public class MainActivity extends AppCompatActivity {
             editor.remove("password");
             editor.commit();
         }
+    }
+
+    private void initSettings(){
+        setting_editor.putInt("morning_progress", settings.getInt("morning_progress", res.getInteger(R.integer.settings_morning_progress_init)));
+        setting_editor.putInt("afternoon_progress", settings.getInt("afternoon_progress", res.getInteger(R.integer.settings_afternoon_progress_init)));
+        setting_editor.putInt("evening_progress", settings.getInt("evening_progress", res.getInteger(R.integer.settings_evening_progress_init)));
+        setting_editor.putInt("bedtime_progress", settings.getInt("bedtime_progress", res.getInteger(R.integer.settings_bedtime_progress_init)));
+
+        setting_editor.putBoolean("notification", settings.getBoolean("notification", true));
+        setting_editor.putBoolean("vibration", settings.getBoolean("vibration", true));
+        setting_editor.putBoolean("sound", settings.getBoolean("sound", true));
+
+        setting_editor.putInt("remind_progress", settings.getInt("remind_progress", res.getInteger(R.integer.settings_remind_progress_init)));
+        setting_editor.putInt("interval_progress", settings.getInt("interval_progress", res.getInteger(R.integer.settings_interval_progress_init)));
+        setting_editor.putInt("maximum_progress", settings.getInt("maximum_progress", res.getInteger(R.integer.settings_max_remind_progress_init)));
+
+        setting_editor.commit();
+
     }
 
 }

@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
+import android.provider.MediaStore;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.Menu;
@@ -1313,4 +1314,6 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
         startActivity(new Intent(this, NextActivity.class));
         finish();
     }
+
+
 }
