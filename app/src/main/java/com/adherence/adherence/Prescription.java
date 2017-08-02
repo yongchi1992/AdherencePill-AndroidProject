@@ -1,6 +1,8 @@
 package com.adherence.adherence;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Environment;
 import android.util.Log;
 
 import com.android.volley.AuthFailureError;
@@ -15,6 +17,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -127,5 +130,26 @@ public class Prescription {
             };
         }
         return set;
+    }
+
+    public void findLocalImg(){
+        if (!this.name.isEmpty()){
+            String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
+            File file = new File(extStorageDirectory, this.name + ".png");
+            if (file.exists()) {
+                Bitmap bitmap;
+                BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
+
+                this.image = BitmapFactory.decodeFile(file.getAbsolutePath(), bitmapOptions);
+                this.haveImage = true;
+
+            }else {
+                this.image = null;
+                this.haveImage = false;
+            }
+        }else{
+            this.image = null;
+            this.haveImage = false;
+        }
     }
 }

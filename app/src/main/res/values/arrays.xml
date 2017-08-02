@@ -27,6 +27,55 @@
 
     </string-array>
 
+    <string-array name="after_notification_time">
+        <item>10 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+        <item>40 Minutes</item>
+        <item>50 Minutes</item>
+        <item>60 Minutes</item>
+    </string-array>
+
+    <string-array name="after_notification_time_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="interval_notification_time">
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+        <item>45 Minutes</item>
+        <item>1 Hour</item>
+        <item>1 Hour 15 Minutes</item>
+        <item>1 Hour 30 Minutes</item>
+        <item>1 Hour 45 Minutes</item>
+        <item>2 Hour</item>
+    </string-array>
+
+    <string-array name="interval_notification_time_values">
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>75</item>
+        <item>90</item>
+        <item>105</item>
+        <item>120</item>
+    </string-array>
+
+    <string-array name="max_notification_times">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
 
 
 </resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr_TNNP="com.adherence.adherence.TripleNumberPickerPreference">
+    <PreferenceCategory
+        android:title="@string/pref_notification_category_notifications">
+        <SwitchPreference
+            android:title="@string/pref_notification_category_notifi_switch_title"
+            android:key="@string/pref_notification_category_notifi_switch_key"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            />
+        <SwitchPreference
+            android:title="@string/pref_notification_category_vibrate_switch_title"
+            android:key="@string/pref_notification_category_vibrate_switch_key"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            />
+        <SwitchPreference
+            android:title="@string/pref_notification_category_sound_switch_title"
+            android:key="@string/pref_notification_category_sound_switch_key"
+            android:summaryOn="On"
+            android:summaryOff="Off"
+            />
+
+        <ListPreference
+            android:title="Notification After"
+            android:key="@string/pref_notification_category_after_key"
+            android:dialogTitle="Select Time"
+            android:defaultValue="10"
+            android:summary="%s"
+            android:entryValues="@array/after_notification_time_values"
+            android:entries="@array/after_notification_time"
+            />
+        <ListPreference
+            android:title="Notification Interval"
+            android:key="@string/pref_notification_category_interval_key"
+            android:dialogTitle="Select Time"
+            android:defaultValue="15"
+            android:summary="%s"
+            android:entryValues="@array/interval_notification_time_values"
+            android:entries="@array/interval_notification_time"
+            />
+        <ListPreference
+            android:title="Maximum Notification Times"
+            android:key="@string/pref_notification_category_times_key"
+            android:defaultValue="1"
+            android:dialogTitle="Select Times"
+            android:summary="%s"
+            android:entryValues="@array/max_notification_times"
+            android:entries="@array/max_notification_times"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_notification_category_period">
+        <com.adherence.adherence.TripleNumberPickerPreference
+            android:title="Morning"
+            android:key="@string/pref_notification_category_morning_key"
+            android:persistent="true"
+            attr_TNNP:startTime="00:00:0"
+            attr_TNNP:endTime = "12:00:0"
+            attr_TNNP:defaultTime = "07:00:0"
+           />
+        <com.adherence.adherence.TripleNumberPickerPreference
+            android:title="Afternoon"
+            android:key="@string/pref_notification_category_afternoon_key"
+            android:persistent="true"
+
+            attr_TNNP:startTime="12:00:0"
+            attr_TNNP:endTime = "18:00:0"
+            attr_TNNP:defaultTime = "16:00:1"
+            />
+        <com.adherence.adherence.TripleNumberPickerPreference
+            android:title="Night"
+            android:key="@string/pref_notification_category_night_key"
+            android:persistent="true"
+            attr_TNNP:startTime="18:00:0"
+            attr_TNNP:endTime = "24:00:0"
+            attr_TNNP:defaultTime = "20:00:1"
+            />
+        <com.adherence.adherence.TripleNumberPickerPreference
+            android:title="Bedtime"
+            android:key="@string/pref_notification_category_bedtime_key"
+            android:persistent="true"
+            attr_TNNP:startTime="00:00:0"
+            attr_TNNP:endTime = "24:00:0"
+            attr_TNNP:defaultTime = "22:00:1"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

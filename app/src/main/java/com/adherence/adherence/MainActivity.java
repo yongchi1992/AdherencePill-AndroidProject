@@ -252,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
+
     public void initLogin() {
         if (loginPrefs.getBoolean("saveLogin", false)){
             name.setText(loginPrefs.getString("username", ""));

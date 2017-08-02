@@ -72,7 +72,7 @@
     <string name="arg_section_number">section_number</string>
     <string name="arg_section_token">session_token</string>
 
-    <string name="parseURL">http://129.105.36.93:5000</string>
+    <string name="parseURL">http://ec2-13-59-253-73.us-east-2.compute.amazonaws.com:5000</string>
 
     <string name="settings_remind_time_init">1hr00min</string>
     <string name="settings_interval_time_init">30min</string>
@@ -82,5 +82,32 @@
     <string name="settings_afternoon_time_init">14:00</string>
     <string name="settings_evening_time_init">19:00</string>
     <string name="settings_bedtime_time_init">21:00</string>
+    <string name="title_activity_settings">Settings</string>
+    
+    <string name="triple_numberpicker_hour">Hour</string>
+    <string name="triple_numberpicker_minute">Minute</string>
 
+    <!-- Strings related to Settings -->
+
+    <string name="pref_headers_notification_title">Notification</string>
+    <string name="pref_headers_notification_summary">Notification Setting</string>
+
+    <!-- Settings for Notifications -->
+    <string name="pref_notification_category_notifications">Notifications</string>
+    <string name="pref_notification_category_notifi_switch_title">Notification</string>
+    <string name="pref_notification_category_notifi_switch_key">notify_switch</string>
+    <string name="pref_notification_category_vibrate_switch_title">Vibration</string>
+    <string name="pref_notification_category_vibrate_switch_key">vibrate_switch</string>
+    <string name="pref_notification_category_sound_switch_title">Sound</string>
+    <string name="pref_notification_category_sound_switch_key">sound_switch</string>
+
+    <string name="pref_notification_category_after_key">notifi_after</string>
+    <string name="pref_notification_category_interval_key">notifi_interval</string>
+    <string name="pref_notification_category_times_key">notifi_times</string>
+
+    <string name="pref_notification_category_period">Period</string>
+    <string name="pref_notification_category_morning_key">pref_period_morning</string>
+    <string name="pref_notification_category_afternoon_key">pref_period_afternoon</string>
+    <string name="pref_notification_category_night_key">pref_period_night</string>
+    <string name="pref_notification_category_bedtime_key">pref_period_bedtime</string>
 </resources>

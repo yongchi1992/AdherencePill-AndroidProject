@@ -24,20 +24,16 @@
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/six_blue.png"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/green_tick.png",
-        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/green_tick.png"
-    },
-    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable/abc_dialog_material_background_light.xml"
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/green_tick.png",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/green_tick.png"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/fab_background.xml",
-        "source": "/Users/sam/.android/build-cache/7fd821fa81dfdac940031cb59012d8cb7549c501/output/res/drawable/fab_background.xml"
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
@@ -46,6 +42,14 @@
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/triangle_red.png",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/triangle_red.png"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/fab_background.xml",
+        "source": "/Users/sam/.android/build-cache/7fd821fa81dfdac940031cb59012d8cb7549c501/output/res/drawable/fab_background.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/ic_notifications_black_24dp.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/bullet.png",
@@ -68,12 +72,12 @@
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/collapse_icon.png",
-        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/collapse_icon.png"
-    },
-    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
         "source": "/Users/sam/.android/build-cache/29044f68ee494242a90cc5eae0f100b85a662e60/output/res/drawable/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/collapse_icon.png",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/collapse_icon.png"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
@@ -168,6 +172,10 @@
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/nine_blue.png"
     },
     {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/ic_info_black_24dp.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/ic_info_black_24dp.xml"
+    },
+    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/ten_blue.png",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/ten_blue.png"
     },
@@ -190,6 +198,10 @@
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/ic_sync_black_24dp.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/drawable/ic_sync_black_24dp.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",

@@ -107,63 +107,49 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
     }
 
     private void selectImage(final View view, final Prescription prescription){
-        final CharSequence[] options = { "Take Photo", "Choose from Gallery", "Cancel" };
+        final CharSequence[] options = { "Take Photo", "Choose from Gallery"};
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-
+        final AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
         builder.setTitle("Add a Pill Photo");
-
         builder.setItems(options, new DialogInterface.OnClickListener() {
-
             @Override
-
             public void onClick(DialogInterface dialog, int item) {
 
-                if (options[item].equals("Take Photo"))
-                {
-
+                if (options[item].equals("Take Photo")) {
                     medicationFragment.captureImage(prescription.getListItemPosition(), prescription.getName());
-
                 }
-
-                else if (options[item].equals("Choose from Gallery"))
-
-                {
-
-                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-                    ((NextActivity)view.getContext()).startActivityForResult(intent, 2);
-
+                else if (options[item].equals("Choose from Gallery")) {
+                    medicationFragment.chooseFromGallery(prescription.getListItemPosition(), prescription.getName());
                 }
-
-                else if (options[item].equals("Cancel")) {
-
-                    dialog.dismiss();
-
-                }
-
             }
-
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
         });
         builder.show();
     }
 
 
 
-    private File saveBitmap(Bitmap bmp) {
+    private File saveBitmap(Bitmap bmp, String filename) {
         String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
         OutputStream outStream = null;
+        Log.d("extStorageDirectory", extStorageDirectory);
         // String temp = null;
-        File file = new File(extStorageDirectory, "temp.png");
+        File file = new File(extStorageDirectory, filename + ".png");
         if (file.exists()) {
             file.delete();
-            file = new File(extStorageDirectory, "temp.png");
+            file = new File(extStorageDirectory, filename + ".png");
 
         }
 
         try {
             outStream = new FileOutputStream(file);
-            bmp.compress(Bitmap.CompressFormat.PNG, 100, outStream);
+            //// TODO: 7/21/17 calculate compression ratio before compress image into required size;
+            bmp.compress(Bitmap.CompressFormat.PNG, 50, outStream);
             outStream.flush();
             outStream.close();
 
@@ -174,10 +160,10 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
         return file;
     }
 
-    public void setImageInItem(int position, Bitmap imageSrc) {
+    public void setImageInItem(int position, Bitmap imageMap) {
         Prescription dataSet = prescriptions.get(position);
-        dataSet.setImage(imageSrc);
-//        dataSet.setStatus(false);
+        saveBitmap(imageMap, dataSet.getName());
+        dataSet.setImage(imageMap);
         dataSet.setHaveImage(true);
         notifyDataSetChanged();
     }

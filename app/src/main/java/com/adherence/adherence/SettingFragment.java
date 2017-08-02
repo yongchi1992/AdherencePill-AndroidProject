@@ -20,6 +20,8 @@ import android.widget.Toast;
  * Created by sam on 7/10/17.
  */
 
+// TODO: 7/24/17 maybe use Preference instead? 
+
 public class SettingFragment extends Fragment {
 
     private View view;

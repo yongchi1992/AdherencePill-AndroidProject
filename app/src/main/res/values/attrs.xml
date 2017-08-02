@@ -18,4 +18,10 @@
 
         <attr name="minDistRequestDisallowParent" format="dimension" />
     </declare-styleable>
+    
+    <declare-styleable name="com.adherence.adherence.TripleNumberPickerPreference">
+        <attr name="startTime" format="string"/>
+        <attr name="endTime" format="string"/>
+        <attr name="defaultTime" format="string"/>
+    </declare-styleable>
 </resources>

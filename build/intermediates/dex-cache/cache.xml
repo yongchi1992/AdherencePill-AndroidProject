@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4c2a82fe710c5cebbe34f1cbdaed955f07f8ca3c">
+        sha1="7c856317dcb4abae1d7dcd1e2d5a4296b41c0709">
         <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex" />
     </item>
 

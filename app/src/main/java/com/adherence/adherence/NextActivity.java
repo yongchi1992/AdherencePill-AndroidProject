@@ -256,9 +256,10 @@ public class NextActivity extends AppCompatActivity
                 break;
             case 3:
 
-                fragmentManager.beginTransaction()
-                        .replace(R.id.container, SettingFragment.newInstance(sessionToken, position +1))
-                        .commit();
+//                fragmentManager.beginTransaction()
+//                        .replace(R.id.container, SettingFragment.newInstance(sessionToken, position +1))
+//                        .commit();
+                startActivity(new Intent(NextActivity.this, SettingsActivity.class));
                 break;
             default:
                 break;
@@ -435,7 +436,9 @@ public class NextActivity extends AppCompatActivity
             intent.setClass(NextActivity.this, MainActivity.class);
             NextActivity.this.startActivity(intent);
         }
+        finish();
         return super.onKeyDown(keyCode, event);
+
     }
 
 

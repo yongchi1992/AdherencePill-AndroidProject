@@ -128,6 +128,10 @@
         "source": "/Users/sam/.android/build-cache/4680b86b4ed81297ca2e9485893ab36cdcf573b0/output/res/layout/abc_action_mode_bar.xml"
     },
     {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/setting_toolbar.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/setting_toolbar.xml"
+    },
+    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/activity_first.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/activity_first.xml"
     },
@@ -174,6 +178,10 @@
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/pill_list_view.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/pill_list_view.xml"
+    },
+    {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/triple_number_picker.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/triple_number_picker.xml"
     },
     {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",

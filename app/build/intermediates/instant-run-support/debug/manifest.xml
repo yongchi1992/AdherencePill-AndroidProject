@@ -46,13 +46,11 @@
         <activity
             android:name="com.adherence.adherence.MainActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.adherence.adherence.NextActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
 
         <receiver android:name="com.adherence.adherence.NotificationReceiver" />
 
@@ -75,12 +73,10 @@
             android:name="com.adherence.adherence.ZentriOSBLEService"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="@string/service_name" >
-        </service>
+            android:label="@string/service_name" />
         <service
             android:name="com.adherence.adherence.MyService"
-            android:exported="true" >
-        </service>
+            android:exported="true" />
 
         <receiver
             android:name="com.adherence.adherence.AlarmReceiver"
@@ -96,6 +92,10 @@
                 <action android:name="ACTION_SCAN_RESULT" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.adherence.adherence.SettingsActivity"
+            android:label="@string/title_activity_settings" />
 
         <meta-data
             android:name="com.google.android.gms.version"

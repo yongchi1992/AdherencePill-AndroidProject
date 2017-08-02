@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -69,6 +70,8 @@ public class MedicationFragment extends Fragment {
     private static final String ARG_MEDICINE_DETAIL = "medicine detail";
     private static final String ARG_SECTION_NUMBER = "section_number";
     private static final String ARG_SESSION_TOKEN="session_token";
+    static final int REQUEST_IMAGE_CAPTURE = 101;
+    static final int REQUEST_IMAGE_SELECTOR = 102;
 
     private RecyclerView mRecyclerView;
     private MedicationListAdapter mAdapter;
@@ -160,6 +163,9 @@ public class MedicationFragment extends Fragment {
                     try {
                         JSONObject prescript = response.getJSONObject(j);
                         newPrescrip.setName(prescript.getString("name"));
+
+                        newPrescrip.findLocalImg();
+
                         if(prescript.has("bottle")){
                             if(prescript.getJSONObject("bottle").has("bottleName")){
                                 newPrescrip.setBottleName(prescript.getJSONObject("bottle").getString("bottleName"));
@@ -387,11 +393,32 @@ public class MedicationFragment extends Fragment {
         Bundle extras = data.getExtras();
         Bitmap imageBitmap = (Bitmap) extras.get("data");
 
+
         // CALL THIS METHOD TO GET THE URI FROM THE BITMAP
         Uri tempUri = getImageUri(getContext(), imageBitmap, imageTempName);
-        String picturePath = getRealPathFromURI(tempUri);
+//        String picturePath = getRealPathFromURI(tempUri);
         mAdapter.setImageInItem(position, imageBitmap);
 
+    }
+
+    private void onGalleryImageResult(Intent data) {
+        String[] filePath = { MediaStore.Images.Media.DATA };
+        Cursor c = getActivity().getContentResolver().query(data.getData(), filePath, null, null, null);
+        if (c == null || c.getCount() < 1) {
+            return;
+        }
+        c.moveToFirst();
+        int columnIndex = c.getColumnIndex(filePath[0]);
+        if(columnIndex < 0) { // no column index
+            return;
+        }
+        String picturePath = c.getString(columnIndex);
+        c.close();
+
+        Bitmap imageBitmap = (BitmapFactory.decodeFile(picturePath));
+        mAdapter.setImageInItem(position, imageBitmap);
+
+        Log.w("image from gallery", picturePath+"");
     }
 
     public Bitmap convertSrcToBitmap(String imageSrc) {
@@ -407,17 +434,33 @@ public class MedicationFragment extends Fragment {
         position = pos;
         imageTempName = imageName;
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, 100);
+        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+    }
+
+    public void chooseFromGallery(int pos, String imageName) {
+        position = pos;
+        imageTempName = imageName;
+        Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent, REQUEST_IMAGE_SELECTOR);
     }
 
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != Activity.RESULT_CANCELED) {
-            if (requestCode == 100) {
-                onCaptureImageResult(data);
-            }
+        switch (requestCode){
+            case REQUEST_IMAGE_CAPTURE:
+                if (resultCode == Activity.RESULT_OK){
+                    onCaptureImageResult(data);
+                }
+                break;
+            case REQUEST_IMAGE_SELECTOR:
+                if (resultCode == Activity.RESULT_OK && data != null && data.getData() != null){
+                    onGalleryImageResult(data);
+                }
+                break;
         }
+        super.onActivityResult(requestCode, resultCode, data);
+
     }
+
 }
