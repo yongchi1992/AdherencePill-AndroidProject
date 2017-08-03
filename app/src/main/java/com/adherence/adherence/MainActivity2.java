@@ -1106,7 +1106,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     private boolean writeLog(String buffer) {
         String state = Environment.getExternalStorageState();
         File logFile = new File ( mFileNameLog );
-
+//sdfadsaf
         if (Environment.MEDIA_MOUNTED.equals(state)) {
 
             try {
@@ -1122,7 +1122,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                 e.printStackTrace();
             }
         }
-        
+
         else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
             this.stopRecording();
             return false;
