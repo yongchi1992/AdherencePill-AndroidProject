@@ -284,6 +284,10 @@
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/test.xml"
     },
     {
+        "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/currentlist.xml",
+        "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/currentlist.xml"
+    },
+    {
         "merged": "/Users/sam/GitHub/ADP_Android/app/build/intermediates/res/merged/debug/layout/medication_listitem.xml",
         "source": "/Users/sam/GitHub/ADP_Android/app/src/main/res/layout/medication_listitem.xml"
     },

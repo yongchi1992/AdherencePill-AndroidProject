@@ -20,7 +20,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
-import android.provider.MediaStore;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.view.Menu;
@@ -101,7 +100,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     //private Button mSendTextButton;
     //private Button AutoPhoto;
     //private EditText mTextToSendBox;
-    private TextView mReceivedDataTextBox;
+//    private TextView mReceivedDataTextBox;
     private ScrollView mScrollView;
     private Button mClearTextButton;
     //private ToggleButton mToggleIm;
@@ -148,8 +147,18 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
-        sessionToken=data.getString("sessionToken","null");
+
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+
+
+
+
+        SharedPreferences data_newdata=getSharedPreferences(MainActivity.UserPREFERENCES,MODE_PRIVATE);
+
+        //SharedPreferences data=getSharedPreferences("data",MODE_PRIVATE);
+        sessionToken=data_newdata.getString("sessionToken","null");
+        System.out.println(sessionToken);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
@@ -212,8 +221,6 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             }
         };
 
-        mReceivedDataTextBox = (TextView) findViewById(R.id.receivedDataBox);
-        mScrollView = (ScrollView) findViewById(R.id.scroll_view);
 
         mDisconnectTimeoutTask = new Runnable()
         {
@@ -228,8 +235,8 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
 //        original hard code data
 
         ListView currentView = (ListView) findViewById(R.id.currentList);
-        newadapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
+        newadapter = new ArrayAdapter<String>(
+                this, R.layout.currentlist, R.id.currentListTextView, values);
 
 
         currentView.setAdapter(newadapter);
@@ -246,8 +253,8 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                     values.remove(deleteDeviceName);
                     newadapter.notifyDataSetChanged();
+                    mDeviceList.add(deleteDeviceName);
                 }
-
             }
         });
 
@@ -574,10 +581,6 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                 {
                     startBLEEnableIntent();
                 }
-                //else
-                //{
-                //    startScan();
-                //}
             }
 
             @Override
@@ -652,170 +655,8 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                         handleCommandResponse(intent);
                         break;
 
-//                    case ZentriOSBLEService.ACTION_MODE_WRITE:
-//                        int mode = ZentriOSBLEService.getMode(intent);
-//                        if (mode == ZentriOSBLEManager.MODE_STREAM)
-//                        {
-//                            //disable buttons while in stream mode (must be in rem command to work)
-//                            //GUISetStreamMode();
-//                        }
-//                        else
-//                        {
-//                            //GUISetCommandMode();
-//                        }
-//                        break;
 
                     case ZentriOSBLEService.ACTION_STRING_DATA_READ:
-                        //if (mCurrentMode == ZentriOSBLEManager.MODE_STREAM)
-                        //{
-                        String text = ZentriOSBLEService.getData(intent);
-                        updateReceivedTextBox(text);//就是这句往那个textbox写东西
-
-                        if (text.equals("I")) {
-                            mZentriOSBLEManager.setReceiveMode(ReceiveMode.BINARY);
-                            count_bytes = 0;
-                            header_done = false;
-//                            mZentriOSBLEManager.writeData("0");
-                            break;
-                        }
-
-                        if (text.equals("N")) {
-                            break;
-                        }
-
-
-
-                        temp = text;
-
-                        if (temp.contains(":")) {
-
-                            ParseObject testObject = new ParseObject("TestXZ");
-                            testObject.put("TIME", temp);
-                            testObject.put("NAME", mCurrentDeviceName);
-                            testObject.saveEventually();
-                        }
-
-                        Log.d(TAG, "text = : " + text);
-
-//                        if(mRecording) {
-//                            writeLog(text);
-//                            if (count_bytes == 0) {
-//                                val = Integer.parseInt(text);
-//                                len_image = val;
-//                                count_bytes++;
-//                            }
-//                            else if (count_bytes == 1) {
-//                                val = Integer.parseInt(text);
-//                                len_image += val*256;
-//                                imBytesSplit = new byte[2*len_image];
-//                                count_bytes++;
-//                                header_done = true;
-//                            }
-//                            else {
-//                                byte[] block = text.getBytes(Charset.forName("UTF-8"));
-//                                //byte[] block = ZentriOSBLEService.getByteData(intent);
-//                                System.arraycopy(block,0,imBytesSplit,count_bytes-2,block.length);
-//                                    /*for (int ii=0;ii<block.length;ii++) {
-//                                        imBytes[count_bytes-2+ii] = block[ii];
-//                                    }*/
-//                                count_bytes += block.length;
-//                                //imBytes[count_bytes-2] = (byte) val;
-//                            }
-//
-//                            if (count_bytes < len_image*2) mZentriOSBLEManager.writeData("0");
-//
-//                            //count_bytes++;
-//
-//                            if (count_bytes>=(2*len_image) && header_done) {
-//                                imBytes = new byte[len_image];
-//                                for (int ii=0;ii<len_image;ii++) {
-//                                    imBytes[ii] = (byte) (imBytesSplit[2*ii] + (imBytesSplit[(2*ii)+1]*16));
-//                                }
-//                                saveImage(imBytes);
-//                                mToggleIm.setChecked(false);
-//                                doStopRecording();
-//                                stopRecording();
-//                            }
-//                        }
-
-
-//                                String dataToSend = "*gi#";
-//                                mZentriOSBLEManager.writeData(dataToSend);
-
-                        if (gi == true) {
-                            String dataToSend = "*ai#";
-                            mZentriOSBLEManager.writeData(dataToSend);
-                            gi = false;
-                        }
-                        else {
-                            String dataToSend = "*gi#";
-                            mZentriOSBLEManager.writeData(dataToSend);
-                            gi = true;
-                        }
-
-                        Log.d(TAG, "Bytes: " + count_bytes);
-                        //}
-                        break;
-
-                    case ZentriOSBLEService.ACTION_BINARY_DATA_READ:
-                        byte[] block = ZentriOSBLEService.getBinaryData(intent);
-                        if(mRecording) {
-                            writeLog(block.toString());
-                        }
-                        if (!header_done) {
-                            if (block.length == 1 && count_bytes == 0) {
-                                len_image = block[0];
-                                count_bytes++;
-                            }
-                            else if (block.length == 1 && count_bytes == 1) {
-                                len_image += block[0]*256;
-                                count_bytes--;
-                                header_done = true;
-                                imBytes = new byte[len_image];
-                            }
-                            else if (block.length > 1) {
-                                len_image = (block[0] & 0x00FF) | ((block[1] << 8) & 0xFF00);
-                                header_done = true;
-                                imBytes = new byte[len_image];
-
-                                if (block.length > 2) {
-                                    System.arraycopy(block, 2, imBytes, count_bytes, block.length - 2);
-                                    count_bytes += block.length - 2;
-                                }
-                            }
-                        }
-                        else {
-                            if (count_bytes + block.length > len_image) {
-                                System.arraycopy(block, 0, imBytes, count_bytes, len_image-count_bytes);
-                                count_bytes += (len_image-count_bytes);
-                            }
-                            else {
-                                System.arraycopy(block, 0, imBytes, count_bytes, block.length);
-                                count_bytes += block.length;
-                            }
-                        }
-
-                        //if (count_bytes < len_image) mZentriOSBLEManager.writeData("0");
-                        //mZentriOSBLEManager.writeData("0");
-
-                        if (count_bytes>2 && imBytes[count_bytes-2]==-1 && imBytes[count_bytes-1]==-39) {
-                            //if (count_bytes>=(len_image) && header_done) {
-                            saveImage(imBytes);
-//                            mToggleIm.setChecked(false);
-                            doStopRecording();
-                            stopRecording();
-                            clearReceivedTextBox();
-                            Log.d(TAG, "SDFADSFASDFASFASFASFASFA   photo show");
-                            //显示图片
-                            imView = (ImageView) findViewById(R.id.imageView);
-                            Bitmap bmp = BitmapFactory.decodeByteArray(imBytes, 0, len_image);
-                            imView.setImageBitmap(bmp);
-                            mZentriOSBLEManager.setReceiveMode(ReceiveMode.STRING);
-                            //mZentriOSBLEManager.writeData("*000#");
-                            //mZentriOSBLEManager.writeData("*R#");
-                            //mZentriOSBLEManager.writeData("*W#");
-                        }
-                        Log.d(TAG, "Bytes: " + count_bytes + "Val: " + block[0]);
 
                         break;
 
@@ -907,7 +748,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                     values.add(mCurrentDeviceName);
-
+                    mDeviceList.remove(mCurrentDeviceName);
                 }
                 newadapter.notifyDataSetChanged();
             }
@@ -919,7 +760,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
 
         if (mZentriOSBLEManager != null)
         {
-            Toast.makeText(getApplicationContext(),"Manager is not null startscan",Toast.LENGTH_LONG).show();
+            //Toast.makeText(getApplicationContext(),"Manager is not null startscan",Toast.LENGTH_LONG).show();
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -1084,7 +925,9 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                mDeviceList.add(name);
+                if(name.startsWith("SC") && !values.contains(name)) {
+                    mDeviceList.add(name);
+                }
             }
         });
     }
@@ -1220,15 +1063,15 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     //mTextToSendBox.setVisibility(View.VISIBLE);
     //}
 
-    private void updateReceivedTextBox(String newData)
-    {
-        mReceivedDataTextBox.append(newData);
-    }
+//    private void updateReceivedTextBox(String newData)
+//    {
+//        mReceivedDataTextBox.append(newData);
+//    }
 
-    private void clearReceivedTextBox()
-    {
-        mReceivedDataTextBox.setText("");
-    }
+//    private void clearReceivedTextBox()
+//    {
+//        mReceivedDataTextBox.setText("");
+//    }
 
     private void doStartRecording() {
         File sdCard = Environment.getExternalStorageDirectory();
@@ -1314,6 +1157,4 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
         startActivity(new Intent(this, NextActivity.class));
         finish();
     }
-
-
 }

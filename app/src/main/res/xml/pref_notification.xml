@@ -6,18 +6,21 @@
         <SwitchPreference
             android:title="@string/pref_notification_category_notifi_switch_title"
             android:key="@string/pref_notification_category_notifi_switch_key"
+            android:persistent="true"
             android:summaryOn="On"
             android:summaryOff="Off"
             />
         <SwitchPreference
             android:title="@string/pref_notification_category_vibrate_switch_title"
             android:key="@string/pref_notification_category_vibrate_switch_key"
+            android:persistent="true"
             android:summaryOn="On"
             android:summaryOff="Off"
             />
         <SwitchPreference
             android:title="@string/pref_notification_category_sound_switch_title"
             android:key="@string/pref_notification_category_sound_switch_key"
+            android:persistent="true"
             android:summaryOn="On"
             android:summaryOff="Off"
             />
@@ -27,6 +30,7 @@
             android:key="@string/pref_notification_category_after_key"
             android:dialogTitle="Select Time"
             android:defaultValue="10"
+            android:persistent="true"
             android:summary="%s"
             android:entryValues="@array/after_notification_time_values"
             android:entries="@array/after_notification_time"
@@ -36,6 +40,7 @@
             android:key="@string/pref_notification_category_interval_key"
             android:dialogTitle="Select Time"
             android:defaultValue="15"
+            android:persistent="true"
             android:summary="%s"
             android:entryValues="@array/interval_notification_time_values"
             android:entries="@array/interval_notification_time"
@@ -45,6 +50,7 @@
             android:key="@string/pref_notification_category_times_key"
             android:defaultValue="1"
             android:dialogTitle="Select Times"
+            android:persistent="true"
             android:summary="%s"
             android:entryValues="@array/max_notification_times"
             android:entries="@array/max_notification_times"
@@ -66,7 +72,6 @@
             android:title="Afternoon"
             android:key="@string/pref_notification_category_afternoon_key"
             android:persistent="true"
-
             attr_TNNP:startTime="12:00:0"
             attr_TNNP:endTime = "18:00:0"
             attr_TNNP:defaultTime = "16:00:1"

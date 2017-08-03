@@ -9,6 +9,7 @@ import android.content.res.Configuration;
  */
 public class AdherenceApplication extends Application {
 
+    public static boolean flag = true;
     private static Context mAllContext;
 
     @Override

@@ -29,30 +29,29 @@ public class FirstActivity extends AppCompatActivity {
         userPref = getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
 
 
-//        Parse.enableLocalDatastore(this);
-//        Parse.initialize(new Parse.Configuration.Builder(this)
-//                .applicationId("myAppId")
-//                .clientKey("myMasterKey")
-//                .server("http://129.105.36.93:5000/parse/").build());
-//
-////        Parse.initialize(this, "BDo39lSOtPuBwDfq0EBDgIjTzztIQE38Fuk03EcR", "6exCVtTYC6JhQP6gw1OFByyP2RRq5McznAsoQ3Gq");
-//
-//
-//        ParseUser.enableAutomaticUser();
-//        List<ParseObject> user = new ArrayList<>();
-//        try {
-//            ParseQuery<ParseObject> query = ParseQuery.getQuery("saveUser");
-//            query.fromLocalDatastore();
-//            user = query.find();
-//        } catch (Exception e) {
-//        }
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId("myAppId")
+                .clientKey("myMasterKey")
+                .server(getString(R.string.parseURL) + "/parse/").build());
 
-//        if (user.size() > 0) {;
-//            Intent intent = new Intent();
-//            intent.setClass(FirstActivity.this, NextActivity.class);
-//            FirstActivity.this.startActivity(intent);
-//
-//        }
+////        Parse.initialize(this, "BDo39lSOtPuBwDfq0EBDgIjTzztIQE38Fuk03EcR", "6exCVtTYC6JhQP6gw1OFByyP2RRq5McznAsoQ3Gq");
+
+        ParseUser.enableAutomaticUser();
+        List<ParseObject> user = new ArrayList<>();
+        try {
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("saveUser");
+            query.fromLocalDatastore();
+            user = query.find();
+        } catch (Exception e) {
+        }
+
+        if (user.size() > 0) {;
+            Intent intent = new Intent();
+            intent.setClass(FirstActivity.this, NextActivity.class);
+            FirstActivity.this.startActivity(intent);
+
+        }
 
 
         new Handler().postDelayed(new Runnable() {

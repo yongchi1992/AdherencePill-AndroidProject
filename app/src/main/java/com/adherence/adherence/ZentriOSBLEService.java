@@ -381,6 +381,9 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     notification.setLatestEventInfo(mContext, "Please take the pills on time.",
                             "", null);
                     notification.defaults = Notification.DEFAULT_ALL;
+
+                    notification.defaults |= Notification.DEFAULT_SOUND;
+
                     mNotificationManager.notify(1, notification);
 
                 }
@@ -795,7 +798,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
 
         mRequestQueue= Volley.newRequestQueue(getApplicationContext());
-        String url="http://129.105.36.93:5000/patient/prescriptions";
+        String url=getString(R.string.parseURL) + "/patient/prescriptions";
         final JsonArrayRequest prescriptionRequest=new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {

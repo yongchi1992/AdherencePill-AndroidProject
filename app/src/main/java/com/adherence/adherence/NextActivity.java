@@ -100,11 +100,11 @@ public class NextActivity extends AppCompatActivity
 //        SharedPreferences data=getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
 //        String tempDeviceName = data.getString("bottle", null);
 
-        String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
+        //String tempDeviceName="SC36-03  4C:55:CC:10:6E:9A";
 
 //        Log.d("username", username_temp);
 
-//        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
+        String tempDeviceName="SC36-05  4C:55:CC:10:7B:12";
         SQLiteDatabase testdb = openOrCreateDatabase("Adherence_app.db", Context.MODE_PRIVATE, null);
         testdb.execSQL("DROP TABLE IF EXISTS DeviceTable");
         testdb.execSQL("CREATE TABLE IF NOT EXISTS DeviceTable (name VARCHAR PRIMARY KEY)");
@@ -438,6 +438,7 @@ public class NextActivity extends AppCompatActivity
         }
         finish();
         return super.onKeyDown(keyCode, event);
+
 
     }
 

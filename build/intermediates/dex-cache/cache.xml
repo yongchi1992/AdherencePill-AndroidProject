@@ -2,31 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/sam/GitHub/ADP_Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ce23db828e3ff372986ad2e3b27dab6384d4332a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/sam/GitHub/ADP_Android/app/libs/AndroidSwipeLayout-v1.1.8.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="c092dd2f2bdea6c04c5bf4122db66cb3495a3c35">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/2/AndroidSwipeLayout-v1.1.8_868f84d81b14540a5ea01fd75336c466b7969506/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/sam/GitHub/ADP_Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7c856317dcb4abae1d7dcd1e2d5a4296b41c0709">
-        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_06fddcbb1378f10f646389e25fe544abe8a38d64/classes.dex" />
+        <dex dex="/Users/sam/GitHub/ADP_Android/app/build/intermediates/pre-dexed/debug/AndroidSwipeLayout-v1.1.8_868f84d81b14540a5ea01fd75336c466b7969506.jar" />
     </item>
 
 </items>
