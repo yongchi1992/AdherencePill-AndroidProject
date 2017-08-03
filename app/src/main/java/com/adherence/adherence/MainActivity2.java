@@ -1122,7 +1122,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                 e.printStackTrace();
             }
         }
-        //fsafdsfasdfa
+        
         else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
             this.stopRecording();
             return false;
