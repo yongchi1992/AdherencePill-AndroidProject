@@ -54,14 +54,15 @@ public class AlarmReceiver extends BroadcastReceiver {
         //响闹钟
         test_alarm(context);
 
-
+        Intent blestartintent = new Intent(context, BluetoothService.class);
+        context.startService(blestartintent);
 
 //要用这个的时候要取消注释
 
-        Intent ii = new Intent();
-        ii.setAction(AL1);
-        ii.putExtra(EXTRA_DATA, command1);
-        context.sendBroadcast(ii);
+//        Intent ii = new Intent();
+//        ii.setAction(AL1);
+//        ii.putExtra(EXTRA_DATA, command1);
+//        context.sendBroadcast(ii);
 
         //再次开启LongRunningService这个服务，从而可以
         Intent i = new Intent(context, MyService.class);

@@ -71,6 +71,9 @@
         <service
             android:name=".MyService"
             android:exported="true" />
+        <service
+            android:name=".BluetoothService"
+            android:exported="true" />
 
         <receiver
             android:name=".AlarmReceiver"
