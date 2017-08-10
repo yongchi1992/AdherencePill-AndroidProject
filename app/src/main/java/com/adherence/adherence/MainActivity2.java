@@ -26,6 +26,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -80,6 +83,11 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     private boolean mConnecting = false;
     private boolean mConnected = false;
     private boolean mErrorDialogShowing = false;
+
+
+
+    private ImageView img_loading;
+    private Animation operatingAnim;
 
     private String mCurrentDeviceName;
 
@@ -200,6 +208,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             public void run()
             {
                 stopScan();
+                img_loading.clearAnimation();
             }
         };
 
@@ -257,6 +266,11 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
                 }
             }
         });
+
+
+        img_loading = (ImageView) findViewById(R.id.img_loading);
+        operatingAnim = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        operatingAnim.setInterpolator(new LinearInterpolator());
 
 //        delay_while();delay_while();delay_while();delay_while();delay_while();
         Intent ii = new Intent();
@@ -520,6 +534,7 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             @Override
             public void onClick(View v) {
                 mDeviceList.clear();
+                img_loading.startAnimation(operatingAnim);
                 startScan();
             }
         });
