@@ -264,13 +264,11 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     mBroadcastManager.sendBroadcast(intent);
                     sendBroadcast(intent);
                     if(isBack && !devices.isEmpty()) {
-
                         if (deviceinfo != null && deviceinfo.equals(devices.get(index))) {
                             mZentriOSBLEManager.stopScan();
                             scan_times = 0;
                             //delay_while();
                             mZentriOSBLEManager.connect(deviceName);
-
                         }
                     }
                 }
