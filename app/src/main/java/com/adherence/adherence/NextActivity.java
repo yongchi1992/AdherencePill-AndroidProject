@@ -259,7 +259,11 @@ public class NextActivity extends AppCompatActivity
 //                fragmentManager.beginTransaction()
 //                        .replace(R.id.container, SettingFragment.newInstance(sessionToken, position +1))
 //                        .commit();
-                startActivity(new Intent(NextActivity.this, SettingsActivity.class));
+//                startActivity(new Intent(NextActivity.this, SettingsActivity.class));
+
+//                fragmentManager.beginTransaction()
+//                        .replace(R.id.container, new SettingsFragment())
+//                        .commit();
                 break;
             default:
                 break;

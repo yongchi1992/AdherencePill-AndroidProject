@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Personal">
+        <Preference
+            android:fragment="com.adherence.adherence.SettingsActivity$PersonalInfoFragment"
+            android:title="PersonalInfo"
+            android:enabled="false"/>
+        <Preference
+            android:fragment="com.adherence.adherence.SettingsActivity$NotificationFragment"
+            android:title="Notification"/>
+        <Preference
+            android:fragment="com.adherence.adherence.SettingsActivity$GeneralFragment"
+            android:title="General"
+            android:enabled="false"/>
+        <Preference
+            android:fragment="com.adherence.adherence.SettingsActivity$PrivacyFragment"
+            android:title="Privacy"
+            android:enabled="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Bottles"
+        android:enabled="false">
+        <Preference
+            android:title="Bottles Status"/>
+        <Preference
+            android:title="Bottles Settings"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:enabled="false">
+        <Preference
+            android:title="Feedback"/>
+        <Preference
+            android:title="About"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
