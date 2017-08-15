@@ -106,8 +106,14 @@
     <string name="pref_notification_category_times_key">notifi_times</string>
 
     <string name="pref_notification_category_period">Period</string>
+    <!--old version for triple timepicker version-->
     <string name="pref_notification_category_morning_key">pref_period_morning</string>
     <string name="pref_notification_category_afternoon_key">pref_period_afternoon</string>
     <string name="pref_notification_category_night_key">pref_period_night</string>
     <string name="pref_notification_category_bedtime_key">pref_period_bedtime</string>
+    <!--new version for seekBar preference-->
+    <string name="pref_morning_seekBar_key">pref_morning_seekbar</string>
+    <string name="pref_afternoon_seekBar_key">pref_afternoon_seekbar</string>
+    <string name="pref_evening_seekBar_key">pref_evening_seekbar</string>
+    <string name="pref_bedtime_seekBar_key">pref_bedtime_seekbar</string>
 </resources>

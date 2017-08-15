@@ -20,8 +20,14 @@
     </declare-styleable>
     
     <declare-styleable name="com.adherence.adherence.TripleNumberPickerPreference">
-        <attr name="startTime" format="string"/>
-        <attr name="endTime" format="string"/>
+        <attr name="startTime_TNPP" format="string"/>
+        <attr name="endTime_TNPP" format="string"/>
         <attr name="defaultTime" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SeekBarPreference">
+        <attr name="startTime" format="integer"/>
+        <attr name="endTime" format="integer"/>
+        <attr name="interval" format="integer"/>
     </declare-styleable>
 </resources>

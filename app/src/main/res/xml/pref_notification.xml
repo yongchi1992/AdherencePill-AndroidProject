@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:attr_TNNP="com.adherence.adherence.TripleNumberPickerPreference">
+    xmlns:attr_seekBar="http://schemas.android.com/apk/res/com.adherence.adherence">
     <PreferenceCategory
         android:title="@string/pref_notification_category_notifications">
+
         <SwitchPreference
             android:title="@string/pref_notification_category_notifi_switch_title"
             android:key="@string/pref_notification_category_notifi_switch_key"
@@ -60,37 +61,38 @@
 
     <PreferenceCategory
         android:title="@string/pref_notification_category_period">
-        <com.adherence.adherence.TripleNumberPickerPreference
+
+        <com.adherence.adherence.SeekBarPreference
             android:title="Morning"
-            android:key="@string/pref_notification_category_morning_key"
+            android:key="@string/pref_morning_seekBar_key"
             android:persistent="true"
-            attr_TNNP:startTime="00:00:0"
-            attr_TNNP:endTime = "12:00:0"
-            attr_TNNP:defaultTime = "07:00:0"
-           />
-        <com.adherence.adherence.TripleNumberPickerPreference
+            attr_seekBar:startTime="@integer/pref_morning_start_hour"
+            attr_seekBar:endTime="@integer/pref_morning_end_hour"
+            attr_seekBar:interval="@integer/pref_period_interval"
+            />
+        <com.adherence.adherence.SeekBarPreference
             android:title="Afternoon"
-            android:key="@string/pref_notification_category_afternoon_key"
+            android:key="@string/pref_afternoon_seekBar_key"
             android:persistent="true"
-            attr_TNNP:startTime="12:00:0"
-            attr_TNNP:endTime = "18:00:0"
-            attr_TNNP:defaultTime = "16:00:1"
+            attr_seekBar:startTime="@integer/pref_afternoon_start_hour"
+            attr_seekBar:endTime="@integer/pref_afternoon_end_hour"
+            attr_seekBar:interval="@integer/pref_period_interval"
             />
-        <com.adherence.adherence.TripleNumberPickerPreference
-            android:title="Night"
-            android:key="@string/pref_notification_category_night_key"
+        <com.adherence.adherence.SeekBarPreference
+            android:title="Evening"
+            android:key="@string/pref_evening_seekBar_key"
             android:persistent="true"
-            attr_TNNP:startTime="18:00:0"
-            attr_TNNP:endTime = "24:00:0"
-            attr_TNNP:defaultTime = "20:00:1"
+            attr_seekBar:startTime="@integer/pref_evening_start_hour"
+            attr_seekBar:endTime="@integer/pref_evening_end_hour"
+            attr_seekBar:interval="@integer/pref_period_interval"
             />
-        <com.adherence.adherence.TripleNumberPickerPreference
+        <com.adherence.adherence.SeekBarPreference
             android:title="Bedtime"
-            android:key="@string/pref_notification_category_bedtime_key"
+            android:key="@string/pref_bedtime_seekBar_key"
             android:persistent="true"
-            attr_TNNP:startTime="00:00:0"
-            attr_TNNP:endTime = "24:00:0"
-            attr_TNNP:defaultTime = "22:00:1"
+            attr_seekBar:startTime="@integer/pref_bedtime_start_hour"
+            attr_seekBar:endTime="@integer/pref_bedtime_end_hour"
+            attr_seekBar:interval="@integer/pref_period_interval"
             />
     </PreferenceCategory>
 </PreferenceScreen>

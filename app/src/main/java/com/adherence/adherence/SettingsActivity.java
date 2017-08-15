@@ -141,19 +141,25 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             ListPreference pref_notifi_times = (ListPreference) findPreference(getString(R.string.pref_notification_category_times_key));
 
 
-            TripleNumberPickerPreference morning_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_morning_key));
-            TripleNumberPickerPreference afternoon_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_afternoon_key));
-            TripleNumberPickerPreference night_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_night_key));
-            TripleNumberPickerPreference bedtime_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_bedtime_key));
+//            TripleNumberPickerPreference morning_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_morning_key));
+//            TripleNumberPickerPreference afternoon_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_afternoon_key));
+//            TripleNumberPickerPreference night_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_night_key));
+//            TripleNumberPickerPreference bedtime_pref = (TripleNumberPickerPreference) findPreference(getString(R.string.pref_notification_category_bedtime_key));
+
+            SeekBarPreference morning_pref = (SeekBarPreference) findPreference(getString(R.string.pref_morning_seekBar_key));
+            SeekBarPreference afternoon_pref = (SeekBarPreference) findPreference(getString(R.string.pref_afternoon_seekBar_key));
+            SeekBarPreference night_pref = (SeekBarPreference) findPreference(getString(R.string.pref_evening_seekBar_key));
+            SeekBarPreference bedtime_pref = (SeekBarPreference) findPreference(getString(R.string.pref_bedtime_seekBar_key));
+
 
 
 
             vibrate_pref.setEnabled(notifi_switch);
             sound_pref.setEnabled(notifi_switch);
-            morning_pref.setEnabled(notifi_switch);
             pref_notifi_after.setEnabled(notifi_switch);
             pref_notifi_interval.setEnabled(notifi_switch);
             pref_notifi_times.setEnabled(notifi_switch);
+            morning_pref.setEnabled(notifi_switch);
             afternoon_pref.setEnabled(notifi_switch);
             night_pref.setEnabled(notifi_switch);
             bedtime_pref.setEnabled(notifi_switch);
