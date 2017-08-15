@@ -33,4 +33,20 @@
     <integer name="settings_bedtime_progress_init">84</integer>
 
 
+    <!--settings for pref_notification-->
+    <integer name="pref_period_interval">15</integer>
+
+    <integer name="pref_morning_start_hour">0</integer>
+    <integer name="pref_afternoon_start_hour">12</integer>
+    <integer name="pref_evening_start_hour">16</integer>
+    <integer name="pref_bedtime_start_hour">0</integer>
+
+    <integer name="pref_morning_end_hour">12</integer>
+    <integer name="pref_afternoon_end_hour">17</integer>
+    <integer name="pref_evening_end_hour">24</integer>
+    <integer name="pref_bedtime_end_hour">24</integer>
+
+
+
+
 </resources>
