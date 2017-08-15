@@ -374,15 +374,23 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
 
                 if(needremid == true) {
-                    Notification notification = new Notification(R.drawable.ic_launcher, ""
-                            , System.currentTimeMillis());
-                    notification.setLatestEventInfo(mContext, "Please take the pills on time.",
-                            "", null);
-                    notification.defaults = Notification.DEFAULT_ALL;
-
-                    notification.defaults |= Notification.DEFAULT_SOUND;
-
-                    mNotificationManager.notify(1, notification);
+                    Notification.Builder notification = new Notification.Builder(ZentriOSBLEService.this);
+                    notification.setSmallIcon(R.drawable.ic_launcher);
+                    notification.setTicker("Please take the pills on time.");
+                    notification.setContentTitle("Please take the pills on time.");
+                    notification.setContentText("Wait to implement……");
+                    notification.setWhen(System.currentTimeMillis());
+                    Notification notify = notification.build();
+                    mNotificationManager.notify(1, notify);
+//                    Notification notification = new Notification(R.drawable.ic_launcher, ""
+//                            , System.currentTimeMillis());
+//                    notification.setLatestEventInfo(mContext, "Please take the pills on time.",
+//                            "", null);
+//                    notification.defaults = Notification.DEFAULT_ALL;
+//
+//                    notification.defaults |= Notification.DEFAULT_SOUND;
+//
+//                    mNotificationManager.notify(1, notification);
 
                 }
 

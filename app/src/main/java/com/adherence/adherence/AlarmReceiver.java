@@ -82,10 +82,21 @@ public class AlarmReceiver extends BroadcastReceiver {
             boolean vibration = data_newdata.getBoolean("vibration", true);
             boolean sound = data_newdata.getBoolean("sound", false);
             NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-            Notification notification = new Notification(R.drawable.ic_launcher, ""
-                    , System.currentTimeMillis());
-            notification.setLatestEventInfo(context, "Please take the pill on time.",
-                    "", null);
+
+            Notification.Builder builder = new Notification.Builder(context);
+
+            builder.setSmallIcon(R.drawable.ic_launcher);
+            builder.setTicker("Please take the pills on time.");
+            builder.setContentTitle("Please take the pills on time.");
+            builder.setContentText("Wait to implement……");
+            builder.setWhen(System.currentTimeMillis());
+            Notification notification = builder.build();
+
+
+//            Notification notification = new Notification(R.drawable.ic_launcher, ""
+//                    , System.currentTimeMillis());
+//            notification.setLatestEventInfo(context, "Please take the pill on time.",
+//                    "", null);
             notification.defaults = Notification.DEFAULT_ALL;
 
             if(sound){
