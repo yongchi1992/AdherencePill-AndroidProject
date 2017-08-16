@@ -2,6 +2,7 @@ package com.adherence.adherence;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -34,6 +35,8 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
     private MedicationFragment medicationFragment;
 
     public static final int CAMERA_REQUEST = 101;
+
+
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public View listRootView;
@@ -135,10 +138,15 @@ public class MedicationListAdapter extends RecyclerView.Adapter<MedicationListAd
 
 
     private File saveBitmap(Bitmap bmp, String filename) {
-        String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
+
+        String extStorageDirectory = (Environment.getExternalStorageDirectory()
+                + context.getResources().getString(R.string.med_fragment_storage_path)).toString();
         OutputStream outStream = null;
         Log.d("extStorageDirectory", extStorageDirectory);
-        // String temp = null;
+        File direct = new File(extStorageDirectory);
+        if (!direct.exists()){
+            direct.mkdir();
+        }
         File file = new File(extStorageDirectory, filename + ".png");
         if (file.exists()) {
             file.delete();
