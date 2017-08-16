@@ -707,7 +707,21 @@ public class ZentriOSBLEService extends Service implements Serializable {
             if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected()) {
                 mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
             }else if(!devices.isEmpty() && beforeTime == false) {
-                mZentriOSBLEManager.startScan();
+                //mZentriOSBLEManager.startScan();
+
+                for(String scanDevice : AdherenceApplication.scanRecord){
+                    System.out.println(scanDevice);
+                    if(scanDevice.contains(devices.get(index))) {
+                        int tmp_idx = scanDevice.indexOf("+");
+                        int beacon = Integer.parseInt(scanDevice.substring(tmp_idx + 1));
+                        if(beacon != 0){
+                            System.out.println("Beacon = " + beacon);
+                            mZentriOSBLEManager.startScan();
+                        } else {
+                            System.out.println("Beacon = 0");
+                        }
+                    }
+                }
             }
         }
     }

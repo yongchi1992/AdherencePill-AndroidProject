@@ -35,7 +35,9 @@ public class BluetoothService extends Service {
     private BluetoothGattCharacteristic characteristic;
     private int charaProp;
 
-
+    public static final String EXTRA_DATA = "EXTRA_DATA";
+    private String command1 = "Scan";
+    public static final String AL1 = "AL1";
 
 
     //dasfwoenwefaona
@@ -135,31 +137,43 @@ public class BluetoothService extends Service {
             public void onScanComplete(final ScanResult[] results) {
                 System.out.println("Yongchi");
 
+                AdherenceApplication.scanRecord.clear();
+
+
                 for(int i = 0; i < results.length; i++){
+                    String temp_name = results[i].getDevice().getName();
+                    String temp_address = results[i].getDevice().getAddress();
+                    if(temp_name == null){
+                        continue;
+                    }
+                    System.out.println(temp_name);
                     for(int j = 0; j < results[i].getScanRecord().length; j++){
                         int temp = 0xff & results[i].getScanRecord()[j];
                         int left = temp >> 4;
                         int right = temp & 0xf;
                         System.out.print(left + "," + right + ",");
                     }
+
+                    int temp = 0xff & results[i].getScanRecord()[5];
+                    AdherenceApplication.scanRecord.add(temp_name + "  " + temp_address + "+" + temp);
+
                     System.out.println();
                 }
-                runOnMainThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (mCallback != null) {
-                            mCallback.onScanComplete();
-                        }
-                    }
-                });
+
+
+
+
+                if(AlarmReceiver.flag == true) {
+                    AlarmReceiver.flag = false;
+                    Intent ii = new Intent();
+                    ii.setAction(AL1);
+                    ii.putExtra(EXTRA_DATA, command1);
+                    sendBroadcast(ii);
+                }
+
+
             }
         });
-        System.out.println(b);
-//        if (!b) {
-//            if (mCallback != null) {
-//                mCallback.onScanComplete();
-//            }
-//        }
     }
 
     public void cancelScan() {
