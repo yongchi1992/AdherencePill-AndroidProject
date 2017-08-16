@@ -2,8 +2,11 @@ package com.adherence.adherence;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.ChangeBounds;
@@ -34,6 +37,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -75,6 +79,7 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
         private TextView period;
         private ImageView tick;
         private ImageView pillAmount;
+        private ImageView pillImage;
         private TextView pillNote;
 
         private SwipeRevealLayout swipeLayout;
@@ -100,6 +105,7 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
         public ImageView getTick() {return tick;}
         public TextView getPillNote() {return pillNote;}
         public ImageView getPillAmount() {return pillAmount;}
+        public ImageView getPillImage() {return pillImage;}
 
 
         public SwipeRevealLayout getSwipeLayout() {return swipeLayout;}
@@ -121,6 +127,7 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
             tick = (ImageView) itemView.findViewById(R.id.tick4);
             pillNote = (TextView) itemView.findViewById(R.id.pillNote4);
             pillAmount = (ImageView) itemView.findViewById(R.id.pillAmount4);
+            pillImage = (ImageView) itemView.findViewById(R.id.pillImage4);
 
             swipeLayout = (SwipeRevealLayout) itemView.findViewById(R.id.today_SL);
             hideLayout = (LinearLayout) itemView.findViewById(R.id.hide_layout);
@@ -164,13 +171,28 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
 
         final JSONObject temp = schedule.get(position);
 
-
         String name = null;
         String period = null;
         final String url = holder.itemView.getContext().getString(R.string.parseURL);
         try {
             name =temp.getString("name");
             period = temp.getString("period");
+
+            if (!name.isEmpty()){
+                String extStorageDirectory = (Environment.getExternalStorageDirectory()
+                        + mInflater.getContext().getString(R.string.today_fragment_storage_path)).toString();
+                File file = new File(extStorageDirectory, name + ".png");
+                if (file.exists()) {
+                    BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
+                    holder.getPillImage().setImageDrawable(null);
+                    holder.getPillImage().setImageBitmap(BitmapFactory.decodeFile(file.getAbsolutePath(), bitmapOptions));
+                } else {
+                    holder.getPillImage().setImageResource(R.drawable.capsule);
+                }
+
+            }
+
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -378,13 +400,6 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
 //        });
 
 
-
-
-
-
-
-
-
     }
 
 
@@ -410,6 +425,5 @@ public class TodayListAdapter4 extends RecyclerView.Adapter {
         Collections.swap(schedule, position, schedule.size() - 1);
         notifyItemMoved(position, schedule.size() - 1);
     }
-
 
 }

@@ -2,6 +2,7 @@ package com.adherence.adherence;
 
 import android.app.Activity;
 import android.app.AlarmManager;
+import android.app.FragmentTransaction;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,6 +15,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -81,9 +83,13 @@ public class NextActivity extends AppCompatActivity
     private int position;
     private String imageTempName;
 
+    private static final int REQUEST_CAMERA = 0;
+    private static final int REQUEST_CAMERA_PERMISSION = 1;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
 
         userPref = getSharedPreferences(MainActivity.UserPREFERENCES, MODE_PRIVATE);
@@ -260,11 +266,17 @@ public class NextActivity extends AppCompatActivity
 //                fragmentManager.beginTransaction()
 //                        .replace(R.id.container, SettingFragment.newInstance(sessionToken, position +1))
 //                        .commit();
-//                startActivity(new Intent(NextActivity.this, SettingsActivity.class));
+                startActivity(new Intent(NextActivity.this, SettingsActivity.class));
+
+//                SettingsFragment settingsFragment = new SettingsFragment();
+//                FragmentTransaction setting_fragment;
+//                setting_fragment = getFragmentManager().beginTransaction().replace(R.id.container, settingsFragment, "SETTING_FRAGMENT");
+//                setting_fragment.commit();
 
 //                fragmentManager.beginTransaction()
-//                        .replace(R.id.container, new SettingsFragment())
+//                        .replace(R.id.container, SettingsFragment.newInstance(sessionToken))
 //                        .commit();
+
                 break;
             default:
                 break;
@@ -517,5 +529,9 @@ public class NextActivity extends AppCompatActivity
 
 
     }
+
+//    protected void requestForPermission(final String permission) {
+//        ActivityCompat.requestPermissions(NextActivity.this, new String[]{permission}, REQUEST_CAMERA_PERMISSION);
+//    }
 
 }

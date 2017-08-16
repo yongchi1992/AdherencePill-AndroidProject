@@ -16,7 +16,9 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -35,6 +37,15 @@ import java.util.List;
 public class SettingsActivity extends AppCompatPreferenceActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+////        setTheme(R.style.PreferenceFixTheme);
+//        super.onCreate(savedInstanceState);
+////        addPreferencesFromResource(R.xml.pref_fragment);
+//        Button button = new Button(this);
+//        button.setText("Log Out");
+//        setListFooter(button);
+//        setupActionBar();
+////        setContentView(R.layout.activity_settings);
+////        getSupportFragmentManager().beginTransaction().add(R.id.pref_container, new SettingsFragment()).commit();
         super.onCreate(savedInstanceState);
         Button button = new Button(this);
         button.setText("Log Out");
@@ -87,6 +98,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
     public void onBuildHeaders(List<Header> target) {
 
         loadHeadersFromResource(R.xml.pref_headers, target);
+
     }
 
     @Override
