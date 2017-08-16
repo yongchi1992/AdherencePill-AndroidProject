@@ -76,8 +76,8 @@ public class MyService extends Service {
             }
 
             manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[0], pendingIntents[0]);
-            manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[1], pendingIntents[1]);
-            manager.cancel(pendingIntents[1]);
+//            manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[1], pendingIntents[1]);
+//            manager.cancel(pendingIntents[1]);
         }
 
 

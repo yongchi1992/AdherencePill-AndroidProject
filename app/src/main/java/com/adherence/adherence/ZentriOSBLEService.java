@@ -299,14 +299,27 @@ public class ZentriOSBLEService extends Service implements Serializable {
             public void transmitdata() throws ParseException {
 
                 String[] info = allinfo.split("\n");
+                String info_time = null;
+                String info_units = null;
+                String info_battery = null;
+                String info_voltage = null;
 
                 for(int i=0;i<info.length;i++){
                     Log.d(TAG, info[i]);
                     Log.d(TAG, i+"");
+                    if(info[i].contains(":")){
+                        info_time = info[i];
+                    } else if(info[i].contains("Units")){
+                        info_units = info[i];
+                    } else if(info[i].contains("mAh")){
+                        info_battery = info[i];
+                    } else if(info[i].contains("V")){
+                        info_voltage = info[i];
+                    }
                 }
 
 
-                String info_time = info[1];
+
                 Log.d(TAG, info_time);
                 String[] timestamp = info_time.split(",");
 
@@ -321,9 +334,7 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
                 Log.d(TAG, info_clock);
 
-                String info_units = info[2];
-                String info_battery = info[3];
-                String info_voltage = info[4];
+
 
                 //push it to server
                 Log.d(TAG, "start upload");
@@ -485,19 +496,11 @@ public class ZentriOSBLEService extends Service implements Serializable {
                         aiflag = false;
                     }
 
-                    if(receiveimage==1) {
-                        allinfo = allinfo + data;
-                        Log.d(TAG, "allinfo - " + allinfo );
-                        if (allinfo.contains(" V")) {
 
-                            String dataToSend = "*ai#";
-                            mZentriOSBLEManager.writeData(dataToSend);
+                    allinfo = allinfo + data;
+                    Log.d(TAG, "allinfo - " + allinfo );
 
 
-                            aiflag = true;
-                            receiveimage=0;
-                        }
-                    }
 
                 }
 
@@ -567,7 +570,14 @@ public class ZentriOSBLEService extends Service implements Serializable {
                     //save photos
 
                     mZentriOSBLEManager.setReceiveMode(com.zentri.zentri_ble.BLECallbacks.ReceiveMode.STRING);
-                    receiveimage=1;
+
+
+                    String dataToSend = "*ai#";
+                    mZentriOSBLEManager.writeData(dataToSend);
+
+
+                    aiflag = true;
+
                 }
             }
 
@@ -706,15 +716,15 @@ public class ZentriOSBLEService extends Service implements Serializable {
         //GUISetCommandMode();
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_COMMAND_REMOTE);
-        mZentriOSBLEManager.setSystemCommandMode(CommandMode.MACHINE);//set mode
-        mZentriOSBLEManager.getVersion();
+//        mZentriOSBLEManager.setSystemCommandMode(CommandMode.MACHINE);//set mode
+//        mZentriOSBLEManager.getVersion();
 
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);//set mode
         delay_while();
         mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);
-        delay_while();
-        mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);
+//        delay_while();
+//        mZentriOSBLEManager.setMode(ZentriOSBLEManager.MODE_STREAM);
 
         delay_while();
         String dataToSend = "*gn#";
