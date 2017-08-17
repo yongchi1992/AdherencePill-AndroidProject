@@ -22,6 +22,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -159,6 +160,21 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     {
 
         BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+
+        SharedPreferences data_newdata2 = PreferenceManager.getDefaultSharedPreferences(MainActivity2.this);
+        Log.d("test get pref", "" + data_newdata2.getBoolean(getString(R.string.pref_notification_category_notifi_switch_key), false));
+        Log.d("test get pref", "" + data_newdata2.getBoolean(getString(R.string.pref_notification_category_vibrate_switch_key), false));
+        Log.d("test get pref", "" + data_newdata2.getBoolean(getString(R.string.pref_notification_category_sound_switch_key), false));
+        Log.d("test get pref", data_newdata2.getString(getString(R.string.pref_notification_category_after_key), "null"));
+        Log.d("test get pref", data_newdata2.getString(getString(R.string.pref_notification_category_interval_key), "null"));
+        Log.d("test get pref", data_newdata2.getString(getString(R.string.pref_notification_category_times_key), "null"));
+        Log.d("test get pref", "" + data_newdata2.getInt(getString(R.string.pref_morning_seekBar_key), 0));
+        Log.d("test get pref", "" + data_newdata2.getInt(getString(R.string.pref_afternoon_seekBar_key), 0));
+        Log.d("test get pref", "" + data_newdata2.getInt(getString(R.string.pref_evening_seekBar_key), 0));
+        Log.d("test get pref", "" + data_newdata2.getInt(getString(R.string.pref_bedtime_seekBar_key), 0));
+
+
 
 
 

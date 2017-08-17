@@ -35,13 +35,15 @@ public class MyService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         System.out.println("StartStart");
-        if(AdherenceApplication.flag == true) {
 
-            AdherenceApplication.flag = false;
-            AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
-            //Notification time interval
 
-            int Minutes = 10 * 1000;
+
+        AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+        //Notification time interval
+
+
+        int firstMinutes = 10 * 1000;
+        int Minutes = 5 * 60 * 1000;
 
 
         /*
@@ -62,23 +64,32 @@ public class MyService extends Service {
         * */
 
             //SystemClock.elapsedRealtime() shows time starting from when the phone starts
-            triggerAtTimes = new long[2];
+
+
+        triggerAtTimes = new long[2];
+        if(AdherenceApplication.flag == true) {
+            AdherenceApplication.flag = false;
+            triggerAtTimes[0] = SystemClock.elapsedRealtime() + firstMinutes;
+        } else {
             triggerAtTimes[0] = SystemClock.elapsedRealtime() + Minutes;
-            triggerAtTimes[1] = SystemClock.elapsedRealtime() + 3 * Minutes;
+        }
+
+        triggerAtTimes[1] = SystemClock.elapsedRealtime() + 3 * Minutes;
 
 
 
             //start AlarmReceiver Service
-            Intent inte = new Intent(this, AlarmReceiver.class);
-            pendingIntents = new PendingIntent[2];
-            for(int i = 0; i < pendingIntents.length; i++){
-                pendingIntents[i] = PendingIntent.getBroadcast(this,i,inte, 0);
-            }
+        Intent inte = new Intent(this, AlarmReceiver.class);
+        pendingIntents = new PendingIntent[2];
+        for(int i = 0; i < pendingIntents.length; i++){
+            pendingIntents[i] = PendingIntent.getBroadcast(this,i,inte, 0);
+        }
 
-            manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[0], pendingIntents[0]);
+        manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[0], pendingIntents[0]);
+
 //            manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTimes[1], pendingIntents[1]);
 //            manager.cancel(pendingIntents[1]);
-        }
+
 
 
         return super.onStartCommand(intent, flags, startId);

@@ -704,11 +704,11 @@ public class ZentriOSBLEService extends Service implements Serializable {
                 e.printStackTrace();
             }
 
+            System.out.println("BeforeTime : " + beforeTime);
+
             if (mZentriOSBLEManager != null && mZentriOSBLEManager.isConnected()) {
                 mZentriOSBLEManager.disconnect(NO_TX_NOTIFY_DISABLE);
-            }else if(!devices.isEmpty() && beforeTime == false) {
-                //mZentriOSBLEManager.startScan();
-
+            }else if(!devices.isEmpty() && !beforeTime) {
                 for(String scanDevice : AdherenceApplication.scanRecord){
                     System.out.println(scanDevice);
                     if(scanDevice.contains(devices.get(index))) {
@@ -974,12 +974,12 @@ public class ZentriOSBLEService extends Service implements Serializable {
 
                     }
 
-                    if(shouldTime.size() == 0){
-                        beforeTime = true;
-                    }else{
-                        beforeTime = false;
-                        hmp.put(prescriptions[j].getBottleName(), tempMap);
-                    }
+//                    if(shouldTime.size() == 0){
+//                        beforeTime = true;
+//                    }else{
+//                        beforeTime = false;
+//                        hmp.put(prescriptions[j].getBottleName(), tempMap);
+//                    }
 
                     System.out.println("Print shtime");
 
