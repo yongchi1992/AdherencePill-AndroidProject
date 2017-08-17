@@ -1,5 +1,6 @@
 package com.adherence.adherence;
 
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
@@ -134,10 +135,10 @@ public class Prescription {
 
     public void findLocalImg(){
         if (!this.name.isEmpty()){
-            String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
+            String extStorageDirectory = (Environment.getExternalStorageDirectory() + "/Adherence/savedPictures").toString();
+            // TODO: 8/16/17 use strings instead 
             File file = new File(extStorageDirectory, this.name + ".png");
             if (file.exists()) {
-                Bitmap bitmap;
                 BitmapFactory.Options bitmapOptions = new BitmapFactory.Options();
 
                 this.image = BitmapFactory.decodeFile(file.getAbsolutePath(), bitmapOptions);
@@ -151,5 +152,6 @@ public class Prescription {
             this.image = null;
             this.haveImage = false;
         }
+
     }
 }

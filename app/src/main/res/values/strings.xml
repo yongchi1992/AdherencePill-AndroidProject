@@ -116,4 +116,10 @@
     <string name="pref_afternoon_seekBar_key">pref_afternoon_seekbar</string>
     <string name="pref_evening_seekBar_key">pref_evening_seekbar</string>
     <string name="pref_bedtime_seekBar_key">pref_bedtime_seekbar</string>
+
+    <!--Medication Fragment-->
+    <string name="med_fragment_storage_path">/Adherence/savedPictures</string>
+
+    <!--Today Frament-->
+    <string name="today_fragment_storage_path">/Adherence/savedPictures</string>
 </resources>

@@ -1,20 +1,28 @@
 package com.adherence.adherence;
 
+import android.Manifest;
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Point;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,6 +71,9 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.desmond.squarecamera.CameraActivity;
+import com.desmond.squarecamera.ImageUtility;
+
 
 public class MedicationFragment extends Fragment {
 
@@ -72,6 +83,8 @@ public class MedicationFragment extends Fragment {
     private static final String ARG_SESSION_TOKEN="session_token";
     static final int REQUEST_IMAGE_CAPTURE = 101;
     static final int REQUEST_IMAGE_SELECTOR = 102;
+    private static final int REQUEST_CAMERA = 0;
+    private static final int REQUEST_CAMERA_PERMISSION = 1;
 
     private RecyclerView mRecyclerView;
     private MedicationListAdapter mAdapter;
@@ -85,6 +98,7 @@ public class MedicationFragment extends Fragment {
     private String sessionToken;
     private String mDay;
     private String imageTempName;
+    private Point mSize;
 
     private Context mContext=null;
 
@@ -121,6 +135,9 @@ public class MedicationFragment extends Fragment {
         Log.d("medi_fragment session",sessionToken);
         mContext = this.getContext();
         mRequestQueue = Volley.newRequestQueue(getActivity());
+        Display display = getActivity().getWindowManager().getDefaultDisplay();
+        mSize = new Point();
+        display.getSize(mSize);
         Log.d("sequence", "onCreate!");
     }
 
@@ -390,12 +407,14 @@ public class MedicationFragment extends Fragment {
 
     private void onCaptureImageResult(Intent data) {
 
-        Bundle extras = data.getExtras();
-        Bitmap imageBitmap = (Bitmap) extras.get("data");
+//        Bundle extras = data.getExtras();
+//        Bitmap imageBitmap = (Bitmap) extras.get("data");
 
+        Uri photoUri = data.getData();
+        Bitmap imageBitmap = ImageUtility.decodeSampledBitmapFromPath(photoUri.getPath(), mSize.x, mSize.x);
 
         // CALL THIS METHOD TO GET THE URI FROM THE BITMAP
-        Uri tempUri = getImageUri(getContext(), imageBitmap, imageTempName);
+//        Uri tempUri = getImageUri(getContext(), imageBitmap, imageTempName);
 //        String picturePath = getRealPathFromURI(tempUri);
         mAdapter.setImageInItem(position, imageBitmap);
 
@@ -433,8 +452,10 @@ public class MedicationFragment extends Fragment {
     public void captureImage(int pos, String imageName) {
         position = pos;
         imageTempName = imageName;
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+//        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
+        Intent startCustomCameraIntent = new Intent(getActivity(), CameraActivity.class);
+        startActivityForResult(startCustomCameraIntent, REQUEST_IMAGE_CAPTURE);
     }
 
     public void chooseFromGallery(int pos, String imageName) {
@@ -462,5 +483,43 @@ public class MedicationFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
 
     }
+
+//    public void requestForCameraPermission(View view) {
+//        final String permission = Manifest.permission.CAMERA;
+//        if (ContextCompat.checkSelfPermission(getActivity(), permission)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), permission)) {
+//                showPermissionRationaleDialog("Test", permission);
+//            } else {
+//                NextActivity.requestForPermission(permission);
+//            }
+//        } else {
+//            launch();
+//        }
+//    }
+//
+//    private void showPermissionRationaleDialog(final String message, final String permission) {
+//        new AlertDialog.Builder(getActivity())
+//                .setMessage(message)
+//                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        getActivity().requestForPermission(permission);
+//                    }
+//                })
+//                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//
+//                    }
+//                })
+//                .create()
+//                .show();
+//    }
+//
+//    private void launch() {
+//        Intent startCustomCameraIntent = new Intent(getActivity(), CameraActivity.class);
+//        startActivityForResult(startCustomCameraIntent, REQUEST_CAMERA);
+//    }
 
 }
