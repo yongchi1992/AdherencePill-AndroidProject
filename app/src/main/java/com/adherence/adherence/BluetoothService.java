@@ -140,13 +140,31 @@ public class BluetoothService extends Service {
                 AdherenceApplication.scanRecord.clear();
 
 
+                if(MainActivity2.pressScan){
+                    MainActivity2.BLE_Result.clear();
+                }
+
+
                 for(int i = 0; i < results.length; i++){
                     String temp_name = results[i].getDevice().getName();
                     String temp_address = results[i].getDevice().getAddress();
+                    int rssi = results[i].getRssi();
                     if(temp_name == null){
                         continue;
                     }
+
+
+
+                    if(MainActivity2.pressScan){
+                        if(rssi > -70){
+                            MainActivity2.BLE_Result.add(temp_name + "  " + temp_address);
+                        }
+                    }
+
+
+
                     System.out.println(temp_name);
+                    System.out.println(rssi);
                     for(int j = 0; j < results[i].getScanRecord().length; j++){
                         int temp = 0xff & results[i].getScanRecord()[j];
                         int left = temp >> 4;
@@ -159,6 +177,9 @@ public class BluetoothService extends Service {
 
                     System.out.println();
                 }
+
+
+                MainActivity2.pressScan = false;
 
 
 

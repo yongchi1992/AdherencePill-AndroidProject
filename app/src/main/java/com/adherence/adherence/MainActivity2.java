@@ -70,6 +70,12 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
     private static final String TAG = "SmartCap";
     private final int BLE_ENABLE_REQ_CODE = 1;
 
+
+    public static ArrayList<String> BLE_Result = new ArrayList<>();
+    public static boolean pressScan = false;
+
+
+
     private final boolean NO_TX_NOTIFY_DISABLE = false;
 
     private ProgressDialog mConnectProgressDialog;
@@ -226,7 +232,6 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             public void run()
             {
                 stopScan();
-                img_loading.clearAnimation();
             }
         };
 
@@ -558,7 +563,26 @@ public class MainActivity2 extends Activity implements com.adherence.adherence.S
             public void onClick(View v) {
                 mDeviceList.clear();
                 img_loading.startAnimation(operatingAnim);
-                startScan();
+
+
+                pressScan = true;
+                Intent blestartintent = new Intent(MainActivity2.this, BluetoothService.class);
+                startService(blestartintent);
+
+
+                new Handler().postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        for(String name : BLE_Result) {
+                            if (name.startsWith("SC") && !values.contains(name)) {
+                                mDeviceList.add(name);
+                            }
+                        }
+                        img_loading.clearAnimation();
+                    }
+                }, 6000);
+
             }
         });
 

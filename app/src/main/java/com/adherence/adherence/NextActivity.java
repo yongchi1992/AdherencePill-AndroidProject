@@ -205,7 +205,7 @@ public class NextActivity extends AppCompatActivity
         startService(openservice);
 
         startService(new Intent(this, MyService.class));
-        startService(new Intent(this, BluetoothService.class));
+//        startService(new Intent(this, BluetoothService.class));
 
         ///////////////////////////////2.7///////////////////////////////////////
         //createDelayedNotification();
