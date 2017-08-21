@@ -1,15 +1,23 @@
 package com.adherence.adherence;
 
 
+import android.app.AlertDialog;
 import android.app.Service;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.blelib.BleManager;
 import com.example.blelib.conn.BleCharacterCallback;
@@ -20,7 +28,7 @@ import com.example.blelib.exception.BleException;
 import com.example.blelib.scan.ListScanCallback;
 import com.example.blelib.utils.HexUtil;
 
-public class BluetoothService extends Service {
+public class BluetoothService extends Service implements View.OnClickListener {
 
     public BluetoothBinder mBinder = new BluetoothBinder();
     private BleManager bleManager;
@@ -40,6 +48,15 @@ public class BluetoothService extends Service {
     public static final String AL1 = "AL1";
 
 
+
+    AlertDialog mDialog = null;
+
+    TextView dialogContent;
+    Button dialogBuOK, dialogBuCancel;
+
+    private MediaPlayer mp;
+
+
     //dasfwoenwefaona
 
 
@@ -54,6 +71,7 @@ public class BluetoothService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         System.out.println("test BLE Service");
         scanDevice();
+        showDialog();
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -770,6 +788,93 @@ public class BluetoothService extends Service {
             threadHandler.post(runnable);
         }
     }
+
+
+
+
+    // 创建dialog 的地方
+    private void createDialog() {
+//        View view = View.inflate(BluetoothService.this, R.layout.dialog, null);
+//        // 初始Dialog 里面的内容
+//        dialogBuOK = (Button) view.findViewById(R.id.dialog_button_ok);
+//        dialogBuOK.setOnClickListener(this);
+//        dialogBuCancel = (Button) view.findViewById(R.id.dialog_button_cancel);
+//        dialogBuCancel.setOnClickListener(this);
+//        dialogContent = (TextView)view.findViewById(R.id.dialog_content);
+//        AlertDialog.Builder builder = new AlertDialog.Builder(BluetoothService.this);
+//        builder.setView(view);
+//        mDialog = builder.create();
+//        mDialog.getWindow().setType(
+//                WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(BluetoothService.this);
+        builder.setTitle("AdherencePill Notification")
+                .setIcon(R.drawable.capsule)
+                .setMessage("\nPlease take pills on time.")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        mDialog.dismiss();
+                        mp.stop();
+                        mp.release();
+                    }
+                });
+        mDialog = builder.create();
+        mDialog.setCanceledOnTouchOutside(false);
+        mDialog.getWindow().setType(
+                WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
+
+
+    }
+    // 更新dialog 里面的内容
+    private String updateDialogContent(){
+        String content = null ;
+
+        content = "Please take pills on time.";
+        return content;
+    }
+    // 弹出dialog 的地方
+    public void showDialog() {
+        if (mDialog == null) {
+            createDialog();
+        }
+
+
+
+
+        mp = MediaPlayer.create(this,R.raw.music);
+        mp.start();
+        mDialog.dismiss();
+        mDialog.show();
+    }
+
+
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.dialog_button_ok:
+                //TODO
+                mDialog.dismiss();
+                mp.stop();
+                mp.release();
+                break;
+            case R.id.dialog_button_cancel:
+                //TODO
+                mDialog.dismiss();
+                mp.stop();
+                mp.release();
+                break;
+
+            default:
+                break;
+        }
+
+    }
+
 
 
 }

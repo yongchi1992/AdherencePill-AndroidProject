@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#aa000000"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/dialog_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#567345"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <LinearLayout
+            android:id="@+id/dialog_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="25pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/capsule" />
+
+            <TextView
+                android:id="@+id/dialog_tital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="Notification"
+                android:textColor="@color/white"
+                android:textSize="16pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Please take pills on time."
+                android:textColor="#000000"
+                android:textSize="25.0sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/iv_divider_line_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <include layout="@layout/listview_divider_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:maxLines="1"
+                android:text="@string/ok"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:id="@+id/iv_divider_line_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp" >
+
+                <include layout="@layout/listview_divider_line2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:maxLines="1"
+                android:text="@string/cancel"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
