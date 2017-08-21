@@ -52,6 +52,12 @@
             android:screenOrientation="portrait"
             />
 
+        <activity
+            android:name=".PlayAlarmAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            />
+
         <receiver android:name=".NotificationReceiver" />
 
         <service android:name=".NotificationService" />

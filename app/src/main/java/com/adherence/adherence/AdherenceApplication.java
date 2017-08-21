@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class AdherenceApplication extends Application {
 
-    public static boolean flag = true;
+    public static boolean flag = true;    //   This flag here controls the AlarmReceiver, make it start broadcast in 10s, and 5min the next time.
 
 
     public static ArrayList<String> scanRecord = new ArrayList<>();

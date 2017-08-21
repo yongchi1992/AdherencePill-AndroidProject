@@ -156,7 +156,7 @@ public class BluetoothService extends Service {
 
 
                     if(MainActivity2.pressScan){
-                        if(rssi > -70){
+                        if(rssi > -60){
                             MainActivity2.BLE_Result.add(temp_name + "  " + temp_address);
                         }
                     }
