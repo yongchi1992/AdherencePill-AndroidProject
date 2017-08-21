@@ -81,7 +81,10 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 
         //响闹钟
-        test_alarm(context);
+        //test_alarm(context);
+
+
+
 
 //start that activity
 //        Intent intentPlay = new Intent(context, PlayAlarmAty.class);

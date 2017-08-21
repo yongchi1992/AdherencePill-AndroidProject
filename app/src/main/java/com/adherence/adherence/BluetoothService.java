@@ -2,12 +2,16 @@ package com.adherence.adherence;
 
 
 import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.Service;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.icu.text.SimpleDateFormat;
 import android.media.MediaPlayer;
 import android.os.Binder;
@@ -71,7 +75,14 @@ public class BluetoothService extends Service implements View.OnClickListener {
     public int onStartCommand(Intent intent, int flags, int startId) {
         System.out.println("test BLE Service");
         scanDevice();
-        showDialog();
+
+        AdherenceApplication.bleserTimes++;
+        if(AdherenceApplication.bleserTimes >= 50){
+            AdherenceApplication.bleserTimes = 0;
+            showDialog();
+            test_alarm(this);
+        }
+
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -873,6 +884,40 @@ public class BluetoothService extends Service implements View.OnClickListener {
                 break;
         }
 
+    }
+
+    public void test_alarm(Context context){
+        SharedPreferences data_newdata=context.getSharedPreferences(MainActivity.UserPREFERENCES,context.MODE_PRIVATE);
+        boolean neednotify = data_newdata.getBoolean("notification",true);
+        if(neednotify) {
+            boolean vibration = data_newdata.getBoolean("vibration", true);
+            boolean sound = data_newdata.getBoolean("sound", false);
+            NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+            Notification.Builder builder = new Notification.Builder(context);
+
+            builder.setSmallIcon(R.drawable.capsule);
+            builder.setTicker("Please take the pills on time.");
+            builder.setContentTitle("Please take the pills on time.");
+            builder.setContentText("");
+            builder.setWhen(System.currentTimeMillis());
+            Notification notification = builder.build();
+
+
+            notification.defaults = Notification.DEFAULT_ALL;
+
+            if(sound){
+                notification.defaults |= Notification.DEFAULT_SOUND;
+            }else{
+                notification.defaults &= ~Notification.DEFAULT_SOUND;
+            }
+            if(vibration){
+                notification.defaults |= Notification.DEFAULT_VIBRATE;
+            }else{
+                notification.defaults &= ~Notification.DEFAULT_VIBRATE;
+            }
+            manager.notify(1, notification);
+        }
     }
 
 
